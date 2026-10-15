@@ -294,6 +294,46 @@ details.table-toggle > summary:focus-visible { outline: 2px solid var(--teal); o
 .site-foot a { color: var(--ink-soft); }
 .site-foot p { margin: 0 0 0.6rem; max-width: var(--measure); }
 
+/* ---- author block ------------------------------------------------------- */
+.author {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--teal);
+  padding: 1.25rem clamp(1rem, 3vw, 1.5rem);
+  margin: 0 0 1.75rem;
+  max-width: 34rem;
+}
+.author-label {
+  font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-mute); margin: 0 0 0.4rem;
+}
+.author-name {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 1.3125rem; line-height: 1.2; color: var(--ink);
+  margin: 0 0 1rem;
+}
+.author-detail {
+  display: grid;
+  grid-template-columns: minmax(5rem, auto) 1fr;
+  gap: 0.4rem 1rem;
+  margin: 0;
+  font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.5;
+}
+.author-detail dt {
+  color: var(--ink-mute); letter-spacing: 0.06em; text-transform: uppercase;
+  font-size: 0.6875rem; padding-top: 0.1em;
+}
+.author-detail dd { margin: 0; color: var(--ink-soft); overflow-wrap: anywhere; }
+.author-detail a { color: var(--teal); text-underline-offset: 2px; }
+.author-detail a:hover { color: var(--ink); }
+.author-detail a:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+@media (max-width: 30rem) {
+  .author-detail { grid-template-columns: 1fr; gap: 0.15rem; }
+  .author-detail dd { margin-bottom: 0.5rem; }
+}
+
 /* ---- narrow screens ----------------------------------------------------- */
 @media (max-width: 64rem) {
   .sidenav {
