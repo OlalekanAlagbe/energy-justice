@@ -1,0 +1,1755 @@
+{
+ "meta": {
+  "chart": "Electricity demand per person",
+  "chapter": 2,
+  "year": 2023,
+  "built_by": "analysis/21_build_ch2.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "iso_code",
+   "country",
+   "electricity_demand_per_capita_kwh",
+   "electricity_generation_per_capita_kwh",
+   "population"
+  ],
+  "filter": "iso_code present, demand per person reported",
+  "n_rows": 212,
+  "note": "Demand, not generation. Generation alone would call Lesotho the poorest country on earth, because it generates almost nothing and imports what it uses. Neither column says how many households are connected."
+ },
+ "breaks": [
+  0,
+  100,
+  500,
+  1000,
+  3000,
+  6000,
+  12000
+ ],
+ "band_labels": [
+  "under 100",
+  "100 to 500",
+  "500 to 1,000",
+  "1,000 to 3,000",
+  "3,000 to 6,000",
+  "6,000 to 12,000",
+  "12,000 and over"
+ ],
+ "band_counts": [
+  13,
+  33,
+  16,
+  53,
+  49,
+  34,
+  14
+ ],
+ "rows": [
+  {
+   "iso": "AFG",
+   "country": "Afghanistan",
+   "demand_pc_kwh": 173.4,
+   "generation_pc_kwh": 23.4,
+   "band": 1,
+   "population": 41454762
+  },
+  {
+   "iso": "ALB",
+   "country": "Albania",
+   "demand_pc_kwh": 2877.3,
+   "generation_pc_kwh": 3204.5,
+   "band": 3,
+   "population": 2811660
+  },
+  {
+   "iso": "DZA",
+   "country": "Algeria",
+   "demand_pc_kwh": 2024.1,
+   "generation_pc_kwh": 2076.9,
+   "band": 3,
+   "population": 46164222
+  },
+  {
+   "iso": "ASM",
+   "country": "American Samoa",
+   "demand_pc_kwh": 3575.6,
+   "generation_pc_kwh": 3575.6,
+   "band": 4,
+   "population": 47544
+  },
+  {
+   "iso": "AGO",
+   "country": "Angola",
+   "demand_pc_kwh": 428.6,
+   "generation_pc_kwh": 428.6,
+   "band": 1,
+   "population": 36749909
+  },
+  {
+   "iso": "ATG",
+   "country": "Antigua and Barbuda",
+   "demand_pc_kwh": 3857.2,
+   "generation_pc_kwh": 3857.2,
+   "band": 4,
+   "population": 93331
+  },
+  {
+   "iso": "ARG",
+   "country": "Argentina",
+   "demand_pc_kwh": 3599.2,
+   "generation_pc_kwh": 3262.3,
+   "band": 4,
+   "population": 45538402
+  },
+  {
+   "iso": "ARM",
+   "country": "Armenia",
+   "demand_pc_kwh": 2551.5,
+   "generation_pc_kwh": 2938.8,
+   "band": 3,
+   "population": 2943398
+  },
+  {
+   "iso": "ABW",
+   "country": "Aruba",
+   "demand_pc_kwh": 9263.9,
+   "generation_pc_kwh": 9263.9,
+   "band": 5,
+   "population": 107946
+  },
+  {
+   "iso": "AUS",
+   "country": "Australia",
+   "demand_pc_kwh": 10325.1,
+   "generation_pc_kwh": 10325.1,
+   "band": 5,
+   "population": 26451126
+  },
+  {
+   "iso": "AUT",
+   "country": "Austria",
+   "demand_pc_kwh": 7766.3,
+   "generation_pc_kwh": 7774.0,
+   "band": 5,
+   "population": 9130434
+  },
+  {
+   "iso": "AZE",
+   "country": "Azerbaijan",
+   "demand_pc_kwh": 2525.6,
+   "generation_pc_kwh": 2819.3,
+   "band": 3,
+   "population": 10318209
+  },
+  {
+   "iso": "BHS",
+   "country": "Bahamas",
+   "demand_pc_kwh": 5532.6,
+   "generation_pc_kwh": 5532.6,
+   "band": 4,
+   "population": 399452
+  },
+  {
+   "iso": "BHR",
+   "country": "Bahrain",
+   "demand_pc_kwh": 24177.0,
+   "generation_pc_kwh": 23871.2,
+   "band": 6,
+   "population": 1569674
+  },
+  {
+   "iso": "BGD",
+   "country": "Bangladesh",
+   "demand_pc_kwh": 648.3,
+   "generation_pc_kwh": 587.5,
+   "band": 2,
+   "population": 171466986
+  },
+  {
+   "iso": "BRB",
+   "country": "Barbados",
+   "demand_pc_kwh": 3895.9,
+   "generation_pc_kwh": 3895.9,
+   "band": 4,
+   "population": 282347
+  },
+  {
+   "iso": "BLR",
+   "country": "Belarus",
+   "demand_pc_kwh": 4544.9,
+   "generation_pc_kwh": 4578.9,
+   "band": 4,
+   "population": 9115679
+  },
+  {
+   "iso": "BEL",
+   "country": "Belgium",
+   "demand_pc_kwh": 7151.9,
+   "generation_pc_kwh": 7011.9,
+   "band": 5,
+   "population": 11712891
+  },
+  {
+   "iso": "BLZ",
+   "country": "Belize",
+   "demand_pc_kwh": 1775.7,
+   "generation_pc_kwh": 1094.6,
+   "band": 3,
+   "population": 411112
+  },
+  {
+   "iso": "BEN",
+   "country": "Benin",
+   "demand_pc_kwh": 162.3,
+   "generation_pc_kwh": 70.9,
+   "band": 1,
+   "population": 14111035
+  },
+  {
+   "iso": "BMU",
+   "country": "Bermuda",
+   "demand_pc_kwh": 9888.6,
+   "generation_pc_kwh": 9888.6,
+   "band": 5,
+   "population": 64721
+  },
+  {
+   "iso": "BTN",
+   "country": "Bhutan",
+   "demand_pc_kwh": 15247.0,
+   "generation_pc_kwh": 14191.5,
+   "band": 6,
+   "population": 786386
+  },
+  {
+   "iso": "BOL",
+   "country": "Bolivia",
+   "demand_pc_kwh": 1025.0,
+   "generation_pc_kwh": 1025.0,
+   "band": 3,
+   "population": 12244161
+  },
+  {
+   "iso": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "demand_pc_kwh": 5393.9,
+   "generation_pc_kwh": 5393.9,
+   "band": 4,
+   "population": 3185072
+  },
+  {
+   "iso": "BWA",
+   "country": "Botswana",
+   "demand_pc_kwh": 1911.1,
+   "generation_pc_kwh": 1302.3,
+   "band": 3,
+   "population": 2480242
+  },
+  {
+   "iso": "BRA",
+   "country": "Brazil",
+   "demand_pc_kwh": 3425.3,
+   "generation_pc_kwh": 3353.8,
+   "band": 4,
+   "population": 211140731
+  },
+  {
+   "iso": "VGB",
+   "country": "British Virgin Islands",
+   "demand_pc_kwh": 4358.0,
+   "generation_pc_kwh": 4358.0,
+   "band": 4,
+   "population": 39009
+  },
+  {
+   "iso": "BRN",
+   "country": "Brunei",
+   "demand_pc_kwh": 12201.5,
+   "generation_pc_kwh": 12201.5,
+   "band": 6,
+   "population": 458959
+  },
+  {
+   "iso": "BGR",
+   "country": "Bulgaria",
+   "demand_pc_kwh": 5407.7,
+   "generation_pc_kwh": 5897.8,
+   "band": 4,
+   "population": 6795805
+  },
+  {
+   "iso": "BFA",
+   "country": "Burkina Faso",
+   "demand_pc_kwh": 142.0,
+   "generation_pc_kwh": 73.4,
+   "band": 1,
+   "population": 23025777
+  },
+  {
+   "iso": "BDI",
+   "country": "Burundi",
+   "demand_pc_kwh": 43.8,
+   "generation_pc_kwh": 36.5,
+   "band": 0,
+   "population": 13689455
+  },
+  {
+   "iso": "KHM",
+   "country": "Cambodia",
+   "demand_pc_kwh": 974.0,
+   "generation_pc_kwh": 780.5,
+   "band": 2,
+   "population": 17423884
+  },
+  {
+   "iso": "CMR",
+   "country": "Cameroon",
+   "demand_pc_kwh": 256.6,
+   "generation_pc_kwh": 254.5,
+   "band": 1,
+   "population": 28372690
+  },
+  {
+   "iso": "CAN",
+   "country": "Canada",
+   "demand_pc_kwh": 15614.4,
+   "generation_pc_kwh": 16320.7,
+   "band": 6,
+   "population": 39299098
+  },
+  {
+   "iso": "CPV",
+   "country": "Cape Verde",
+   "demand_pc_kwh": 957.2,
+   "generation_pc_kwh": 957.2,
+   "band": 2,
+   "population": 522335
+  },
+  {
+   "iso": "CYM",
+   "country": "Cayman Islands",
+   "demand_pc_kwh": 9581.8,
+   "generation_pc_kwh": 9581.8,
+   "band": 5,
+   "population": 73055
+  },
+  {
+   "iso": "CAF",
+   "country": "Central African Republic",
+   "demand_pc_kwh": 27.2,
+   "generation_pc_kwh": 27.2,
+   "band": 0,
+   "population": 5152415
+  },
+  {
+   "iso": "TCD",
+   "country": "Chad",
+   "demand_pc_kwh": 18.6,
+   "generation_pc_kwh": 18.6,
+   "band": 0,
+   "population": 19319075
+  },
+  {
+   "iso": "CHL",
+   "country": "Chile",
+   "demand_pc_kwh": 4538.9,
+   "generation_pc_kwh": 4538.9,
+   "band": 4,
+   "population": 19658833
+  },
+  {
+   "iso": "CHN",
+   "country": "China",
+   "demand_pc_kwh": 6635.4,
+   "generation_pc_kwh": 6647.4,
+   "band": 5,
+   "population": 1422584930
+  },
+  {
+   "iso": "COL",
+   "country": "Colombia",
+   "demand_pc_kwh": 1654.8,
+   "generation_pc_kwh": 1654.8,
+   "band": 3,
+   "population": 52321152
+  },
+  {
+   "iso": "COM",
+   "country": "Comoros",
+   "demand_pc_kwh": 164.6,
+   "generation_pc_kwh": 164.6,
+   "band": 1,
+   "population": 850390
+  },
+  {
+   "iso": "COG",
+   "country": "Congo",
+   "demand_pc_kwh": 858.8,
+   "generation_pc_kwh": 866.9,
+   "band": 2,
+   "population": 6182890
+  },
+  {
+   "iso": "COK",
+   "country": "Cook Islands",
+   "demand_pc_kwh": 2808.2,
+   "generation_pc_kwh": 2808.2,
+   "band": 3,
+   "population": 14244
+  },
+  {
+   "iso": "CRI",
+   "country": "Costa Rica",
+   "demand_pc_kwh": 2364.1,
+   "generation_pc_kwh": 2295.6,
+   "band": 3,
+   "population": 5105526
+  },
+  {
+   "iso": "CIV",
+   "country": "Cote d'Ivoire",
+   "demand_pc_kwh": 329.5,
+   "generation_pc_kwh": 352.3,
+   "band": 1,
+   "population": 31165653
+  },
+  {
+   "iso": "HRV",
+   "country": "Croatia",
+   "demand_pc_kwh": 4881.9,
+   "generation_pc_kwh": 4476.4,
+   "band": 4,
+   "population": 3896023
+  },
+  {
+   "iso": "CUB",
+   "country": "Cuba",
+   "demand_pc_kwh": 1791.3,
+   "generation_pc_kwh": 1791.3,
+   "band": 3,
+   "population": 11019932
+  },
+  {
+   "iso": "CYP",
+   "country": "Cyprus",
+   "demand_pc_kwh": 3962.9,
+   "generation_pc_kwh": 3962.9,
+   "band": 4,
+   "population": 1344981
+  },
+  {
+   "iso": "CZE",
+   "country": "Czechia",
+   "demand_pc_kwh": 6163.0,
+   "generation_pc_kwh": 7012.2,
+   "band": 5,
+   "population": 10809722
+  },
+  {
+   "iso": "COD",
+   "country": "Democratic Republic of Congo",
+   "demand_pc_kwh": 161.4,
+   "generation_pc_kwh": 147.7,
+   "band": 1,
+   "population": 105789733
+  },
+  {
+   "iso": "DNK",
+   "country": "Denmark",
+   "demand_pc_kwh": 6223.8,
+   "generation_pc_kwh": 5697.6,
+   "band": 5,
+   "population": 5948134
+  },
+  {
+   "iso": "DJI",
+   "country": "Djibouti",
+   "demand_pc_kwh": 615.8,
+   "generation_pc_kwh": 173.5,
+   "band": 2,
+   "population": 1152951
+  },
+  {
+   "iso": "DMA",
+   "country": "Dominica",
+   "demand_pc_kwh": 2254.6,
+   "generation_pc_kwh": 2254.6,
+   "band": 3,
+   "population": 66531
+  },
+  {
+   "iso": "DOM",
+   "country": "Dominican Republic",
+   "demand_pc_kwh": 2167.5,
+   "generation_pc_kwh": 2167.5,
+   "band": 3,
+   "population": 11331269
+  },
+  {
+   "iso": "TLS",
+   "country": "East Timor",
+   "demand_pc_kwh": 368.4,
+   "generation_pc_kwh": 368.4,
+   "band": 1,
+   "population": 1384292
+  },
+  {
+   "iso": "ECU",
+   "country": "Ecuador",
+   "demand_pc_kwh": 2035.6,
+   "generation_pc_kwh": 1992.2,
+   "band": 3,
+   "population": 17980079
+  },
+  {
+   "iso": "EGY",
+   "country": "Egypt",
+   "demand_pc_kwh": 1925.4,
+   "generation_pc_kwh": 1937.6,
+   "band": 3,
+   "population": 114535772
+  },
+  {
+   "iso": "SLV",
+   "country": "El Salvador",
+   "demand_pc_kwh": 885.9,
+   "generation_pc_kwh": 947.8,
+   "band": 2,
+   "population": 6309629
+  },
+  {
+   "iso": "GNQ",
+   "country": "Equatorial Guinea",
+   "demand_pc_kwh": 774.0,
+   "generation_pc_kwh": 774.0,
+   "band": 2,
+   "population": 1847556
+  },
+  {
+   "iso": "ERI",
+   "country": "Eritrea",
+   "demand_pc_kwh": 141.2,
+   "generation_pc_kwh": 141.2,
+   "band": 1,
+   "population": 3470391
+  },
+  {
+   "iso": "EST",
+   "country": "Estonia",
+   "demand_pc_kwh": 6612.1,
+   "generation_pc_kwh": 4198.4,
+   "band": 5,
+   "population": 1367195
+  },
+  {
+   "iso": "SWZ",
+   "country": "Eswatini",
+   "demand_pc_kwh": 1381.5,
+   "generation_pc_kwh": 536.4,
+   "band": 3,
+   "population": 1230507
+  },
+  {
+   "iso": "ETH",
+   "country": "Ethiopia",
+   "demand_pc_kwh": 124.3,
+   "generation_pc_kwh": 138.1,
+   "band": 1,
+   "population": 128691695
+  },
+  {
+   "iso": "FLK",
+   "country": "Falkland Islands",
+   "demand_pc_kwh": 2858.8,
+   "generation_pc_kwh": 2858.8,
+   "band": 3,
+   "population": 3498
+  },
+  {
+   "iso": "FRO",
+   "country": "Faroe Islands",
+   "demand_pc_kwh": 8951.7,
+   "generation_pc_kwh": 8951.7,
+   "band": 5,
+   "population": 54738
+  },
+  {
+   "iso": "FJI",
+   "country": "Fiji",
+   "demand_pc_kwh": 1244.4,
+   "generation_pc_kwh": 1244.4,
+   "band": 3,
+   "population": 924150
+  },
+  {
+   "iso": "FIN",
+   "country": "Finland",
+   "demand_pc_kwh": 14861.1,
+   "generation_pc_kwh": 14554.1,
+   "band": 6,
+   "population": 5601185
+  },
+  {
+   "iso": "FRA",
+   "country": "France",
+   "demand_pc_kwh": 7048.3,
+   "generation_pc_kwh": 7807.9,
+   "band": 5,
+   "population": 66438828
+  },
+  {
+   "iso": "GUF",
+   "country": "French Guiana",
+   "demand_pc_kwh": 3230.0,
+   "generation_pc_kwh": 3230.0,
+   "band": 4,
+   "population": 303408
+  },
+  {
+   "iso": "PYF",
+   "country": "French Polynesia",
+   "demand_pc_kwh": 2525.6,
+   "generation_pc_kwh": 2525.6,
+   "band": 3,
+   "population": 281125
+  },
+  {
+   "iso": "GAB",
+   "country": "Gabon",
+   "demand_pc_kwh": 1275.8,
+   "generation_pc_kwh": 1042.3,
+   "band": 3,
+   "population": 2484790
+  },
+  {
+   "iso": "GMB",
+   "country": "Gambia",
+   "demand_pc_kwh": 189.0,
+   "generation_pc_kwh": 189.0,
+   "band": 1,
+   "population": 2697846
+  },
+  {
+   "iso": "GEO",
+   "country": "Georgia",
+   "demand_pc_kwh": 3611.3,
+   "generation_pc_kwh": 3789.9,
+   "band": 4,
+   "population": 3807494
+  },
+  {
+   "iso": "DEU",
+   "country": "Germany",
+   "demand_pc_kwh": 6102.3,
+   "generation_pc_kwh": 5993.3,
+   "band": 5,
+   "population": 84548233
+  },
+  {
+   "iso": "GHA",
+   "country": "Ghana",
+   "demand_pc_kwh": 646.7,
+   "generation_pc_kwh": 719.2,
+   "band": 2,
+   "population": 33787916
+  },
+  {
+   "iso": "GIB",
+   "country": "Gibraltar",
+   "demand_pc_kwh": 5975.1,
+   "generation_pc_kwh": 5975.1,
+   "band": 4,
+   "population": 38493
+  },
+  {
+   "iso": "GRC",
+   "country": "Greece",
+   "demand_pc_kwh": 5256.3,
+   "generation_pc_kwh": 4777.0,
+   "band": 4,
+   "population": 10242910
+  },
+  {
+   "iso": "GRL",
+   "country": "Greenland",
+   "demand_pc_kwh": 10902.4,
+   "generation_pc_kwh": 10902.4,
+   "band": 5,
+   "population": 55951
+  },
+  {
+   "iso": "GRD",
+   "country": "Grenada",
+   "demand_pc_kwh": 2049.6,
+   "generation_pc_kwh": 2049.6,
+   "band": 3,
+   "population": 117094
+  },
+  {
+   "iso": "GLP",
+   "country": "Guadeloupe",
+   "demand_pc_kwh": 4435.4,
+   "generation_pc_kwh": 4435.4,
+   "band": 4,
+   "population": 376518
+  },
+  {
+   "iso": "GUM",
+   "country": "Guam",
+   "demand_pc_kwh": 10809.4,
+   "generation_pc_kwh": 10809.4,
+   "band": 5,
+   "population": 166522
+  },
+  {
+   "iso": "GTM",
+   "country": "Guatemala",
+   "demand_pc_kwh": 871.2,
+   "generation_pc_kwh": 822.6,
+   "band": 2,
+   "population": 18124841
+  },
+  {
+   "iso": "GIN",
+   "country": "Guinea",
+   "demand_pc_kwh": 277.7,
+   "generation_pc_kwh": 277.7,
+   "band": 1,
+   "population": 14405469
+  },
+  {
+   "iso": "GNB",
+   "country": "Guinea-Bissau",
+   "demand_pc_kwh": 37.2,
+   "generation_pc_kwh": 37.2,
+   "band": 0,
+   "population": 2153343
+  },
+  {
+   "iso": "GUY",
+   "country": "Guyana",
+   "demand_pc_kwh": 1670.0,
+   "generation_pc_kwh": 1670.0,
+   "band": 3,
+   "population": 826357
+  },
+  {
+   "iso": "HTI",
+   "country": "Haiti",
+   "demand_pc_kwh": 73.0,
+   "generation_pc_kwh": 73.0,
+   "band": 0,
+   "population": 11637402
+  },
+  {
+   "iso": "HND",
+   "country": "Honduras",
+   "demand_pc_kwh": 1186.5,
+   "generation_pc_kwh": 1173.3,
+   "band": 3,
+   "population": 10644853
+  },
+  {
+   "iso": "HKG",
+   "country": "Hong Kong",
+   "demand_pc_kwh": 6629.3,
+   "generation_pc_kwh": 5072.1,
+   "band": 5,
+   "population": 7442738
+  },
+  {
+   "iso": "HUN",
+   "country": "Hungary",
+   "demand_pc_kwh": 4815.0,
+   "generation_pc_kwh": 3669.0,
+   "band": 4,
+   "population": 9686465
+  },
+  {
+   "iso": "ISL",
+   "country": "Iceland",
+   "demand_pc_kwh": 51114.8,
+   "generation_pc_kwh": 51114.8,
+   "band": 6,
+   "population": 387559
+  },
+  {
+   "iso": "IND",
+   "country": "India",
+   "demand_pc_kwh": 1332.5,
+   "generation_pc_kwh": 1333.9,
+   "band": 3,
+   "population": 1438069597
+  },
+  {
+   "iso": "IDN",
+   "country": "Indonesia",
+   "demand_pc_kwh": 1250.0,
+   "generation_pc_kwh": 1246.8,
+   "band": 3,
+   "population": 281190068
+  },
+  {
+   "iso": "IRN",
+   "country": "Iran",
+   "demand_pc_kwh": 4141.9,
+   "generation_pc_kwh": 4216.2,
+   "band": 4,
+   "population": 90608708
+  },
+  {
+   "iso": "IRQ",
+   "country": "Iraq",
+   "demand_pc_kwh": 3368.5,
+   "generation_pc_kwh": 3217.2,
+   "band": 4,
+   "population": 45074055
+  },
+  {
+   "iso": "IRL",
+   "country": "Ireland",
+   "demand_pc_kwh": 6700.5,
+   "generation_pc_kwh": 6071.2,
+   "band": 5,
+   "population": 5196629
+  },
+  {
+   "iso": "ISR",
+   "country": "Israel",
+   "demand_pc_kwh": 7616.4,
+   "generation_pc_kwh": 8365.1,
+   "band": 5,
+   "population": 9256311
+  },
+  {
+   "iso": "ITA",
+   "country": "Italy",
+   "demand_pc_kwh": 5257.2,
+   "generation_pc_kwh": 4395.8,
+   "band": 4,
+   "population": 59499452
+  },
+  {
+   "iso": "JAM",
+   "country": "Jamaica",
+   "demand_pc_kwh": 1679.7,
+   "generation_pc_kwh": 1679.7,
+   "band": 3,
+   "population": 2839785
+  },
+  {
+   "iso": "JPN",
+   "country": "Japan",
+   "demand_pc_kwh": 8094.6,
+   "generation_pc_kwh": 8094.6,
+   "band": 5,
+   "population": 124370947
+  },
+  {
+   "iso": "JOR",
+   "country": "Jordan",
+   "demand_pc_kwh": 2084.1,
+   "generation_pc_kwh": 2077.9,
+   "band": 3,
+   "population": 11439220
+  },
+  {
+   "iso": "KAZ",
+   "country": "Kazakhstan",
+   "demand_pc_kwh": 5689.1,
+   "generation_pc_kwh": 5587.3,
+   "band": 4,
+   "population": 20330109
+  },
+  {
+   "iso": "KEN",
+   "country": "Kenya",
+   "demand_pc_kwh": 247.4,
+   "generation_pc_kwh": 231.3,
+   "band": 1,
+   "population": 55339007
+  },
+  {
+   "iso": "KIR",
+   "country": "Kiribati",
+   "demand_pc_kwh": 301.8,
+   "generation_pc_kwh": 301.8,
+   "band": 1,
+   "population": 132540
+  },
+  {
+   "iso": "KWT",
+   "country": "Kuwait",
+   "demand_pc_kwh": 18550.1,
+   "generation_pc_kwh": 18550.1,
+   "band": 6,
+   "population": 4838781
+  },
+  {
+   "iso": "KGZ",
+   "country": "Kyrgyzstan",
+   "demand_pc_kwh": 2396.3,
+   "generation_pc_kwh": 1922.7,
+   "band": 3,
+   "population": 7073523
+  },
+  {
+   "iso": "LAO",
+   "country": "Laos",
+   "demand_pc_kwh": 2230.9,
+   "generation_pc_kwh": 6823.2,
+   "band": 3,
+   "population": 7665001
+  },
+  {
+   "iso": "LVA",
+   "country": "Latvia",
+   "demand_pc_kwh": 3814.3,
+   "generation_pc_kwh": 3389.3,
+   "band": 4,
+   "population": 1882399
+  },
+  {
+   "iso": "LBN",
+   "country": "Lebanon",
+   "demand_pc_kwh": 1087.7,
+   "generation_pc_kwh": 1087.7,
+   "band": 3,
+   "population": 5773494
+  },
+  {
+   "iso": "LSO",
+   "country": "Lesotho",
+   "demand_pc_kwh": 194.7,
+   "generation_pc_kwh": 0.0,
+   "band": 1,
+   "population": 2311476
+  },
+  {
+   "iso": "LBR",
+   "country": "Liberia",
+   "demand_pc_kwh": 111.0,
+   "generation_pc_kwh": 111.0,
+   "band": 1,
+   "population": 5493035
+  },
+  {
+   "iso": "LBY",
+   "country": "Libya",
+   "demand_pc_kwh": 4619.7,
+   "generation_pc_kwh": 4619.7,
+   "band": 4,
+   "population": 7305659
+  },
+  {
+   "iso": "LTU",
+   "country": "Lithuania",
+   "demand_pc_kwh": 4285.1,
+   "generation_pc_kwh": 1857.0,
+   "band": 4,
+   "population": 2854104
+  },
+  {
+   "iso": "LUX",
+   "country": "Luxembourg",
+   "demand_pc_kwh": 9938.3,
+   "generation_pc_kwh": 2120.0,
+   "band": 5,
+   "population": 665101
+  },
+  {
+   "iso": "MAC",
+   "country": "Macao",
+   "demand_pc_kwh": 8390.3,
+   "generation_pc_kwh": 924.5,
+   "band": 5,
+   "population": 713916
+  },
+  {
+   "iso": "MDG",
+   "country": "Madagascar",
+   "demand_pc_kwh": 79.5,
+   "generation_pc_kwh": 79.5,
+   "band": 0,
+   "population": 31195937
+  },
+  {
+   "iso": "MWI",
+   "country": "Malawi",
+   "demand_pc_kwh": 85.8,
+   "generation_pc_kwh": 86.7,
+   "band": 0,
+   "population": 21104480
+  },
+  {
+   "iso": "MYS",
+   "country": "Malaysia",
+   "demand_pc_kwh": 5315.1,
+   "generation_pc_kwh": 5346.4,
+   "band": 4,
+   "population": 35126295
+  },
+  {
+   "iso": "MDV",
+   "country": "Maldives",
+   "demand_pc_kwh": 1615.9,
+   "generation_pc_kwh": 1615.9,
+   "band": 3,
+   "population": 526009
+  },
+  {
+   "iso": "MLI",
+   "country": "Mali",
+   "demand_pc_kwh": 222.6,
+   "generation_pc_kwh": 252.8,
+   "band": 1,
+   "population": 23769130
+  },
+  {
+   "iso": "MLT",
+   "country": "Malta",
+   "demand_pc_kwh": 5572.6,
+   "generation_pc_kwh": 4409.3,
+   "band": 4,
+   "population": 532964
+  },
+  {
+   "iso": "MTQ",
+   "country": "Martinique",
+   "demand_pc_kwh": 4364.1,
+   "generation_pc_kwh": 4364.1,
+   "band": 4,
+   "population": 346008
+  },
+  {
+   "iso": "MRT",
+   "country": "Mauritania",
+   "demand_pc_kwh": 467.9,
+   "generation_pc_kwh": 416.1,
+   "band": 1,
+   "population": 5022442
+  },
+  {
+   "iso": "MUS",
+   "country": "Mauritius",
+   "demand_pc_kwh": 2567.5,
+   "generation_pc_kwh": 2567.5,
+   "band": 3,
+   "population": 1273591
+  },
+  {
+   "iso": "MEX",
+   "country": "Mexico",
+   "demand_pc_kwh": 2702.8,
+   "generation_pc_kwh": 2710.8,
+   "band": 3,
+   "population": 129739761
+  },
+  {
+   "iso": "MDA",
+   "country": "Moldova",
+   "demand_pc_kwh": 2096.5,
+   "generation_pc_kwh": 2070.4,
+   "band": 3,
+   "population": 3067072
+  },
+  {
+   "iso": "MNG",
+   "country": "Mongolia",
+   "demand_pc_kwh": 3111.9,
+   "generation_pc_kwh": 2415.5,
+   "band": 4,
+   "population": 3431938
+  },
+  {
+   "iso": "MNE",
+   "country": "Montenegro",
+   "demand_pc_kwh": 5240.3,
+   "generation_pc_kwh": 6613.5,
+   "band": 4,
+   "population": 633553
+  },
+  {
+   "iso": "MSR",
+   "country": "Montserrat",
+   "demand_pc_kwh": 2252.3,
+   "generation_pc_kwh": 2252.3,
+   "band": 3,
+   "population": 4440
+  },
+  {
+   "iso": "MAR",
+   "country": "Morocco",
+   "demand_pc_kwh": 1174.9,
+   "generation_pc_kwh": 1125.9,
+   "band": 3,
+   "population": 37712516
+  },
+  {
+   "iso": "MOZ",
+   "country": "Mozambique",
+   "demand_pc_kwh": 490.6,
+   "generation_pc_kwh": 593.4,
+   "band": 1,
+   "population": 33635163
+  },
+  {
+   "iso": "MMR",
+   "country": "Myanmar",
+   "demand_pc_kwh": 400.7,
+   "generation_pc_kwh": 389.8,
+   "band": 1,
+   "population": 54133800
+  },
+  {
+   "iso": "NAM",
+   "country": "Namibia",
+   "demand_pc_kwh": 1410.7,
+   "generation_pc_kwh": 637.8,
+   "band": 3,
+   "population": 2963102
+  },
+  {
+   "iso": "NRU",
+   "country": "Nauru",
+   "demand_pc_kwh": 3361.3,
+   "generation_pc_kwh": 3361.3,
+   "band": 4,
+   "population": 11900
+  },
+  {
+   "iso": "NPL",
+   "country": "Nepal",
+   "demand_pc_kwh": 358.7,
+   "generation_pc_kwh": 360.3,
+   "band": 1,
+   "population": 29694614
+  },
+  {
+   "iso": "NLD",
+   "country": "Netherlands",
+   "demand_pc_kwh": 6317.5,
+   "generation_pc_kwh": 6630.4,
+   "band": 5,
+   "population": 18092526
+  },
+  {
+   "iso": "NCL",
+   "country": "New Caledonia",
+   "demand_pc_kwh": 10659.6,
+   "generation_pc_kwh": 10659.6,
+   "band": 5,
+   "population": 289879
+  },
+  {
+   "iso": "NZL",
+   "country": "New Zealand",
+   "demand_pc_kwh": 8291.4,
+   "generation_pc_kwh": 8291.4,
+   "band": 5,
+   "population": 5172837
+  },
+  {
+   "iso": "NIC",
+   "country": "Nicaragua",
+   "demand_pc_kwh": 782.6,
+   "generation_pc_kwh": 662.4,
+   "band": 2,
+   "population": 6823619
+  },
+  {
+   "iso": "NER",
+   "country": "Niger",
+   "demand_pc_kwh": 84.5,
+   "generation_pc_kwh": 37.1,
+   "band": 0,
+   "population": 26159863
+  },
+  {
+   "iso": "NGA",
+   "country": "Nigeria",
+   "demand_pc_kwh": 169.4,
+   "generation_pc_kwh": 179.6,
+   "band": 1,
+   "population": 227882949
+  },
+  {
+   "iso": "NIU",
+   "country": "Niue",
+   "demand_pc_kwh": 0.0,
+   "generation_pc_kwh": 0.0,
+   "band": 0,
+   "population": 1841
+  },
+  {
+   "iso": "PRK",
+   "country": "North Korea",
+   "demand_pc_kwh": 1011.4,
+   "generation_pc_kwh": 1011.4,
+   "band": 3,
+   "population": 26418196
+  },
+  {
+   "iso": "MKD",
+   "country": "North Macedonia",
+   "demand_pc_kwh": 3843.2,
+   "generation_pc_kwh": 3761.3,
+   "band": 4,
+   "population": 1831800
+  },
+  {
+   "iso": "NOR",
+   "country": "Norway",
+   "demand_pc_kwh": 24621.5,
+   "generation_pc_kwh": 27835.7,
+   "band": 6,
+   "population": 5519167
+  },
+  {
+   "iso": "OMN",
+   "country": "Oman",
+   "demand_pc_kwh": 8912.2,
+   "generation_pc_kwh": 8912.2,
+   "band": 5,
+   "population": 5049267
+  },
+  {
+   "iso": "PAK",
+   "country": "Pakistan",
+   "demand_pc_kwh": 696.8,
+   "generation_pc_kwh": 694.8,
+   "band": 2,
+   "population": 247504505
+  },
+  {
+   "iso": "PSE",
+   "country": "Palestine",
+   "demand_pc_kwh": 1464.2,
+   "generation_pc_kwh": 157.1,
+   "band": 3,
+   "population": 5409201
+  },
+  {
+   "iso": "PAN",
+   "country": "Panama",
+   "demand_pc_kwh": 2908.9,
+   "generation_pc_kwh": 2940.3,
+   "band": 3,
+   "population": 4458758
+  },
+  {
+   "iso": "PNG",
+   "country": "Papua New Guinea",
+   "demand_pc_kwh": 455.3,
+   "generation_pc_kwh": 455.3,
+   "band": 1,
+   "population": 10389638
+  },
+  {
+   "iso": "PRY",
+   "country": "Paraguay",
+   "demand_pc_kwh": 3309.4,
+   "generation_pc_kwh": 7749.7,
+   "band": 4,
+   "population": 6844150
+  },
+  {
+   "iso": "PER",
+   "country": "Peru",
+   "demand_pc_kwh": 1799.3,
+   "generation_pc_kwh": 1798.5,
+   "band": 3,
+   "population": 33845616
+  },
+  {
+   "iso": "PHL",
+   "country": "Philippines",
+   "demand_pc_kwh": 1016.0,
+   "generation_pc_kwh": 1016.0,
+   "band": 3,
+   "population": 114891199
+  },
+  {
+   "iso": "POL",
+   "country": "Poland",
+   "demand_pc_kwh": 4366.6,
+   "generation_pc_kwh": 4270.1,
+   "band": 4,
+   "population": 38762847
+  },
+  {
+   "iso": "PRT",
+   "country": "Portugal",
+   "demand_pc_kwh": 5404.2,
+   "generation_pc_kwh": 4423.5,
+   "band": 4,
+   "population": 10430735
+  },
+  {
+   "iso": "PRI",
+   "country": "Puerto Rico",
+   "demand_pc_kwh": 6138.1,
+   "generation_pc_kwh": 6138.1,
+   "band": 5,
+   "population": 3242022
+  },
+  {
+   "iso": "QAT",
+   "country": "Qatar",
+   "demand_pc_kwh": 18925.3,
+   "generation_pc_kwh": 18925.3,
+   "band": 6,
+   "population": 2979086
+  },
+  {
+   "iso": "REU",
+   "country": "Reunion",
+   "demand_pc_kwh": 3509.0,
+   "generation_pc_kwh": 3509.0,
+   "band": 4,
+   "population": 874883
+  },
+  {
+   "iso": "ROU",
+   "country": "Romania",
+   "demand_pc_kwh": 2820.8,
+   "generation_pc_kwh": 2978.8,
+   "band": 3,
+   "population": 19118482
+  },
+  {
+   "iso": "RUS",
+   "country": "Russia",
+   "demand_pc_kwh": 7987.6,
+   "generation_pc_kwh": 8101.3,
+   "band": 5,
+   "population": 145440502
+  },
+  {
+   "iso": "RWA",
+   "country": "Rwanda",
+   "demand_pc_kwh": 86.0,
+   "generation_pc_kwh": 78.8,
+   "band": 0,
+   "population": 13954473
+  },
+  {
+   "iso": "SHN",
+   "country": "Saint Helena",
+   "demand_pc_kwh": 1881.1,
+   "generation_pc_kwh": 1881.1,
+   "band": 3,
+   "population": 5316
+  },
+  {
+   "iso": "KNA",
+   "country": "Saint Kitts and Nevis",
+   "demand_pc_kwh": 4702.6,
+   "generation_pc_kwh": 4702.6,
+   "band": 4,
+   "population": 46783
+  },
+  {
+   "iso": "LCA",
+   "country": "Saint Lucia",
+   "demand_pc_kwh": 2231.0,
+   "generation_pc_kwh": 2231.0,
+   "band": 3,
+   "population": 179291
+  },
+  {
+   "iso": "SPM",
+   "country": "Saint Pierre and Miquelon",
+   "demand_pc_kwh": 8761.2,
+   "generation_pc_kwh": 8761.2,
+   "band": 5,
+   "population": 5707
+  },
+  {
+   "iso": "VCT",
+   "country": "Saint Vincent and the Grenadines",
+   "demand_pc_kwh": 1480.3,
+   "generation_pc_kwh": 1480.3,
+   "band": 3,
+   "population": 101331
+  },
+  {
+   "iso": "WSM",
+   "country": "Samoa",
+   "demand_pc_kwh": 692.3,
+   "generation_pc_kwh": 692.3,
+   "band": 2,
+   "population": 216673
+  },
+  {
+   "iso": "STP",
+   "country": "Sao Tome and Principe",
+   "demand_pc_kwh": 389.8,
+   "generation_pc_kwh": 389.8,
+   "band": 1,
+   "population": 230882
+  },
+  {
+   "iso": "SAU",
+   "country": "Saudi Arabia",
+   "demand_pc_kwh": 12903.0,
+   "generation_pc_kwh": 12904.2,
+   "band": 6,
+   "population": 33264289
+  },
+  {
+   "iso": "SEN",
+   "country": "Senegal",
+   "demand_pc_kwh": 483.5,
+   "generation_pc_kwh": 453.6,
+   "band": 1,
+   "population": 18077573
+  },
+  {
+   "iso": "SRB",
+   "country": "Serbia",
+   "demand_pc_kwh": 5483.4,
+   "generation_pc_kwh": 5806.7,
+   "band": 4,
+   "population": 6773204
+  },
+  {
+   "iso": "SYC",
+   "country": "Seychelles",
+   "demand_pc_kwh": 4845.2,
+   "generation_pc_kwh": 4845.2,
+   "band": 4,
+   "population": 127961
+  },
+  {
+   "iso": "SLE",
+   "country": "Sierra Leone",
+   "demand_pc_kwh": 24.8,
+   "generation_pc_kwh": 24.8,
+   "band": 0,
+   "population": 8460523
+  },
+  {
+   "iso": "SGP",
+   "country": "Singapore",
+   "demand_pc_kwh": 9915.2,
+   "generation_pc_kwh": 9901.4,
+   "band": 5,
+   "population": 5789092
+  },
+  {
+   "iso": "SVK",
+   "country": "Slovakia",
+   "demand_pc_kwh": 4731.7,
+   "generation_pc_kwh": 5351.5,
+   "band": 4,
+   "population": 5518057
+  },
+  {
+   "iso": "SVN",
+   "country": "Slovenia",
+   "demand_pc_kwh": 6627.7,
+   "generation_pc_kwh": 7340.5,
+   "band": 5,
+   "population": 2118394
+  },
+  {
+   "iso": "SLB",
+   "country": "Solomon Islands",
+   "demand_pc_kwh": 137.5,
+   "generation_pc_kwh": 137.5,
+   "band": 1,
+   "population": 800014
+  },
+  {
+   "iso": "SOM",
+   "country": "Somalia",
+   "demand_pc_kwh": 22.9,
+   "generation_pc_kwh": 22.9,
+   "band": 0,
+   "population": 18358622
+  },
+  {
+   "iso": "ZAF",
+   "country": "South Africa",
+   "demand_pc_kwh": 3676.5,
+   "generation_pc_kwh": 3685.2,
+   "band": 4,
+   "population": 63212386
+  },
+  {
+   "iso": "KOR",
+   "country": "South Korea",
+   "demand_pc_kwh": 11932.5,
+   "generation_pc_kwh": 11932.5,
+   "band": 5,
+   "population": 51748744
+  },
+  {
+   "iso": "SSD",
+   "country": "South Sudan",
+   "demand_pc_kwh": 48.8,
+   "generation_pc_kwh": 48.8,
+   "band": 0,
+   "population": 11483370
+  },
+  {
+   "iso": "ESP",
+   "country": "Spain",
+   "demand_pc_kwh": 5534.2,
+   "generation_pc_kwh": 5825.5,
+   "band": 4,
+   "population": 47911583
+  },
+  {
+   "iso": "LKA",
+   "country": "Sri Lanka",
+   "demand_pc_kwh": 713.5,
+   "generation_pc_kwh": 713.5,
+   "band": 2,
+   "population": 22971615
+  },
+  {
+   "iso": "SDN",
+   "country": "Sudan",
+   "demand_pc_kwh": 302.9,
+   "generation_pc_kwh": 290.0,
+   "band": 1,
+   "population": 50042800
+  },
+  {
+   "iso": "SUR",
+   "country": "Suriname",
+   "demand_pc_kwh": 2750.9,
+   "generation_pc_kwh": 2750.9,
+   "band": 3,
+   "population": 628892
+  },
+  {
+   "iso": "SWE",
+   "country": "Sweden",
+   "demand_pc_kwh": 13037.0,
+   "generation_pc_kwh": 15737.1,
+   "band": 6,
+   "population": 10551493
+  },
+  {
+   "iso": "CHE",
+   "country": "Switzerland",
+   "demand_pc_kwh": 7178.8,
+   "generation_pc_kwh": 7899.2,
+   "band": 5,
+   "population": 8870564
+  },
+  {
+   "iso": "SYR",
+   "country": "Syria",
+   "demand_pc_kwh": 1033.3,
+   "generation_pc_kwh": 1060.4,
+   "band": 3,
+   "population": 23594623
+  },
+  {
+   "iso": "TWN",
+   "country": "Taiwan",
+   "demand_pc_kwh": 12106.1,
+   "generation_pc_kwh": 12106.1,
+   "band": 6,
+   "population": 23317145
+  },
+  {
+   "iso": "TJK",
+   "country": "Tajikistan",
+   "demand_pc_kwh": 1800.8,
+   "generation_pc_kwh": 2043.3,
+   "band": 3,
+   "population": 10389807
+  },
+  {
+   "iso": "TZA",
+   "country": "Tanzania",
+   "demand_pc_kwh": 161.5,
+   "generation_pc_kwh": 158.7,
+   "band": 1,
+   "population": 66617607
+  },
+  {
+   "iso": "THA",
+   "country": "Thailand",
+   "demand_pc_kwh": 3082.6,
+   "generation_pc_kwh": 2656.5,
+   "band": 4,
+   "population": 71702436
+  },
+  {
+   "iso": "TGO",
+   "country": "Togo",
+   "demand_pc_kwh": 273.6,
+   "generation_pc_kwh": 86.3,
+   "band": 1,
+   "population": 8223853
+  },
+  {
+   "iso": "TON",
+   "country": "Tonga",
+   "demand_pc_kwh": 669.1,
+   "generation_pc_kwh": 669.1,
+   "band": 2,
+   "population": 104613
+  },
+  {
+   "iso": "TTO",
+   "country": "Trinidad and Tobago",
+   "demand_pc_kwh": 6334.3,
+   "generation_pc_kwh": 6334.3,
+   "band": 5,
+   "population": 1502938
+  },
+  {
+   "iso": "TUN",
+   "country": "Tunisia",
+   "demand_pc_kwh": 1949.1,
+   "generation_pc_kwh": 1744.2,
+   "band": 3,
+   "population": 12200434
+  },
+  {
+   "iso": "TUR",
+   "country": "Turkey",
+   "demand_pc_kwh": 3710.4,
+   "generation_pc_kwh": 3664.4,
+   "band": 4,
+   "population": 87270502
+  },
+  {
+   "iso": "TKM",
+   "country": "Turkmenistan",
+   "demand_pc_kwh": 3204.6,
+   "generation_pc_kwh": 4426.7,
+   "band": 4,
+   "population": 7364437
+  },
+  {
+   "iso": "TCA",
+   "country": "Turks and Caicos Islands",
+   "demand_pc_kwh": 5625.1,
+   "generation_pc_kwh": 5625.1,
+   "band": 4,
+   "population": 46221
+  },
+  {
+   "iso": "UGA",
+   "country": "Uganda",
+   "demand_pc_kwh": 109.5,
+   "generation_pc_kwh": 118.6,
+   "band": 1,
+   "population": 48656606
+  },
+  {
+   "iso": "ARE",
+   "country": "United Arab Emirates",
+   "demand_pc_kwh": 15732.8,
+   "generation_pc_kwh": 15742.2,
+   "band": 6,
+   "population": 10642089
+  },
+  {
+   "iso": "GBR",
+   "country": "United Kingdom",
+   "demand_pc_kwh": 4598.4,
+   "generation_pc_kwh": 4259.1,
+   "band": 4,
+   "population": 68682965
+  },
+  {
+   "iso": "USA",
+   "country": "United States",
+   "demand_pc_kwh": 12439.9,
+   "generation_pc_kwh": 12384.8,
+   "band": 6,
+   "population": 343477330
+  },
+  {
+   "iso": "VIR",
+   "country": "United States Virgin Islands",
+   "demand_pc_kwh": 7933.5,
+   "generation_pc_kwh": 7933.5,
+   "band": 5,
+   "population": 85712
+  },
+  {
+   "iso": "URY",
+   "country": "Uruguay",
+   "demand_pc_kwh": 4123.3,
+   "generation_pc_kwh": 3783.9,
+   "band": 4,
+   "population": 3388083
+  },
+  {
+   "iso": "UZB",
+   "country": "Uzbekistan",
+   "demand_pc_kwh": 2236.3,
+   "generation_pc_kwh": 2154.1,
+   "band": 3,
+   "population": 35652311
+  },
+  {
+   "iso": "VUT",
+   "country": "Vanuatu",
+   "demand_pc_kwh": 249.7,
+   "generation_pc_kwh": 249.7,
+   "band": 1,
+   "population": 320422
+  },
+  {
+   "iso": "VEN",
+   "country": "Venezuela",
+   "demand_pc_kwh": 2542.7,
+   "generation_pc_kwh": 2542.7,
+   "band": 3,
+   "population": 28300861
+  },
+  {
+   "iso": "VNM",
+   "country": "Vietnam",
+   "demand_pc_kwh": 2790.9,
+   "generation_pc_kwh": 2756.2,
+   "band": 3,
+   "population": 100352189
+  },
+  {
+   "iso": "YEM",
+   "country": "Yemen",
+   "demand_pc_kwh": 130.0,
+   "generation_pc_kwh": 130.0,
+   "band": 1,
+   "population": 39390800
+  },
+  {
+   "iso": "ZMB",
+   "country": "Zambia",
+   "demand_pc_kwh": 776.4,
+   "generation_pc_kwh": 939.0,
+   "band": 2,
+   "population": 20723967
+  },
+  {
+   "iso": "ZWE",
+   "country": "Zimbabwe",
+   "demand_pc_kwh": 733.7,
+   "generation_pc_kwh": 611.4,
+   "band": 2,
+   "population": 16340829
+  }
+ ],
+ "summary": {
+  "n": 212,
+  "median_kwh": 2559.5,
+  "world_kwh": 3666.1,
+  "nigeria_kwh": 169.4,
+  "nigeria_percentile": 11.3,
+  "min_country": "Niue",
+  "min_kwh": 0.0,
+  "max_country": "Iceland",
+  "max_kwh": 51114.8
+ }
+}

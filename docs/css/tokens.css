@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Energy Justice, design tokens
+   Carried over unchanged from the Step 3 research memo, then extended with the
+   chart ramps the memo did not need.
+
+   Structure, and the reason for it:
+     :root                            the complete light palette
+     @media (prefers-color-scheme: dark) :root:not([data-theme="light"])
+                                      dark for viewers who never chose, and an
+                                      explicit light choice still wins
+     :root[data-theme="dark"]         the toggle wins in the other direction
+
+   Every colour used anywhere in the site is defined in the bare :root block.
+   Nothing gets its only definition inside a media query or a [data-theme]
+   block, because a colour defined only there never applies in the default
+   un-stamped state.
+
+   Chart colours are read out of these variables at runtime by js/charts.js, so
+   the Plotly templates and the CSS can never drift apart.
+   ========================================================================== */
+
+:root {
+  /* ---- surfaces and ink, identical to the memo ---- */
+  --ground:    #E8EBEA;
+  --surface:   #FCFCFB;
+  --surface-2: #F1F4F3;
+  --ink:       #16201F;
+  --ink-soft:  #4C5856;
+  --ink-mute:  #76817F;
+  --rule:      #D2D8D6;
+  --rule-firm: #B9C2C0;
+
+  /* ---- the two carriers of meaning, identical to the memo ----
+     teal  = structure, every country that is not Nigeria
+     amber = Nigeria, in every chart Nigeria appears in
+     Both pass the six-check palette validator in light mode against #FCFCFB:
+     lightness band, chroma floor, CVD separation, normal-vision floor, contrast. */
+  --teal:      #0094A1;
+  --amber:     #C2651B;
+  --teal-wash: #E2F0F2;
+  --amber-wash:#F7EADE;
+
+  /* ---- sequential teal ramp, one hue, light to dark ----
+     Used for choropleth fills where the value is a magnitude.
+     Lightness is strictly monotonic in OKLCH, which is what makes a magnitude
+     ramp readable. Light span 0.541, dark span 0.559. */
+  --seq-1: #B5D8DD;
+  --seq-2: #93C6CE;
+  --seq-3: #6DB4BF;
+  --seq-4: #3DA1AE;
+  --seq-5: #008A98;
+  --seq-6: #00707B;
+  --seq-7: #00565F;
+
+  /* Land with no row in the dataset. Deliberately grey, not a pale teal, and
+     placed outside the ramp's lightness range, so "least electricity" can never
+     be mistaken for "no data". Its lightness sits outside the ramp's range in both themes. */
+  --map-nodata: #ECEFEE;
+
+  /* Region shading behind scatter points. Stronger than --teal-wash,
+     which is tuned for large callout panels and disappears here. */
+  --region-fill: #D3E7EA;
+
+  /* ---- two-state fill, for the Chapter 1 map of what is measured ---- */
+  --state-yes: #0094A1;   /* measured */
+  --state-no:  #C4CFCD;   /* not measured. Pale, not alarming, but clearly a
+                             category and not the same as absent from the data. */
+
+  /* ---- categorical, only for Nigeria's electricity sources in Chapter 5 ----
+     Fixed order, never cycled. Validated as a set. */
+  --cat-1: #00737D;   /* gas, the dominant source */
+  --cat-2: #55B2BD;   /* hydro */
+  --cat-3: #C2651B;   /* solar, amber so its near-absence is findable */
+  --cat-4: #8A9694;   /* everything else, all at 0.00% in 2024 */
+
+  /* ---- chart furniture, deliberately recessive ---- */
+  --mark-mute:  #AEB9B7;   /* non-highlighted points in scatters */
+  --grid:       #DFE5E4;
+  --axis:       #9BA5A3;
+  --tooltip-bg: #16201F;
+  --tooltip-fg: #FCFCFB;
+
+  /* ---- type ---- */
+  --font-display: Spectral, Georgia, "Times New Roman", serif;
+  --font-body:    "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  /* ---- measure and rhythm, identical to the memo ---- */
+  --measure:   68ch;
+  --sheet-max: 54rem;
+  --nav-w:     15rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground:    #121514;
+    --surface:   #1A1A19;
+    --surface-2: #212524;
+    --ink:       #E8EBE9;
+    --ink-soft:  #A8B2B0;
+    --ink-mute:  #7C8684;
+    --rule:      #2C3231;
+    --rule-firm: #3C4342;
+
+    /* validated against the dark surface #1A1A19, not flipped from light */
+    --teal:      #1C9BA7;
+    --amber:     #C87436;
+    --teal-wash: #16292B;
+    --amber-wash:#2A2118;
+
+    /* dark ramp is its own selection: dark and muted at the low end,
+       bright teal at the high end, so magnitude still reads as "more" */
+    --seq-1: #13505A;
+    --seq-2: #0F6774;
+    --seq-3: #0B808F;
+    --seq-4: #1899A8;
+    --seq-5: #4FB4C0;
+    --seq-6: #86CDD6;
+    --seq-7: #B6E2E8;
+    --map-nodata: #242928;
+    --region-fill: #16343A;
+
+    --state-yes: #1C9BA7;
+    --state-no:  #3A4342;
+
+    --cat-1: #1C7B85;
+    --cat-2: #4FB8C2;
+    --cat-3: #C87436;
+    --cat-4: #6B7472;
+
+    --mark-mute:  #4E5756;
+    --grid:       #262B2A;
+    --axis:       #6B7472;
+    --tooltip-bg: #E8EBE9;
+    --tooltip-fg: #121514;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground:    #121514;
+  --surface:   #1A1A19;
+  --surface-2: #212524;
+  --ink:       #E8EBE9;
+  --ink-soft:  #A8B2B0;
+  --ink-mute:  #7C8684;
+  --rule:      #2C3231;
+  --rule-firm: #3C4342;
+
+  --teal:      #1C9BA7;
+  --amber:     #C87436;
+  --teal-wash: #16292B;
+  --amber-wash:#2A2118;
+
+  --seq-1: #13505A;
+  --seq-2: #0F6774;
+  --seq-3: #0B808F;
+  --seq-4: #1899A8;
+  --seq-5: #4FB4C0;
+  --seq-6: #86CDD6;
+  --seq-7: #B6E2E8;
+  --map-nodata: #242928;
+  --region-fill: #16343A;
+
+  --state-yes: #1C9BA7;
+  --state-no:  #3A4342;
+
+  --cat-1: #1C7B85;
+  --cat-2: #4FB8C2;
+  --cat-3: #C87436;
+  --cat-4: #6B7472;
+
+  --mark-mute:  #4E5756;
+  --grid:       #262B2A;
+  --axis:       #6B7472;
+  --tooltip-bg: #E8EBE9;
+  --tooltip-fg: #121514;
+}

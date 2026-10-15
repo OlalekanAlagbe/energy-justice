@@ -1,0 +1,458 @@
+{
+ "meta": {
+  "chart": "Electricity generated per person, by income group",
+  "chapter": 2,
+  "years": [
+   2000,
+   2024
+  ],
+  "built_by": "analysis/21_build_ch2.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "country",
+   "year",
+   "electricity_generation_per_capita_kwh"
+  ],
+  "filter": "only years in which all four income groups are reported",
+  "n_rows": 25,
+  "note": "These are the dataset's own income-group aggregates. Membership is held fixed: no group's population moves more than 5 per cent year on year anywhere in the series, so this is not countries being reclassified."
+ },
+ "series": [
+  {
+   "group": "Low-income countries",
+   "short": "Low",
+   "points": [
+    {
+     "year": 2000,
+     "kwh_pc": 194.5
+    },
+    {
+     "year": 2001,
+     "kwh_pc": 203.1
+    },
+    {
+     "year": 2002,
+     "kwh_pc": 203.8
+    },
+    {
+     "year": 2003,
+     "kwh_pc": 206.0
+    },
+    {
+     "year": 2004,
+     "kwh_pc": 213.0
+    },
+    {
+     "year": 2005,
+     "kwh_pc": 225.5
+    },
+    {
+     "year": 2006,
+     "kwh_pc": 228.1
+    },
+    {
+     "year": 2007,
+     "kwh_pc": 229.9
+    },
+    {
+     "year": 2008,
+     "kwh_pc": 232.2
+    },
+    {
+     "year": 2009,
+     "kwh_pc": 238.4
+    },
+    {
+     "year": 2010,
+     "kwh_pc": 247.5
+    },
+    {
+     "year": 2011,
+     "kwh_pc": 228.0
+    },
+    {
+     "year": 2012,
+     "kwh_pc": 209.8
+    },
+    {
+     "year": 2013,
+     "kwh_pc": 200.9
+    },
+    {
+     "year": 2014,
+     "kwh_pc": 195.4
+    },
+    {
+     "year": 2015,
+     "kwh_pc": 187.0
+    },
+    {
+     "year": 2016,
+     "kwh_pc": 198.0
+    },
+    {
+     "year": 2017,
+     "kwh_pc": 193.8
+    },
+    {
+     "year": 2018,
+     "kwh_pc": 202.9
+    },
+    {
+     "year": 2019,
+     "kwh_pc": 203.0
+    },
+    {
+     "year": 2020,
+     "kwh_pc": 197.6
+    },
+    {
+     "year": 2021,
+     "kwh_pc": 200.7
+    },
+    {
+     "year": 2022,
+     "kwh_pc": 199.5
+    },
+    {
+     "year": 2023,
+     "kwh_pc": 205.5
+    },
+    {
+     "year": 2024,
+     "kwh_pc": 210.6
+    }
+   ]
+  },
+  {
+   "group": "Lower-middle-income countries",
+   "short": "Lower-middle",
+   "points": [
+    {
+     "year": 2000,
+     "kwh_pc": 510.4
+    },
+    {
+     "year": 2001,
+     "kwh_pc": 521.0
+    },
+    {
+     "year": 2002,
+     "kwh_pc": 534.1
+    },
+    {
+     "year": 2003,
+     "kwh_pc": 546.5
+    },
+    {
+     "year": 2004,
+     "kwh_pc": 579.5
+    },
+    {
+     "year": 2005,
+     "kwh_pc": 585.3
+    },
+    {
+     "year": 2006,
+     "kwh_pc": 605.4
+    },
+    {
+     "year": 2007,
+     "kwh_pc": 622.7
+    },
+    {
+     "year": 2008,
+     "kwh_pc": 633.4
+    },
+    {
+     "year": 2009,
+     "kwh_pc": 650.6
+    },
+    {
+     "year": 2010,
+     "kwh_pc": 678.2
+    },
+    {
+     "year": 2011,
+     "kwh_pc": 719.6
+    },
+    {
+     "year": 2012,
+     "kwh_pc": 749.4
+    },
+    {
+     "year": 2013,
+     "kwh_pc": 772.5
+    },
+    {
+     "year": 2014,
+     "kwh_pc": 809.5
+    },
+    {
+     "year": 2015,
+     "kwh_pc": 834.7
+    },
+    {
+     "year": 2016,
+     "kwh_pc": 868.9
+    },
+    {
+     "year": 2017,
+     "kwh_pc": 890.9
+    },
+    {
+     "year": 2018,
+     "kwh_pc": 931.3
+    },
+    {
+     "year": 2019,
+     "kwh_pc": 934.0
+    },
+    {
+     "year": 2020,
+     "kwh_pc": 914.1
+    },
+    {
+     "year": 2021,
+     "kwh_pc": 967.2
+    },
+    {
+     "year": 2022,
+     "kwh_pc": 1014.1
+    },
+    {
+     "year": 2023,
+     "kwh_pc": 1041.3
+    },
+    {
+     "year": 2024,
+     "kwh_pc": 1079.8
+    }
+   ]
+  },
+  {
+   "group": "Upper-middle-income countries",
+   "short": "Upper-middle",
+   "points": [
+    {
+     "year": 2000,
+     "kwh_pc": 1333.9
+    },
+    {
+     "year": 2001,
+     "kwh_pc": 1377.1
+    },
+    {
+     "year": 2002,
+     "kwh_pc": 1465.3
+    },
+    {
+     "year": 2003,
+     "kwh_pc": 1596.1
+    },
+    {
+     "year": 2004,
+     "kwh_pc": 1744.4
+    },
+    {
+     "year": 2005,
+     "kwh_pc": 1877.4
+    },
+    {
+     "year": 2006,
+     "kwh_pc": 2044.8
+    },
+    {
+     "year": 2007,
+     "kwh_pc": 2221.1
+    },
+    {
+     "year": 2008,
+     "kwh_pc": 2311.7
+    },
+    {
+     "year": 2009,
+     "kwh_pc": 2368.6
+    },
+    {
+     "year": 2010,
+     "kwh_pc": 2599.6
+    },
+    {
+     "year": 2011,
+     "kwh_pc": 2790.4
+    },
+    {
+     "year": 2012,
+     "kwh_pc": 2907.1
+    },
+    {
+     "year": 2013,
+     "kwh_pc": 3071.7
+    },
+    {
+     "year": 2014,
+     "kwh_pc": 3199.8
+    },
+    {
+     "year": 2015,
+     "kwh_pc": 3198.3
+    },
+    {
+     "year": 2016,
+     "kwh_pc": 3315.4
+    },
+    {
+     "year": 2017,
+     "kwh_pc": 3480.5
+    },
+    {
+     "year": 2018,
+     "kwh_pc": 3685.6
+    },
+    {
+     "year": 2019,
+     "kwh_pc": 3801.3
+    },
+    {
+     "year": 2020,
+     "kwh_pc": 3855.1
+    },
+    {
+     "year": 2021,
+     "kwh_pc": 4145.3
+    },
+    {
+     "year": 2022,
+     "kwh_pc": 4253.3
+    },
+    {
+     "year": 2023,
+     "kwh_pc": 4455.2
+    },
+    {
+     "year": 2024,
+     "kwh_pc": 4700.6
+    }
+   ]
+  },
+  {
+   "group": "High-income countries",
+   "short": "High",
+   "points": [
+    {
+     "year": 2000,
+     "kwh_pc": 8599.0
+    },
+    {
+     "year": 2001,
+     "kwh_pc": 8577.0
+    },
+    {
+     "year": 2002,
+     "kwh_pc": 8713.5
+    },
+    {
+     "year": 2003,
+     "kwh_pc": 8779.5
+    },
+    {
+     "year": 2004,
+     "kwh_pc": 8931.9
+    },
+    {
+     "year": 2005,
+     "kwh_pc": 9096.6
+    },
+    {
+     "year": 2006,
+     "kwh_pc": 9149.0
+    },
+    {
+     "year": 2007,
+     "kwh_pc": 9302.4
+    },
+    {
+     "year": 2008,
+     "kwh_pc": 9260.9
+    },
+    {
+     "year": 2009,
+     "kwh_pc": 8862.6
+    },
+    {
+     "year": 2010,
+     "kwh_pc": 9194.2
+    },
+    {
+     "year": 2011,
+     "kwh_pc": 9124.8
+    },
+    {
+     "year": 2012,
+     "kwh_pc": 9098.5
+    },
+    {
+     "year": 2013,
+     "kwh_pc": 9042.8
+    },
+    {
+     "year": 2014,
+     "kwh_pc": 8995.8
+    },
+    {
+     "year": 2015,
+     "kwh_pc": 8996.7
+    },
+    {
+     "year": 2016,
+     "kwh_pc": 9037.0
+    },
+    {
+     "year": 2017,
+     "kwh_pc": 9046.4
+    },
+    {
+     "year": 2018,
+     "kwh_pc": 9131.3
+    },
+    {
+     "year": 2019,
+     "kwh_pc": 9018.7
+    },
+    {
+     "year": 2020,
+     "kwh_pc": 8770.9
+    },
+    {
+     "year": 2021,
+     "kwh_pc": 9058.4
+    },
+    {
+     "year": 2022,
+     "kwh_pc": 9113.4
+    },
+    {
+     "year": 2023,
+     "kwh_pc": 8978.2
+    },
+    {
+     "year": 2024,
+     "kwh_pc": 9173.6
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "first_year": 2000,
+  "last_year": 2024,
+  "ratio_first": 44.2,
+  "ratio_last": 43.6,
+  "high_first": 8599.0,
+  "high_last": 9173.6,
+  "low_first": 194.5,
+  "low_last": 210.6,
+  "high_gain": 575,
+  "low_gain": 16
+ }
+}

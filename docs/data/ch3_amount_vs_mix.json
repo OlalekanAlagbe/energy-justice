@@ -1,0 +1,1465 @@
+{
+ "meta": {
+  "chart": "Electricity per person against the low-carbon share of it",
+  "chapter": 3,
+  "year": 2023,
+  "built_by": "analysis/22_build_ch3.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "iso_code",
+   "country",
+   "electricity_demand_per_capita_kwh",
+   "low_carbon_electricity_share_pct",
+   "population"
+  ],
+  "filter": "iso_code present, population over 1,000,000, both values reported",
+  "n_rows": 158,
+  "methodology_note": "Low-carbon share here is a share of electricity generated, not of total energy supply. The two are different denominators and the electricity one is unaffected by the September 2026 change in how primary energy is measured."
+ },
+ "rows": [
+  {
+   "iso": "IND",
+   "country": "India",
+   "demand_pc_kwh": 1332.5,
+   "low_carbon_pct": 21.8,
+   "population": 1438069597,
+   "highlight": false,
+   "label": "India"
+  },
+  {
+   "iso": "CHN",
+   "country": "China",
+   "demand_pc_kwh": 6635.4,
+   "low_carbon_pct": 35.2,
+   "population": 1422584930,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "USA",
+   "country": "United States",
+   "demand_pc_kwh": 12439.9,
+   "low_carbon_pct": 40.9,
+   "population": 343477330,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "IDN",
+   "country": "Indonesia",
+   "demand_pc_kwh": 1250.0,
+   "low_carbon_pct": 18.6,
+   "population": 281190068,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PAK",
+   "country": "Pakistan",
+   "demand_pc_kwh": 696.8,
+   "low_carbon_pct": 46.2,
+   "population": 247504505,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NGA",
+   "country": "Nigeria",
+   "demand_pc_kwh": 169.4,
+   "low_carbon_pct": 22.7,
+   "population": 227882949,
+   "highlight": true,
+   "label": "Nigeria"
+  },
+  {
+   "iso": "BRA",
+   "country": "Brazil",
+   "demand_pc_kwh": 3425.3,
+   "low_carbon_pct": 91.0,
+   "population": 211140731,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BGD",
+   "country": "Bangladesh",
+   "demand_pc_kwh": 648.3,
+   "low_carbon_pct": 1.7,
+   "population": 171466986,
+   "highlight": false,
+   "label": "Bangladesh"
+  },
+  {
+   "iso": "RUS",
+   "country": "Russia",
+   "demand_pc_kwh": 7987.6,
+   "low_carbon_pct": 36.2,
+   "population": 145440502,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MEX",
+   "country": "Mexico",
+   "demand_pc_kwh": 2702.8,
+   "low_carbon_pct": 23.8,
+   "population": 129739761,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ETH",
+   "country": "Ethiopia",
+   "demand_pc_kwh": 124.3,
+   "low_carbon_pct": 100.0,
+   "population": 128691695,
+   "highlight": false,
+   "label": "Ethiopia"
+  },
+  {
+   "iso": "JPN",
+   "country": "Japan",
+   "demand_pc_kwh": 8094.6,
+   "low_carbon_pct": 29.8,
+   "population": 124370947,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PHL",
+   "country": "Philippines",
+   "demand_pc_kwh": 1016.0,
+   "low_carbon_pct": 21.4,
+   "population": 114891199,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "EGY",
+   "country": "Egypt",
+   "demand_pc_kwh": 1925.4,
+   "low_carbon_pct": 11.7,
+   "population": 114535772,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "COD",
+   "country": "Democratic Republic of Congo",
+   "demand_pc_kwh": 161.4,
+   "low_carbon_pct": 100.0,
+   "population": 105789733,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "VNM",
+   "country": "Vietnam",
+   "demand_pc_kwh": 2790.9,
+   "low_carbon_pct": 42.9,
+   "population": 100352189,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "IRN",
+   "country": "Iran",
+   "demand_pc_kwh": 4141.9,
+   "low_carbon_pct": 8.2,
+   "population": 90608708,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TUR",
+   "country": "Turkey",
+   "demand_pc_kwh": 3710.4,
+   "low_carbon_pct": 42.0,
+   "population": 87270502,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "DEU",
+   "country": "Germany",
+   "demand_pc_kwh": 6102.3,
+   "low_carbon_pct": 56.1,
+   "population": 84548233,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "THA",
+   "country": "Thailand",
+   "demand_pc_kwh": 3082.6,
+   "low_carbon_pct": 15.6,
+   "population": 71702436,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GBR",
+   "country": "United Kingdom",
+   "demand_pc_kwh": 4598.4,
+   "low_carbon_pct": 60.3,
+   "population": 68682965,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TZA",
+   "country": "Tanzania",
+   "demand_pc_kwh": 161.5,
+   "low_carbon_pct": 26.5,
+   "population": 66617607,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "FRA",
+   "country": "France",
+   "demand_pc_kwh": 7048.3,
+   "low_carbon_pct": 92.1,
+   "population": 66438828,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ZAF",
+   "country": "South Africa",
+   "demand_pc_kwh": 3676.5,
+   "low_carbon_pct": 15.9,
+   "population": 63212386,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ITA",
+   "country": "Italy",
+   "demand_pc_kwh": 5257.2,
+   "low_carbon_pct": 44.5,
+   "population": 59499452,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "KEN",
+   "country": "Kenya",
+   "demand_pc_kwh": 247.4,
+   "low_carbon_pct": 89.8,
+   "population": 55339007,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MMR",
+   "country": "Myanmar",
+   "demand_pc_kwh": 400.7,
+   "low_carbon_pct": 46.5,
+   "population": 54133800,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "COL",
+   "country": "Colombia",
+   "demand_pc_kwh": 1654.8,
+   "low_carbon_pct": 67.0,
+   "population": 52321152,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "KOR",
+   "country": "South Korea",
+   "demand_pc_kwh": 11932.5,
+   "low_carbon_pct": 38.8,
+   "population": 51748744,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SDN",
+   "country": "Sudan",
+   "demand_pc_kwh": 302.9,
+   "low_carbon_pct": 81.0,
+   "population": 50042800,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "UGA",
+   "country": "Uganda",
+   "demand_pc_kwh": 109.5,
+   "low_carbon_pct": 97.1,
+   "population": 48656606,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ESP",
+   "country": "Spain",
+   "demand_pc_kwh": 5534.2,
+   "low_carbon_pct": 71.9,
+   "population": 47911583,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "DZA",
+   "country": "Algeria",
+   "demand_pc_kwh": 2024.1,
+   "low_carbon_pct": 0.9,
+   "population": 46164222,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ARG",
+   "country": "Argentina",
+   "demand_pc_kwh": 3599.2,
+   "low_carbon_pct": 40.8,
+   "population": 45538402,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "IRQ",
+   "country": "Iraq",
+   "demand_pc_kwh": 3368.5,
+   "low_carbon_pct": 1.2,
+   "population": 45074055,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "AFG",
+   "country": "Afghanistan",
+   "demand_pc_kwh": 173.4,
+   "low_carbon_pct": 86.6,
+   "population": 41454762,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "YEM",
+   "country": "Yemen",
+   "demand_pc_kwh": 130.0,
+   "low_carbon_pct": 10.2,
+   "population": 39390800,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CAN",
+   "country": "Canada",
+   "demand_pc_kwh": 15614.4,
+   "low_carbon_pct": 79.2,
+   "population": 39299098,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "POL",
+   "country": "Poland",
+   "demand_pc_kwh": 4366.6,
+   "low_carbon_pct": 27.7,
+   "population": 38762847,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MAR",
+   "country": "Morocco",
+   "demand_pc_kwh": 1174.9,
+   "low_carbon_pct": 21.7,
+   "population": 37712516,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "AGO",
+   "country": "Angola",
+   "demand_pc_kwh": 428.6,
+   "low_carbon_pct": 74.0,
+   "population": 36749909,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "UZB",
+   "country": "Uzbekistan",
+   "demand_pc_kwh": 2236.3,
+   "low_carbon_pct": 9.9,
+   "population": 35652311,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MYS",
+   "country": "Malaysia",
+   "demand_pc_kwh": 5315.1,
+   "low_carbon_pct": 19.2,
+   "population": 35126295,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PER",
+   "country": "Peru",
+   "demand_pc_kwh": 1799.3,
+   "low_carbon_pct": 54.4,
+   "population": 33845616,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GHA",
+   "country": "Ghana",
+   "demand_pc_kwh": 646.7,
+   "low_carbon_pct": 38.5,
+   "population": 33787916,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MOZ",
+   "country": "Mozambique",
+   "demand_pc_kwh": 490.6,
+   "low_carbon_pct": 83.6,
+   "population": 33635163,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SAU",
+   "country": "Saudi Arabia",
+   "demand_pc_kwh": 12903.0,
+   "low_carbon_pct": 1.1,
+   "population": 33264289,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MDG",
+   "country": "Madagascar",
+   "demand_pc_kwh": 79.5,
+   "low_carbon_pct": 44.0,
+   "population": 31195937,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CIV",
+   "country": "Cote d'Ivoire",
+   "demand_pc_kwh": 329.5,
+   "low_carbon_pct": 30.1,
+   "population": 31165653,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NPL",
+   "country": "Nepal",
+   "demand_pc_kwh": 358.7,
+   "low_carbon_pct": 100.0,
+   "population": 29694614,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CMR",
+   "country": "Cameroon",
+   "demand_pc_kwh": 256.6,
+   "low_carbon_pct": 73.3,
+   "population": 28372690,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "VEN",
+   "country": "Venezuela",
+   "demand_pc_kwh": 2542.7,
+   "low_carbon_pct": 90.3,
+   "population": 28300861,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "AUS",
+   "country": "Australia",
+   "demand_pc_kwh": 10325.1,
+   "low_carbon_pct": 34.8,
+   "population": 26451126,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PRK",
+   "country": "North Korea",
+   "demand_pc_kwh": 1011.4,
+   "low_carbon_pct": 62.7,
+   "population": 26418196,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NER",
+   "country": "Niger",
+   "demand_pc_kwh": 84.5,
+   "low_carbon_pct": 2.1,
+   "population": 26159863,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MLI",
+   "country": "Mali",
+   "demand_pc_kwh": 222.6,
+   "low_carbon_pct": 19.8,
+   "population": 23769130,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SYR",
+   "country": "Syria",
+   "demand_pc_kwh": 1033.3,
+   "low_carbon_pct": 3.5,
+   "population": 23594623,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TWN",
+   "country": "Taiwan",
+   "demand_pc_kwh": 12106.1,
+   "low_carbon_pct": 15.2,
+   "population": 23317145,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BFA",
+   "country": "Burkina Faso",
+   "demand_pc_kwh": 142.0,
+   "low_carbon_pct": 16.0,
+   "population": 23025777,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "LKA",
+   "country": "Sri Lanka",
+   "demand_pc_kwh": 713.5,
+   "low_carbon_pct": 48.6,
+   "population": 22971615,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MWI",
+   "country": "Malawi",
+   "demand_pc_kwh": 85.8,
+   "low_carbon_pct": 95.6,
+   "population": 21104480,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ZMB",
+   "country": "Zambia",
+   "demand_pc_kwh": 776.4,
+   "low_carbon_pct": 89.0,
+   "population": 20723967,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "KAZ",
+   "country": "Kazakhstan",
+   "demand_pc_kwh": 5689.1,
+   "low_carbon_pct": 12.7,
+   "population": 20330109,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CHL",
+   "country": "Chile",
+   "demand_pc_kwh": 4538.9,
+   "low_carbon_pct": 63.1,
+   "population": 19658833,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TCD",
+   "country": "Chad",
+   "demand_pc_kwh": 18.6,
+   "low_carbon_pct": 5.6,
+   "population": 19319075,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ROU",
+   "country": "Romania",
+   "demand_pc_kwh": 2820.8,
+   "low_carbon_pct": 69.4,
+   "population": 19118482,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SOM",
+   "country": "Somalia",
+   "demand_pc_kwh": 22.9,
+   "low_carbon_pct": 19.0,
+   "population": 18358622,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GTM",
+   "country": "Guatemala",
+   "demand_pc_kwh": 871.2,
+   "low_carbon_pct": 67.3,
+   "population": 18124841,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NLD",
+   "country": "Netherlands",
+   "demand_pc_kwh": 6317.5,
+   "low_carbon_pct": 50.7,
+   "population": 18092526,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SEN",
+   "country": "Senegal",
+   "demand_pc_kwh": 483.5,
+   "low_carbon_pct": 17.0,
+   "population": 18077573,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ECU",
+   "country": "Ecuador",
+   "demand_pc_kwh": 2035.6,
+   "low_carbon_pct": 73.6,
+   "population": 17980079,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "KHM",
+   "country": "Cambodia",
+   "demand_pc_kwh": 974.0,
+   "low_carbon_pct": 42.1,
+   "population": 17423884,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ZWE",
+   "country": "Zimbabwe",
+   "demand_pc_kwh": 733.7,
+   "low_carbon_pct": 56.2,
+   "population": 16340829,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GIN",
+   "country": "Guinea",
+   "demand_pc_kwh": 277.7,
+   "low_carbon_pct": 74.5,
+   "population": 14405469,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BEN",
+   "country": "Benin",
+   "demand_pc_kwh": 162.3,
+   "low_carbon_pct": 3.0,
+   "population": 14111035,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "RWA",
+   "country": "Rwanda",
+   "demand_pc_kwh": 86.0,
+   "low_carbon_pct": 49.1,
+   "population": 13954473,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BDI",
+   "country": "Burundi",
+   "demand_pc_kwh": 43.8,
+   "low_carbon_pct": 76.0,
+   "population": 13689455,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BOL",
+   "country": "Bolivia",
+   "demand_pc_kwh": 1025.0,
+   "low_carbon_pct": 33.3,
+   "population": 12244161,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TUN",
+   "country": "Tunisia",
+   "demand_pc_kwh": 1949.1,
+   "low_carbon_pct": 3.9,
+   "population": 12200434,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BEL",
+   "country": "Belgium",
+   "demand_pc_kwh": 7151.9,
+   "low_carbon_pct": 73.5,
+   "population": 11712891,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "HTI",
+   "country": "Haiti",
+   "demand_pc_kwh": 73.0,
+   "low_carbon_pct": 22.4,
+   "population": 11637402,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SSD",
+   "country": "South Sudan",
+   "demand_pc_kwh": 48.8,
+   "low_carbon_pct": 1.8,
+   "population": 11483370,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "JOR",
+   "country": "Jordan",
+   "demand_pc_kwh": 2084.1,
+   "low_carbon_pct": 22.0,
+   "population": 11439220,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "DOM",
+   "country": "Dominican Republic",
+   "demand_pc_kwh": 2167.5,
+   "low_carbon_pct": 17.3,
+   "population": 11331269,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CUB",
+   "country": "Cuba",
+   "demand_pc_kwh": 1791.3,
+   "low_carbon_pct": 3.6,
+   "population": 11019932,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CZE",
+   "country": "Czechia",
+   "demand_pc_kwh": 6163.0,
+   "low_carbon_pct": 54.8,
+   "population": 10809722,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "HND",
+   "country": "Honduras",
+   "demand_pc_kwh": 1186.5,
+   "low_carbon_pct": 54.4,
+   "population": 10644853,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ARE",
+   "country": "United Arab Emirates",
+   "demand_pc_kwh": 15732.8,
+   "low_carbon_pct": 29.3,
+   "population": 10642089,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SWE",
+   "country": "Sweden",
+   "demand_pc_kwh": 13037.0,
+   "low_carbon_pct": 98.6,
+   "population": 10551493,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PRT",
+   "country": "Portugal",
+   "demand_pc_kwh": 5404.2,
+   "low_carbon_pct": 74.5,
+   "population": 10430735,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TJK",
+   "country": "Tajikistan",
+   "demand_pc_kwh": 1800.8,
+   "low_carbon_pct": 94.2,
+   "population": 10389807,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PNG",
+   "country": "Papua New Guinea",
+   "demand_pc_kwh": 455.3,
+   "low_carbon_pct": 23.7,
+   "population": 10389638,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "AZE",
+   "country": "Azerbaijan",
+   "demand_pc_kwh": 2525.6,
+   "low_carbon_pct": 6.5,
+   "population": 10318209,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GRC",
+   "country": "Greece",
+   "demand_pc_kwh": 5256.3,
+   "low_carbon_pct": 49.8,
+   "population": 10242910,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "HUN",
+   "country": "Hungary",
+   "demand_pc_kwh": 4815.0,
+   "low_carbon_pct": 71.2,
+   "population": 9686465,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ISR",
+   "country": "Israel",
+   "demand_pc_kwh": 7616.4,
+   "low_carbon_pct": 11.8,
+   "population": 9256311,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "AUT",
+   "country": "Austria",
+   "demand_pc_kwh": 7766.3,
+   "low_carbon_pct": 84.8,
+   "population": 9130434,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BLR",
+   "country": "Belarus",
+   "demand_pc_kwh": 4544.9,
+   "low_carbon_pct": 31.3,
+   "population": 9115679,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CHE",
+   "country": "Switzerland",
+   "demand_pc_kwh": 7178.8,
+   "low_carbon_pct": 98.0,
+   "population": 8870564,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SLE",
+   "country": "Sierra Leone",
+   "demand_pc_kwh": 24.8,
+   "low_carbon_pct": 95.2,
+   "population": 8460523,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TGO",
+   "country": "Togo",
+   "demand_pc_kwh": 273.6,
+   "low_carbon_pct": 26.8,
+   "population": 8223853,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "LAO",
+   "country": "Laos",
+   "demand_pc_kwh": 2230.9,
+   "low_carbon_pct": 76.7,
+   "population": 7665001,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "HKG",
+   "country": "Hong Kong",
+   "demand_pc_kwh": 6629.3,
+   "low_carbon_pct": 1.0,
+   "population": 7442738,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TKM",
+   "country": "Turkmenistan",
+   "demand_pc_kwh": 3204.6,
+   "low_carbon_pct": 0.0,
+   "population": 7364437,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "LBY",
+   "country": "Libya",
+   "demand_pc_kwh": 4619.7,
+   "low_carbon_pct": 0.0,
+   "population": 7305659,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "KGZ",
+   "country": "Kyrgyzstan",
+   "demand_pc_kwh": 2396.3,
+   "low_carbon_pct": 86.5,
+   "population": 7073523,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PRY",
+   "country": "Paraguay",
+   "demand_pc_kwh": 3309.4,
+   "low_carbon_pct": 100.0,
+   "population": 6844150,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NIC",
+   "country": "Nicaragua",
+   "demand_pc_kwh": 782.6,
+   "low_carbon_pct": 62.4,
+   "population": 6823619,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BGR",
+   "country": "Bulgaria",
+   "demand_pc_kwh": 5407.7,
+   "low_carbon_pct": 65.4,
+   "population": 6795805,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SRB",
+   "country": "Serbia",
+   "demand_pc_kwh": 5483.4,
+   "low_carbon_pct": 35.0,
+   "population": 6773204,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SLV",
+   "country": "El Salvador",
+   "demand_pc_kwh": 885.9,
+   "low_carbon_pct": 87.8,
+   "population": 6309629,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "COG",
+   "country": "Congo",
+   "demand_pc_kwh": 858.8,
+   "low_carbon_pct": 23.5,
+   "population": 6182890,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "DNK",
+   "country": "Denmark",
+   "demand_pc_kwh": 6223.8,
+   "low_carbon_pct": 86.4,
+   "population": 5948134,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SGP",
+   "country": "Singapore",
+   "demand_pc_kwh": 9915.2,
+   "low_carbon_pct": 4.5,
+   "population": 5789092,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "LBN",
+   "country": "Lebanon",
+   "demand_pc_kwh": 1087.7,
+   "low_carbon_pct": 34.1,
+   "population": 5773494,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "FIN",
+   "country": "Finland",
+   "demand_pc_kwh": 14861.1,
+   "low_carbon_pct": 94.0,
+   "population": 5601185,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NOR",
+   "country": "Norway",
+   "demand_pc_kwh": 24621.5,
+   "low_carbon_pct": 98.5,
+   "population": 5519167,
+   "highlight": false,
+   "label": "Norway"
+  },
+  {
+   "iso": "SVK",
+   "country": "Slovakia",
+   "demand_pc_kwh": 4731.7,
+   "low_carbon_pct": 84.8,
+   "population": 5518057,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "LBR",
+   "country": "Liberia",
+   "demand_pc_kwh": 111.0,
+   "low_carbon_pct": 57.4,
+   "population": 5493035,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PSE",
+   "country": "Palestine",
+   "demand_pc_kwh": 1464.2,
+   "low_carbon_pct": 40.0,
+   "population": 5409201,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "IRL",
+   "country": "Ireland",
+   "demand_pc_kwh": 6700.5,
+   "low_carbon_pct": 45.3,
+   "population": 5196629,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NZL",
+   "country": "New Zealand",
+   "demand_pc_kwh": 8291.4,
+   "low_carbon_pct": 89.6,
+   "population": 5172837,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CAF",
+   "country": "Central African Republic",
+   "demand_pc_kwh": 27.2,
+   "low_carbon_pct": 100.0,
+   "population": 5152415,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CRI",
+   "country": "Costa Rica",
+   "demand_pc_kwh": 2364.1,
+   "low_carbon_pct": 99.9,
+   "population": 5105526,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "OMN",
+   "country": "Oman",
+   "demand_pc_kwh": 8912.2,
+   "low_carbon_pct": 4.9,
+   "population": 5049267,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MRT",
+   "country": "Mauritania",
+   "demand_pc_kwh": 467.9,
+   "low_carbon_pct": 21.5,
+   "population": 5022442,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "KWT",
+   "country": "Kuwait",
+   "demand_pc_kwh": 18550.1,
+   "low_carbon_pct": 2.1,
+   "population": 4838781,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PAN",
+   "country": "Panama",
+   "demand_pc_kwh": 2908.9,
+   "low_carbon_pct": 60.6,
+   "population": 4458758,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "HRV",
+   "country": "Croatia",
+   "demand_pc_kwh": 4881.9,
+   "low_carbon_pct": 70.1,
+   "population": 3896023,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GEO",
+   "country": "Georgia",
+   "demand_pc_kwh": 3611.3,
+   "low_carbon_pct": 76.1,
+   "population": 3807494,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ERI",
+   "country": "Eritrea",
+   "demand_pc_kwh": 141.2,
+   "low_carbon_pct": 10.2,
+   "population": 3470391,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MNG",
+   "country": "Mongolia",
+   "demand_pc_kwh": 3111.9,
+   "low_carbon_pct": 9.2,
+   "population": 3431938,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "URY",
+   "country": "Uruguay",
+   "demand_pc_kwh": 4123.3,
+   "low_carbon_pct": 92.4,
+   "population": 3388083,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "PRI",
+   "country": "Puerto Rico",
+   "demand_pc_kwh": 6138.1,
+   "low_carbon_pct": 5.4,
+   "population": 3242022,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "demand_pc_kwh": 5393.9,
+   "low_carbon_pct": 43.1,
+   "population": 3185072,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MDA",
+   "country": "Moldova",
+   "demand_pc_kwh": 2096.5,
+   "low_carbon_pct": 9.6,
+   "population": 3067072,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "QAT",
+   "country": "Qatar",
+   "demand_pc_kwh": 18925.3,
+   "low_carbon_pct": 3.6,
+   "population": 2979086,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "NAM",
+   "country": "Namibia",
+   "demand_pc_kwh": 1410.7,
+   "low_carbon_pct": 97.9,
+   "population": 2963102,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ARM",
+   "country": "Armenia",
+   "demand_pc_kwh": 2551.5,
+   "low_carbon_pct": 57.0,
+   "population": 2943398,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "LTU",
+   "country": "Lithuania",
+   "demand_pc_kwh": 4285.1,
+   "low_carbon_pct": 83.8,
+   "population": 2854104,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "JAM",
+   "country": "Jamaica",
+   "demand_pc_kwh": 1679.7,
+   "low_carbon_pct": 12.2,
+   "population": 2839785,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "ALB",
+   "country": "Albania",
+   "demand_pc_kwh": 2877.3,
+   "low_carbon_pct": 100.0,
+   "population": 2811660,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GMB",
+   "country": "Gambia",
+   "demand_pc_kwh": 189.0,
+   "low_carbon_pct": 0.0,
+   "population": 2697846,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GAB",
+   "country": "Gabon",
+   "demand_pc_kwh": 1275.8,
+   "low_carbon_pct": 35.5,
+   "population": 2484790,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BWA",
+   "country": "Botswana",
+   "demand_pc_kwh": 1911.1,
+   "low_carbon_pct": 0.3,
+   "population": 2480242,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GNB",
+   "country": "Guinea-Bissau",
+   "demand_pc_kwh": 37.2,
+   "low_carbon_pct": 0.0,
+   "population": 2153343,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SVN",
+   "country": "Slovenia",
+   "demand_pc_kwh": 6627.7,
+   "low_carbon_pct": 76.5,
+   "population": 2118394,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "LVA",
+   "country": "Latvia",
+   "demand_pc_kwh": 3814.3,
+   "low_carbon_pct": 77.7,
+   "population": 1882399,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "GNQ",
+   "country": "Equatorial Guinea",
+   "demand_pc_kwh": 774.0,
+   "low_carbon_pct": 24.5,
+   "population": 1847556,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MKD",
+   "country": "North Macedonia",
+   "demand_pc_kwh": 3843.2,
+   "low_carbon_pct": 32.1,
+   "population": 1831800,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "BHR",
+   "country": "Bahrain",
+   "demand_pc_kwh": 24177.0,
+   "low_carbon_pct": 0.2,
+   "population": 1569674,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TTO",
+   "country": "Trinidad and Tobago",
+   "demand_pc_kwh": 6334.3,
+   "low_carbon_pct": 0.1,
+   "population": 1502938,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "TLS",
+   "country": "East Timor",
+   "demand_pc_kwh": 368.4,
+   "low_carbon_pct": 0.0,
+   "population": 1384292,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "EST",
+   "country": "Estonia",
+   "demand_pc_kwh": 6612.1,
+   "low_carbon_pct": 48.8,
+   "population": 1367195,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "CYP",
+   "country": "Cyprus",
+   "demand_pc_kwh": 3962.9,
+   "low_carbon_pct": 20.5,
+   "population": 1344981,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "MUS",
+   "country": "Mauritius",
+   "demand_pc_kwh": 2567.5,
+   "low_carbon_pct": 17.4,
+   "population": 1273591,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "SWZ",
+   "country": "Eswatini",
+   "demand_pc_kwh": 1381.5,
+   "low_carbon_pct": 97.0,
+   "population": 1230507,
+   "highlight": false,
+   "label": null
+  },
+  {
+   "iso": "DJI",
+   "country": "Djibouti",
+   "demand_pc_kwh": 615.8,
+   "low_carbon_pct": 35.0,
+   "population": 1152951,
+   "highlight": false,
+   "label": null
+  }
+ ],
+ "fit": {
+  "x": [
+   14.9075472,
+   29545.7628
+  ],
+  "y": [
+   45.11365817412496,
+   45.145651406346374
+  ],
+  "slope_per_decade": 0.01
+ },
+ "stats": {
+  "n": 158,
+  "pearson_r_log10": 0.0002,
+  "spearman": 0.005,
+  "r_squared": 0.0,
+  "demand_p10": 138,
+  "demand_p90": 8154,
+  "demand_spread": 59,
+  "low_carbon_p10": 2.7,
+  "low_carbon_p90": 94.0
+ }
+}

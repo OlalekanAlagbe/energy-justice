@@ -1,0 +1,337 @@
+{
+ "meta": {
+  "chart": "World fossil fuel supply, absolute and as a share",
+  "chapter": 3,
+  "entity": "World",
+  "years": [
+   1965,
+   2024
+  ],
+  "built_by": "analysis/22_build_ch3.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "fossil_fuels_energy_twh",
+   "fossil_fuels_energy_share_pct",
+   "coal_energy_twh",
+   "gas_energy_twh",
+   "solar_energy_twh",
+   "wind_energy_twh"
+  ],
+  "n_rows": 60,
+  "methodology_note": "Total energy supply, the method Our World in Data adopted on 10 September 2026. Earlier releases used the substitution method and are not comparable."
+ },
+ "rows": [
+  {
+   "year": 1965,
+   "fossil_twh": 40489.4,
+   "fossil_share_pct": 97.37
+  },
+  {
+   "year": 1966,
+   "fossil_twh": 42650.9,
+   "fossil_share_pct": 97.29
+  },
+  {
+   "year": 1967,
+   "fossil_twh": 44244.6,
+   "fossil_share_pct": 97.3
+  },
+  {
+   "year": 1968,
+   "fossil_twh": 46884.0,
+   "fossil_share_pct": 97.25
+  },
+  {
+   "year": 1969,
+   "fossil_twh": 50121.8,
+   "fossil_share_pct": 97.24
+  },
+  {
+   "year": 1970,
+   "fossil_twh": 53382.0,
+   "fossil_share_pct": 97.2
+  },
+  {
+   "year": 1971,
+   "fossil_twh": 55392.7,
+   "fossil_share_pct": 97.04
+  },
+  {
+   "year": 1972,
+   "fossil_twh": 58361.9,
+   "fossil_share_pct": 96.86
+  },
+  {
+   "year": 1973,
+   "fossil_twh": 61787.8,
+   "fossil_share_pct": 96.75
+  },
+  {
+   "year": 1974,
+   "fossil_twh": 61582.6,
+   "fossil_share_pct": 96.24
+  },
+  {
+   "year": 1975,
+   "fossil_twh": 61702.1,
+   "fossil_share_pct": 95.74
+  },
+  {
+   "year": 1976,
+   "fossil_twh": 65116.1,
+   "fossil_share_pct": 95.67
+  },
+  {
+   "year": 1977,
+   "fossil_twh": 67222.0,
+   "fossil_share_pct": 95.28
+  },
+  {
+   "year": 1978,
+   "fossil_twh": 69474.8,
+   "fossil_share_pct": 94.91
+  },
+  {
+   "year": 1979,
+   "fossil_twh": 71672.4,
+   "fossil_share_pct": 94.82
+  },
+  {
+   "year": 1980,
+   "fossil_twh": 70684.1,
+   "fossil_share_pct": 94.43
+  },
+  {
+   "year": 1981,
+   "fossil_twh": 69844.4,
+   "fossil_share_pct": 93.79
+  },
+  {
+   "year": 1982,
+   "fossil_twh": 69132.1,
+   "fossil_share_pct": 93.38
+  },
+  {
+   "year": 1983,
+   "fossil_twh": 69855.8,
+   "fossil_share_pct": 92.83
+  },
+  {
+   "year": 1984,
+   "fossil_twh": 72538.6,
+   "fossil_share_pct": 92.15
+  },
+  {
+   "year": 1985,
+   "fossil_twh": 73940.6,
+   "fossil_share_pct": 91.4
+  },
+  {
+   "year": 1986,
+   "fossil_twh": 75396.2,
+   "fossil_share_pct": 91.11
+  },
+  {
+   "year": 1987,
+   "fossil_twh": 78016.6,
+   "fossil_share_pct": 90.87
+  },
+  {
+   "year": 1988,
+   "fossil_twh": 80705.9,
+   "fossil_share_pct": 90.58
+  },
+  {
+   "year": 1989,
+   "fossil_twh": 82353.9,
+   "fossil_share_pct": 90.52
+  },
+  {
+   "year": 1990,
+   "fossil_twh": 83071.2,
+   "fossil_share_pct": 90.28
+  },
+  {
+   "year": 1991,
+   "fossil_twh": 83383.4,
+   "fossil_share_pct": 89.96
+  },
+  {
+   "year": 1992,
+   "fossil_twh": 83898.9,
+   "fossil_share_pct": 89.93
+  },
+  {
+   "year": 1993,
+   "fossil_twh": 84062.3,
+   "fossil_share_pct": 89.59
+  },
+  {
+   "year": 1994,
+   "fossil_twh": 85146.8,
+   "fossil_share_pct": 89.54
+  },
+  {
+   "year": 1995,
+   "fossil_twh": 86597.0,
+   "fossil_share_pct": 89.3
+  },
+  {
+   "year": 1996,
+   "fossil_twh": 89165.9,
+   "fossil_share_pct": 89.29
+  },
+  {
+   "year": 1997,
+   "fossil_twh": 90061.8,
+   "fossil_share_pct": 89.35
+  },
+  {
+   "year": 1998,
+   "fossil_twh": 90455.6,
+   "fossil_share_pct": 89.22
+  },
+  {
+   "year": 1999,
+   "fossil_twh": 91887.4,
+   "fossil_share_pct": 89.06
+  },
+  {
+   "year": 2000,
+   "fossil_twh": 94434.0,
+   "fossil_share_pct": 89.1
+  },
+  {
+   "year": 2001,
+   "fossil_twh": 95580.7,
+   "fossil_share_pct": 89.07
+  },
+  {
+   "year": 2002,
+   "fossil_twh": 97747.9,
+   "fossil_share_pct": 89.08
+  },
+  {
+   "year": 2003,
+   "fossil_twh": 101841.7,
+   "fossil_share_pct": 89.54
+  },
+  {
+   "year": 2004,
+   "fossil_twh": 106811.6,
+   "fossil_share_pct": 89.47
+  },
+  {
+   "year": 2005,
+   "fossil_twh": 110553.2,
+   "fossil_share_pct": 89.62
+  },
+  {
+   "year": 2006,
+   "fossil_twh": 113796.8,
+   "fossil_share_pct": 89.62
+  },
+  {
+   "year": 2007,
+   "fossil_twh": 117664.4,
+   "fossil_share_pct": 89.86
+  },
+  {
+   "year": 2008,
+   "fossil_twh": 118450.6,
+   "fossil_share_pct": 89.62
+  },
+  {
+   "year": 2009,
+   "fossil_twh": 116115.4,
+   "fossil_share_pct": 89.37
+  },
+  {
+   "year": 2010,
+   "fossil_twh": 121765.1,
+   "fossil_share_pct": 89.37
+  },
+  {
+   "year": 2011,
+   "fossil_twh": 124889.7,
+   "fossil_share_pct": 89.65
+  },
+  {
+   "year": 2012,
+   "fossil_twh": 126688.5,
+   "fossil_share_pct": 89.86
+  },
+  {
+   "year": 2013,
+   "fossil_twh": 128322.6,
+   "fossil_share_pct": 89.66
+  },
+  {
+   "year": 2014,
+   "fossil_twh": 129038.6,
+   "fossil_share_pct": 89.36
+  },
+  {
+   "year": 2015,
+   "fossil_twh": 129677.2,
+   "fossil_share_pct": 89.13
+  },
+  {
+   "year": 2016,
+   "fossil_twh": 130518.7,
+   "fossil_share_pct": 88.85
+  },
+  {
+   "year": 2017,
+   "fossil_twh": 132830.9,
+   "fossil_share_pct": 88.72
+  },
+  {
+   "year": 2018,
+   "fossil_twh": 135913.2,
+   "fossil_share_pct": 88.47
+  },
+  {
+   "year": 2019,
+   "fossil_twh": 136221.2,
+   "fossil_share_pct": 88.1
+  },
+  {
+   "year": 2020,
+   "fossil_twh": 129419.0,
+   "fossil_share_pct": 87.45
+  },
+  {
+   "year": 2021,
+   "fossil_twh": 136104.6,
+   "fossil_share_pct": 87.49
+  },
+  {
+   "year": 2022,
+   "fossil_twh": 138189.3,
+   "fossil_share_pct": 87.5
+  },
+  {
+   "year": 2023,
+   "fossil_twh": 140309.3,
+   "fossil_share_pct": 87.22
+  },
+  {
+   "year": 2024,
+   "fossil_twh": 142532.4,
+   "fossil_share_pct": 86.65
+  }
+ ],
+ "summary": {
+  "twh_2000": 94434.0,
+  "twh_2024": 142532.4,
+  "abs_change_twh": 48098,
+  "pct_change": 50.9,
+  "share_2000": 89.1,
+  "share_2024": 86.65,
+  "share_change_pp": -2.46,
+  "coal_gas_added_twh": 35796,
+  "solar_wind_added_twh": 4649,
+  "ratio": 7.7
+ }
+}

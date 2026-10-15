@@ -1,0 +1,31 @@
+{
+ "meta": {
+  "chart": "Why this site reports absolute change, not percentage growth",
+  "chapter": 3,
+  "from": 2015,
+  "to": 2024,
+  "built_by": "analysis/22_build_ch3.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "solar_electricity_twh"
+  ],
+  "n_rows": 2,
+  "note": "Both figures are correct. Vietnam's percentage is larger because its starting point was 0.01 TWh. Percentage growth from a near-zero base measures the base, not the achievement."
+ },
+ "rows": [
+  {
+   "country": "Vietnam",
+   "twh_from": 0.01,
+   "twh_to": 25.86,
+   "added_twh": 25.85,
+   "pct_growth": 258500
+  },
+  {
+   "country": "China",
+   "twh_from": 39.48,
+   "twh_to": 839.04,
+   "added_twh": 799.56,
+   "pct_growth": 2025
+  }
+ ]
+}

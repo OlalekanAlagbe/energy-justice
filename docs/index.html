@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who is counted, who is powered, who is mined</title>
+<meta name="description" content="Three questions about the world's energy, asked of the Our World in Data energy dataset. Every number traces back to a script.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+
+<a class="skip" href="#ch1">Skip to the first chapter</a>
+
+<button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme"></button>
+
+<nav class="sidenav" aria-label="Chapters">
+  <p class="sidenav-brand">Energy Justice</p>
+  <p class="sidenav-sub">Who is counted,<br>who is powered,<br>who is mined.</p>
+  <ul class="sidenav-list">
+    <li><a class="sidenav-link" href="#ch1"><span class="n">01</span><span>Who is counted</span></a></li>
+    <li><a class="sidenav-link" href="#ch2"><span class="n">02</span><span>Who is powered</span></a></li>
+    <li><a class="sidenav-link" href="#ch3"><span class="n">03</span><span>The mix is not the story</span></a></li>
+    <li><a class="sidenav-link" href="#ch4"><span class="n">04</span><span>Who is mined</span></a></li>
+    <li><a class="sidenav-link" href="#ch5"><span class="n">05</span><span>Nigeria</span></a></li>
+    <li><a class="sidenav-link" href="#ch6"><span class="n">06</span><span>What this cannot tell us</span></a></li>
+  </ul>
+  <div class="sidenav-foot">
+    <p>Data: Our World in Data,<br>energy dataset, 2026-09-10.</p>
+    <p>Every figure traces to a<br>script in the repository.</p>
+  </div>
+</nav>
+
+<main class="main" id="main">
+<div class="wrap">
+
+  <header class="hero">
+    <p class="hero-kicker">A data essay</p>
+    <h1>Who is counted, who is powered, who is mined</h1>
+    <p class="hero-stand">
+      Three questions about the world's energy, asked of one dataset. The answers were not
+      the ones I expected when I started.
+    </p>
+    <div class="hero-meta">
+      <span><b>By</b> Olalekan Joshua Alagbe</span>
+      <span><b>Data</b> Our World in Data, energy</span>
+      <span><b>Release</b> 2026-09-10</span>
+      <span><b>Rows</b> 19,494</span>
+    </div>
+  </header>
+
+  <!-- ==================== CHAPTER 1 ==================== -->
+  <section class="chapter" id="ch1" aria-labelledby="ch1-h">
+    <div class="chapter-head">
+      <p class="chapter-eyebrow"><span class="n">01</span><span>Who is counted</span></p>
+      <h2 id="ch1-h">The dataset cannot see most of the world</h2>
+      <p class="claim">
+        This dataset describes the energy of 74 countries in detail. For the other 146 it
+        reports a total and nothing more.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-label">Countries with an energy mix</span>
+        <span class="stat-value is-teal" data-fig="ch1.with_mix">74</span>
+        <p class="stat-note">of <span data-fig="ch1.countries">220</span> in 2024</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Countries without one</span>
+        <span class="stat-value" data-fig="ch1.without_mix">146</span>
+        <p class="stat-note">a total, but no breakdown</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Of the world's people</span>
+        <span class="stat-value" data-fig="ch1.pop_share_display">21.8%</span>
+        <p class="stat-note">live in a country with no mix</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">In Africa</span>
+        <span class="stat-value is-amber" data-fig="ch1.africa_display">4 of 54</span>
+        <p class="stat-note">Algeria, Egypt, Morocco, South Africa</p>
+      </div>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Which countries get an energy mix, and which get only a total</p>
+        <p class="fig-sub">2024 &middot; 220 countries &middot; hover for a country</p>
+      </div>
+      <div id="ch1-map" class="plot plot-map"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--state-yes); border-color: var(--state-yes);"></span>Energy mix published</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--state-no);"></span>No energy mix published</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--map-nodata);"></span>Not in the dataset</span>
+      </div>
+      <div class="fig-foot is-caveat">
+        <p><span class="label">Read this carefully.</span> The pale areas are an absence of
+          measurement, not an absence of energy. Every pale country uses energy, and 144 of
+          them have a published total. What is missing is the breakdown.</p>
+        <p><span class="label">Source.</span> <span class="mono">fossil_fuels_energy_twh</span>,
+          <span class="mono">total_energy_twh</span>, <span class="mono">iso_code</span>.
+          Built by <span class="mono">analysis/20_build_ch1.py</span>.</p>
+      </div>
+    </figure>
+
+    <div class="prose">
+      <p>
+        A country is counted here if the dataset says how much coal, oil, gas, nuclear,
+        hydro, solar and wind it uses. Seventy four countries get that. The rest get a single
+        number for total energy and nothing underneath it.
+      </p>
+      <p>
+        The countries that are measured in detail are the rich and the large ones. In Africa,
+        four countries out of fifty four are measured: Algeria, Egypt, Morocco and South
+        Africa. Nigeria is not one of them. Nigeria has 232 million people, produces more oil
+        than any other African country, and has
+        <span data-fig="ch6.nigeria_empty_cols">57</span> of the dataset's
+        <span data-fig="ch6.nigeria_energy_cols">66</span> energy columns completely empty.
+      </p>
+      <p>
+        This is not a complaint about Our World in Data. They publish what their sources
+        publish, and they say so plainly in the codebook. The gap starts further upstream, in
+        which governments and agencies collect fuel-level statistics and report them.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">How many countries the dataset can describe, by year</p>
+        <p class="fig-sub">1965 to 2024 &middot; three different questions, three different answers</p>
+      </div>
+      <div id="ch1-growth" class="plot plot-line"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-swatch is-line" style="background: var(--teal);"></span>Energy mix by source</span>
+        <span class="legend-item"><span class="legend-swatch is-line" style="background: var(--mark-mute);"></span>Total energy supply</span>
+        <span class="legend-item"><span class="legend-swatch is-dash"></span>Electricity generation</span>
+      </div>
+      <div class="fig-foot">
+        <p><span class="label">Note.</span> Electricity sits near zero before 1985 because
+          only the United Kingdom and the world aggregate have country-level electricity that
+          far back. That is a fact about the data, not about electricity.</p>
+        <p><span class="label">Source.</span> <span class="mono">fossil_fuels_energy_twh</span>,
+          <span class="mono">total_energy_twh</span>,
+          <span class="mono">electricity_generation_twh</span>, counted per year across all
+          rows with an <span class="mono">iso_code</span>.</p>
+      </div>
+    </figure>
+
+    <div class="prose">
+      <p>
+        The gap is not closing. In 1970 the dataset could break down the energy mix of 40
+        countries. In 2024 it could do 74. Over the same years the count with a published
+        total went from 65 to 218, and electricity went from almost nothing to 196 countries.
+      </p>
+      <p>
+        So measurement did expand, a lot, in two of the three lines. The detailed energy
+        panel is the one that barely moved. Fifty four years, 34 more countries.
+      </p>
+      <p>
+        That matters for every chapter after this one. When a chart on this site shows an
+        energy mix, it is showing those 74 countries. When it shows electricity, it can show
+        almost everybody. I use electricity wherever a chapter needs to be about the whole
+        world, and I say so each time.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CHAPTER 2 ==================== -->
+  <section class="chapter" id="ch2" aria-labelledby="ch2-h">
+    <div class="chapter-head">
+      <p class="chapter-eyebrow"><span class="n">02</span><span>Who is powered</span></p>
+      <h2 id="ch2-h">The gap has not closed in 24 years</h2>
+      <p class="claim">
+        Since 2000 the average person in a low-income country gained
+        <span data-fig="ch2.low_gain">+16</span> kWh of electricity a year. The average person
+        in a high-income country gained <span data-fig="ch2.high_gain">+575</span>.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Electricity used per person</p>
+        <p class="fig-sub">2023 &middot; <span data-fig="ch2.countries_mapped">212</span> countries &middot; hover for a country</p>
+      </div>
+      <div id="ch2-map" class="plot plot-map"></div>
+      <div class="legend" id="ch2-legend"></div>
+      <div class="fig-foot">
+        <p><span class="label">Demand, not generation.</span> Generation alone would call
+          Lesotho the poorest country on earth. It generates
+          <span data-fig="ch2.lesotho_generation">0.0</span> kWh per person and imports all
+          the electricity it uses. Demand counts what people actually consume.</p>
+        <p><span class="label">Source.</span> <span class="mono">electricity_demand_per_capita_kwh</span>.
+          Built by <span class="mono">analysis/21_build_ch2.py</span>. Bands are fixed
+          breaks, with the count of countries in each shown in the legend.</p>
+      </div>
+    </figure>
+
+    <div class="prose">
+      <p>
+        The world average was <span data-fig="ch2.world_demand">3,666</span> kWh per person in
+        2023. The median country used <span data-fig="ch2.median_demand">2,560</span>. Nigeria
+        used <span data-fig="ch2.nigeria_demand">169.4</span>, which puts it at the
+        <span data-fig="ch2.nigeria_percentile">11.3th</span> percentile of the countries that
+        report this at all.
+      </p>
+      <p>
+        Neither this map nor any column in this dataset says how many households have a
+        connection. A national average can look adequate while most people have nothing. That
+        is a real limit and I come back to it in the last chapter.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Electricity generated per person, by income group</p>
+        <p class="fig-sub">2000 to 2024 &middot; log scale &middot; equal vertical distance means equal ratio</p>
+      </div>
+      <div id="ch2-income" class="plot plot-line"></div>
+      <div class="stats" style="margin: 1.25rem 0 0;">
+        <div class="stat">
+          <span class="stat-label">High income over low income, 2000</span>
+          <span class="stat-value" data-fig="ch2.ratio_2000">44.2x</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">The same ratio, 2024</span>
+          <span class="stat-value is-teal" data-fig="ch2.ratio_2024">43.6x</span>
+        </div>
+      </div>
+      <div class="fig-foot">
+        <p><span class="label">Why a log scale.</span> On a linear axis the low-income line
+          sits flat against zero and you cannot see it move. On a log axis the vertical
+          distance between two lines is their ratio, so the gap staying the same width is the
+          finding, drawn.</p>
+        <p><span class="label">Source.</span> <span class="mono">electricity_generation_per_capita_kwh</span>
+          for the dataset's own income-group aggregates. Membership is fixed: no group's
+          population moves more than 3.3 per cent year on year anywhere in the series, so this
+          is not countries being reclassified.</p>
+      </div>
+      <details class="table-toggle">
+        <summary>Show the numbers</summary>
+        <div class="table-wrap">
+          <table>
+            <caption>Electricity generated per person, kWh</caption>
+            <thead>
+              <tr><th>Income group</th><th class="is-num">2000</th><th class="is-num">2024</th><th class="is-num">Change</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>High income</td><td class="is-num" data-fig="ch2.high_2000">8,599</td><td class="is-num" data-fig="ch2.high_2024">9,174</td><td class="is-num" data-fig="ch2.high_gain">+575</td></tr>
+              <tr><td>Low income</td><td class="is-num" data-fig="ch2.low_2000">194</td><td class="is-num" data-fig="ch2.low_2024">211</td><td class="is-num" data-fig="ch2.low_gain">+16</td></tr>
+              <tr><td>Ratio, high to low</td><td class="is-num" data-fig="ch2.ratio_2000">44.2x</td><td class="is-num" data-fig="ch2.ratio_2024">43.6x</td><td class="is-num">&minus;0.6</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </figure>
+
+    <div class="prose">
+      <p>
+        Twenty four years of growth, and the ratio moved from
+        <span data-fig="ch2.ratio_2000">44.2x</span> to
+        <span data-fig="ch2.ratio_2024">43.6x</span>. Falling at that rate, it reaches parity
+        in about <span data-fig="ch2.years_to_parity">1,500</span> years.
+      </p>
+      <p>
+        The ratio is the kind view. Measured in kilowatt-hours rather than as a multiple, the
+        gap did not narrow at all. It widened, by
+        <span data-fig="ch2.gap_widened">558</span> kWh per person, to
+        <span data-fig="ch2.gap_2024">8,963</span>. A ratio can improve while the distance
+        between two groups grows, and here it did.
+      </p>
+      <p>
+        Both lines rose. That is worth saying plainly, because the chart is not showing
+        anything getting worse. Low-income countries generated more electricity per person in
+        2024 than in 2000. They just did not gain on anybody.
+      </p>
+      <p>
+        I cannot tell you why from this dataset. It has no data on grid investment, finance,
+        debt, population growth by country within these groups, or policy. It can show the
+        shape of the gap and nothing about its causes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CHAPTER 3 ==================== -->
+
+  <section class="chapter" id="ch3" aria-labelledby="ch3-h">
+    <div class="chapter-head">
+      <p class="chapter-eyebrow"><span class="n">03</span><span>The mix is not the story</span></p>
+      <h2 id="ch3-h">How clean says nothing about how much</h2>
+      <p class="claim">
+        Across <span data-fig="ch3.n_countries">158</span> countries there is no relationship
+        between how much electricity people have and how clean it is. The correlation is
+        <span data-fig="ch3.pearson_r">0.0002</span>.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Electricity per person, against how low-carbon it is</p>
+        <p class="fig-sub">2023 &middot; countries over 1 million people &middot; hover for a country</p>
+      </div>
+      <div id="ch3-scatter" class="plot plot-scatter"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--amber); border-color: var(--amber);"></span>Nigeria</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--mark-mute);"></span>Every other country</span>
+        <span class="legend-item"><span class="legend-swatch is-dash" style="border-top-color: var(--ink);"></span>Line of best fit</span>
+      </div>
+      <div class="fig-foot">
+        <p><span class="label">What a flat line means.</span> If having more electricity made
+          it cleaner, or dirtier, the fitted line would slope. It does not. Ten times more
+          electricity per person predicts a change of <span class="num">0.01</span>
+          percentage points in the low-carbon share, and the correlation across all
+          <span data-fig="ch3.n_countries">158</span> countries is
+          <span data-fig="ch3.pearson_r">0.0002</span>.</p>
+        <p><span class="label">Source.</span> <span class="mono">electricity_demand_per_capita_kwh</span>
+          against <span class="mono">low_carbon_electricity_share_pct</span>. Built by
+          <span class="mono">analysis/22_build_ch3.py</span>. Countries under 1 million people
+          are excluded, because there a single power station moves the whole national mix.</p>
+      </div>
+    </figure>
+
+    <p class="method-note">
+      Shares on this page are shares of electricity generated, not of total energy supply.
+      Our World in Data changed how it measures primary energy on 10 September 2026, from the
+      substitution method to total energy supply. Shares of electricity are not affected by
+      that change. Shares of total energy, used further down this page, are.
+    </p>
+
+    <div class="prose">
+      <p>
+        The spread in how much electricity people have is enormous. From the 10th to the 90th
+        percentile it is a factor of <span data-fig="ch3.demand_spread">59x</span>. The spread
+        in how clean it is runs from <span data-fig="ch3.lowc_p10">2.7%</span> to
+        <span data-fig="ch3.lowc_p90">94.0%</span>. Both vary hugely. They just do not vary
+        together.
+      </p>
+      <p>
+        Look at the left of the chart, where countries have the least electricity. Ethiopia
+        gets <span data-fig="ch3.eth_demand">124</span> kWh per person and
+        <span data-fig="ch3.eth_fossil">0.0%</span> of it from fossil fuels. Uganda gets
+        <span data-fig="ch3.uga_demand">110</span> kWh and
+        <span data-fig="ch3.uga_fossil">2.9%</span>. Niger gets
+        <span data-fig="ch3.ner_demand">84</span> kWh and
+        <span data-fig="ch3.ner_fossil">97.9%</span>. Bangladesh gets
+        <span data-fig="ch3.bgd_demand">648</span> kWh and
+        <span data-fig="ch3.bgd_fossil">98.3%</span>. Nigeria gets
+        <span data-fig="ch3.nga_demand">169</span> kWh and
+        <span data-fig="ch3.nga_fossil">77.3%</span>.
+      </p>
+      <p>
+        Those five countries are all near the bottom for electricity and have almost nothing
+        in common in how they make it. Grouping countries by where they sit in an energy
+        transition does not describe this picture. Grouping them by how much they have does.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">World fossil fuel supply, two ways of reporting the same thing</p>
+        <p class="fig-sub">1965 to 2024 &middot; both panels share one year axis</p>
+      </div>
+      <div id="ch3-fossil" class="plot plot-scatter"></div>
+      <div class="fig-foot is-caveat">
+        <p><span class="label">Two true statements.</span> Since 2000 world fossil fuel supply
+          rose <span data-fig="ch3.fossil_pct_change">50.9%</span>, from
+          <span data-fig="ch3.fossil_twh_2000">94,434</span> to
+          <span data-fig="ch3.fossil_twh_2024">142,532</span> TWh. Over the same years its
+          share of all energy fell
+          <span data-fig="ch3.fossil_share_change">-2.46</span> percentage points. Which one
+          you report decides what the reader believes.</p>
+        <p><span class="label">Why two panels and not two axes.</span> Putting both on one
+          chart with two y scales would let me pick the scales, and therefore the conclusion.
+          Separate panels on a shared year axis show both without that choice.</p>
+        <p><span class="label">Methodology.</span> These are shares of total energy supply, so
+          the 10 September 2026 change does apply here. Figures are not comparable with
+          releases before that date.</p>
+      </div>
+    </figure>
+
+    <div class="prose">
+      <p>
+        Coal and gas added <span data-fig="ch3.coal_gas_added">35,796</span> TWh of supply
+        between 2000 and 2024. Solar and wind added
+        <span data-fig="ch3.solar_wind_added">4,649</span>. Coal and gas added
+        <span data-fig="ch3.added_ratio">7.7x</span> more energy than solar and wind did.
+      </p>
+      <p>
+        Renewables are growing fast. They are also growing on top of a fossil system that is
+        still growing, rather than in place of it. Both things are in the same data.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Why this site reports absolute change, not percentage growth</p>
+        <p class="fig-sub">solar electricity, 2015 to 2024, terawatt-hours</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption>Both columns are correct. They point in opposite directions.</caption>
+          <thead>
+            <tr>
+              <th>Country</th><th class="is-num">2015</th><th class="is-num">2024</th>
+              <th class="is-num">Added</th><th class="is-num">Growth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vietnam</td><td class="is-num">0.01</td><td class="is-num">25.86</td>
+              <td class="is-num" data-fig="ch3.vnm_solar_added">25.85</td>
+              <td class="is-num" data-fig="ch3.vnm_solar_growth">258,500%</td>
+            </tr>
+            <tr>
+              <td>China</td><td class="is-num">39.48</td><td class="is-num">839.04</td>
+              <td class="is-num" data-fig="ch3.chn_solar_added">799.56</td>
+              <td class="is-num" data-fig="ch3.chn_solar_growth">2,025%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="fig-foot">
+        <p><span class="label">Read the two right-hand columns together.</span> Vietnam&rsquo;s
+          growth rate is a hundred times China&rsquo;s. China added thirty one times more
+          electricity. Vietnam&rsquo;s percentage is larger because it started at 0.01 TWh.
+          Percentage growth from a near-zero base measures the base, not the achievement.
+          Every growth figure on this site is an absolute change for that reason.</p>
+      </div>
+    </figure>
+  </section>
+
+  <!-- ==================== CHAPTER 4 ==================== -->
+  <section class="chapter" id="ch4" aria-labelledby="ch4-h">
+    <div class="chapter-head">
+      <p class="chapter-eyebrow"><span class="n">04</span><span>Who is mined</span></p>
+      <h2 id="ch4-h">Producing energy is not the same as having it</h2>
+      <p class="claim">
+        Thirteen countries, <span data-fig="ch4.group_pop">742 million</span> people between
+        them, dig up far more fossil energy than they use and their people get very little
+        electricity. Nigeria is <span data-fig="ch4.nigeria_share_of_group">31.3%</span> of
+        that group on its own.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">What a country produces, against what its people use</p>
+        <p class="fig-sub">2024 &middot; <span data-fig="ch4.countries_in_scope">158</span> countries over 1 million people &middot; hover for a country</p>
+      </div>
+      <div id="ch4-scatter" class="plot plot-scatter"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--amber); border-color: var(--amber);"></span>Nigeria</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--teal); border-color: var(--teal);"></span>The thirteen</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--mark-mute);"></span>Every other country</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--region-fill);"></span>Produces a lot, uses little</span>
+      </div>
+      <div class="fig-foot is-caveat">
+        <p><span class="label">This is a quadrant, not a law.</span> Across all
+          <span data-fig="ch4.countries_in_scope">158</span> countries the rank correlation
+          between how much a country produces and how much electricity its people use is
+          <span data-fig="ch4.spearman">0.15</span>. That is close to nothing.
+          <span data-fig="ch4.big_producers">31</span> countries produce more than
+          <span class="num">1.5</span> times their own supply, and only
+          <span data-fig="ch4.group_n">13</span> of them are also energy-poor. Producing more
+          than you use does not make a country poor in electricity.</p>
+        <p><span class="label">A residual, not measured trade.</span> The horizontal axis is
+          production divided by the country&rsquo;s own total energy supply. The sources warn
+          that production and consumption do not reconcile exactly, so this is a reasonable
+          proxy for net exports and not a measurement of them. Gas that is flared is excluded
+          from production entirely, which matters for Nigeria.</p>
+        <p><span class="label">Source.</span> <span class="mono">oil_production_twh</span>,
+          <span class="mono">gas_production_twh</span>,
+          <span class="mono">coal_production_twh</span>,
+          <span class="mono">total_energy_twh</span>,
+          <span class="mono">electricity_demand_per_capita_kwh</span>. Built by
+          <span class="mono">analysis/23_build_ch4.py</span>.</p>
+      </div>
+    </figure>
+
+    <div class="prose">
+      <p>
+        Norway is the reason this chapter is careful. It produces
+        <span data-fig="ch4.nor_ratio">7.64x</span> its own energy supply, more than almost
+        anywhere, and its people use <span data-fig="ch4.nor_demand">24,866</span> kWh of
+        electricity each. Qatar is in the same position. Selling energy abroad and having
+        plenty at home are perfectly compatible.
+      </p>
+      <p>
+        The bottom right of the chart is where that stops being true. Chad produces
+        <span data-fig="ch4.tcd_ratio">10.1x</span> its own supply and its people get
+        <span data-fig="ch4.tcd_demand">18</span> kWh each. Nigeria produces
+        <span data-fig="ch4.nigeria_prod">1,395</span> TWh against a domestic supply of
+        <span data-fig="ch4.nigeria_supply">515</span> TWh, and its people get
+        <span data-fig="ch4.nga_demand">152</span> kWh each.
+      </p>
+      <p>
+        What this dataset cannot tell you is why. It has nothing on contracts, ownership,
+        refining capacity, domestic pricing or who the revenue goes to. It can show that the
+        gap exists and how large it is. The explanation is somewhere else.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CHAPTER 5 ==================== -->
+  <section class="chapter" id="ch5" aria-labelledby="ch5-h">
+    <div class="chapter-head">
+      <p class="chapter-eyebrow"><span class="n">05</span><span>Nigeria</span></p>
+      <h2 id="ch5-h">One extra kilowatt-hour a year</h2>
+      <p class="claim">
+        Nigeria generates <span data-fig="ch5.gen_growth">2.82x</span> the electricity it did
+        in 2000. Its population grew <span data-fig="ch5.pop_growth">1.88x</span>. What is
+        left over is about <span data-fig="ch5.slope">1.21</span> extra kilowatt-hours per
+        person per year.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Nigeria's electricity, in total and per person</p>
+        <p class="fig-sub">2000 to 2025 &middot; two panels, one shared year axis</p>
+      </div>
+      <div id="ch5-output" class="plot plot-scatter"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-swatch is-line" style="background: var(--teal);"></span>Total generated, TWh</span>
+        <span class="legend-item"><span class="legend-swatch is-line" style="background: var(--amber);"></span>Per person, kWh</span>
+        <span class="legend-item"><span class="legend-swatch is-dash" style="border-top-color: var(--ink);"></span>Fitted trend</span>
+      </div>
+      <div class="fig-foot is-caveat">
+        <p><span class="label">Why the trend line is here.</span> Nigeria generated
+          <span data-fig="ch5.pc_2002">161.5</span> kWh per person in 2002 and
+          <span data-fig="ch5.pc_2024">161.4</span> in 2024. Those two numbers match almost
+          exactly, and quoting them would be cherry-picking: 2024 is a dip year and the series
+          runs to 2025. The fitted line is the honest version. The real trend is
+          <span data-fig="ch5.slope">1.21</span> kWh per person per year, slightly upward.</p>
+        <p><span class="label">Two panels, not two axes.</span> A single chart with two y
+          scales would let me choose the scales and therefore the conclusion. These share only
+          the year axis.</p>
+        <p><span class="label">Source.</span> <span class="mono">electricity_generation_twh</span>,
+          <span class="mono">electricity_generation_per_capita_kwh</span>,
+          <span class="mono">population</span>. Built by
+          <span class="mono">analysis/24_build_ch5.py</span>.</p>
+      </div>
+    </figure>
+
+    <div class="prose">
+      <p>
+        Both panels are true at once. The top one is a real achievement: Nigeria nearly
+        tripled its electricity generation in twenty five years. The bottom one is what that
+        felt like to a Nigerian household, because the population grew almost as fast.
+      </p>
+      <p>
+        Per person, output has moved between <span data-fig="ch5.pc_min">116.6</span> and
+        <span data-fig="ch5.pc_max">187.0</span> kWh for the whole period. The world average
+        in 2025 was <span data-fig="ch5.world_pc">3,860</span>. At
+        <span data-fig="ch5.slope">1.21</span> kWh a year, Nigeria reaches today's world
+        average in about <span data-fig="ch5.years_to_world">3,050</span> years.
+      </p>
+      <p>
+        That last number is arithmetic, not a forecast. Rates change. It is there to give the
+        gap a scale, not to predict anything.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Where Nigeria's electricity comes from</p>
+        <p class="fig-sub">2000 to 2025 &middot; share of generation &middot; hover for a year</p>
+      </div>
+      <div id="ch5-mix" class="plot plot-area"></div>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--seq-6); border-color: var(--seq-6);"></span>Gas</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--seq-3); border-color: var(--seq-3);"></span>Hydro</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--amber); border-color: var(--amber);"></span>Solar</span>
+        <span class="legend-item"><span class="legend-swatch" style="background: var(--mark-mute);"></span>Bioenergy</span>
+      </div>
+      <div class="table-wrap" id="ch5-mix-table"></div>
+      <div class="fig-foot">
+        <p><span class="label">Four sources, and that is all of them.</span> Oil, coal and
+          wind are 0.00% of Nigeria's electricity in every year of this series, so they are
+          left out rather than drawn as empty bands. Bioenergy is tiny but not zero, so it
+          stays: the bands have to total 100% or the chart misreports the mix.</p>
+        <p><span class="label">Why the table.</span> Solar and bioenergy are hairlines at this
+          scale. The table carries the numbers the bands cannot show.</p>
+        <p><span class="label">Methodology.</span> These are shares of electricity generated,
+          not of total energy supply, so the 10 September 2026 change does not apply here.</p>
+      </div>
+    </figure>
+
+    <div class="prose">
+      <p>
+        Nigeria's electricity is gas and water. Gas was
+        <span data-fig="ch5.gas_2000">61.74%</span> of generation in 2000 and
+        <span data-fig="ch5.gas_2025">68.68%</span> in 2025, peaking above 83% in 2014. Hydro
+        is most of the rest. Solar reached
+        <span data-fig="ch5.solar_2025">0.31%</span>.
+      </p>
+      <p>
+        Nigeria has no energy mix in this dataset, only an electricity mix. So this chart
+        covers the electricity sector and not the fuel Nigerians actually burn at home.
+        Firewood and charcoal are outside these sources entirely, and private generators do
+        not appear as generation. The real household picture is larger and dirtier than this.
+      </p>
+    </div>
+
+    <figure class="fig">
+      <div class="fig-head">
+        <p class="fig-title">Growth in electricity per person, 2000 to 2024</p>
+        <p class="fig-sub">Nigeria against peers and the world average</p>
+      </div>
+      <div class="bars" id="ch5-peers"></div>
+      <div class="fig-foot">
+        <p><span class="label">Not a law of poor countries.</span> Ethiopia multiplied its
+          electricity per person more than seven times over the same years, from a lower
+          starting point than Nigeria. Vietnam did it nearly nine times. Whatever holds
+          Nigeria back is specific to Nigeria, and this dataset cannot say what it is.</p>
+        <p><span class="label">2024, not 2025.</span> 2025 electricity is reported for only
+          90 of 220 countries, and a comparison needs every country present.</p>
+      </div>
+    </figure>
+  </section>
+
+  <!-- ==================== CHAPTER 6 ==================== -->
+  <section class="chapter" id="ch6" aria-labelledby="ch6-h">
+    <div class="chapter-head">
+      <p class="chapter-eyebrow"><span class="n">06</span><span>What this cannot tell us</span></p>
+      <h2 id="ch6-h">The limits are part of the finding</h2>
+      <p class="claim">
+        Chapter 1 was about what this dataset cannot see. So is this one. The difference is
+        that here I am counting what the whole project could not answer, including the things
+        I wanted it to.
+      </p>
+    </div>
+
+    <div class="prose">
+      <p>
+        Everything below was measured, not assumed. The claims that a column does not exist
+        come from scanning all 130 column names in the frozen file. If the dataset ever gains
+        one, this page stops saying it is missing.
+      </p>
+    </div>
+
+    <h3 class="fig-title" style="margin:2rem 0 0.75rem;font-size:1.0625rem;">Nigeria has a total and almost nothing else</h3>
+    <div class="prose">
+      <p>
+        I said in Chapter 1 that Nigeria is not one of the 74 countries with an energy mix.
+        Here is what that means exactly. The dataset has
+        <span data-fig="ch6.nigeria_energy_cols">66</span> columns describing energy supply.
+        <span data-fig="ch6.nigeria_empty_cols">57</span> of them are empty for Nigeria in
+        every year, from 1900 to 2025.
+      </p>
+      <p>
+        Of the <span data-fig="ch6.nigeria_present_cols">9</span> that are not empty, four are
+        nuclear and read 0.00 in every year. The other five are the total and figures derived
+        from it. So the dataset knows roughly how much energy Nigeria uses and nothing at all
+        about what it is made of. That is why Chapter 5 is about electricity only.
+      </p>
+    </div>
+
+    <h3 class="fig-title" style="margin:2rem 0 0.75rem;font-size:1.0625rem;">Columns that do not exist</h3>
+    <div class="prose">
+      <p>
+        Four things a reader would reasonably want from a page about energy justice, which
+        this dataset has no column for at all.
+      </p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <caption>Searched across all 130 column names in the frozen file</caption>
+        <thead><tr><th>What is missing</th><th>Why it matters here</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Electricity access</td>
+            <td>No column reports the share of people with a connection. Chapters 2 and 3 use
+              demand per person, which is a national average. A country can look adequate on
+              average and leave most households with nothing.</td>
+          </tr>
+          <tr>
+            <td>Installed capacity</td>
+            <td>Generation only, so nothing on how much plant exists or how much of it runs.
+              For a country with chronic outages that is the interesting number.</td>
+          </tr>
+          <tr>
+            <td>Prices, tariffs, affordability</td>
+            <td>Nothing on what energy costs or what share of income it takes. Energy poverty
+              is as much about price as quantity.</td>
+          </tr>
+          <tr>
+            <td>Fuel imports and exports</td>
+            <td>Only electricity trade is reported. Chapter 4's horizontal axis is production
+              divided by domestic supply, which is an accounting residual, not measured trade.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="fig-title" style="margin:2rem 0 0.75rem;font-size:1.0625rem;">What the sources leave out</h3>
+    <div class="prose">
+      <p>
+        The Energy Institute covers commercially traded fuels. Firewood and charcoal are
+        outside that. For Nigeria they are most household cooking energy, so the dataset
+        understates Nigerian energy use and cannot see the bottom of the ladder at all.
+      </p>
+      <p>
+        Private generators do not appear as electricity generation. Some of the fuel may sit
+        inside the oil supply figure, but it cannot be separated. Gas that is flared is
+        excluded from production entirely, which matters for Chapter 4.
+      </p>
+      <p>
+        Every figure on this site is a national average. There is no data inside countries: no
+        urban and rural split, no income deciles, no households. National averages are exactly
+        where energy injustice hides, and this dataset cannot go there.
+      </p>
+    </div>
+
+    <h3 class="fig-title" style="margin:2rem 0 0.75rem;font-size:1.0625rem;">Where the data runs out</h3>
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-label">GDP ends</span>
+        <span class="stat-value" data-fig="ch6.gdp_last_year">2022</span>
+        <p class="stat-note">three years before the energy data</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Electricity in 2025</span>
+        <span class="stat-value" data-fig="ch6.e2025">90</span>
+        <p class="stat-note">of <span data-fig="ch6.rows2025">126</span> countries with a row</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Total energy in 2025</span>
+        <span class="stat-value" data-fig="ch6.t2025">79</span>
+        <p class="stat-note">so 2024 is the headline year</p>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Electricity in 1990</span>
+        <span class="stat-value" data-fig="ch6.elec_1990">81</span>
+        <p class="stat-note">rising to <span data-fig="ch6.elec_2000">211</span> by 2000</p>
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        The codebook gives electricity a range of 1900 to 2025. At country level that is
+        misleading: before 1985 only the United Kingdom and the world aggregate have it. Every
+        country comparison on this site starts in 2000 for that reason.
+      </p>
+    </div>
+
+    <h3 class="fig-title" style="margin:2rem 0 0.75rem;font-size:1.0625rem;">The methodology change, in full</h3>
+    <div class="callout">
+      <h3>Energy here is total energy supply, not the substitution method</h3>
+      <p>
+        On 10 September 2026 Our World in Data changed how it measures primary energy, from
+        the substitution method to total energy supply, following its sources. The two are not
+        directly comparable, and OWID say so plainly.
+      </p>
+      <p>
+        Under the substitution method, electricity from hydro, wind and solar was scaled up to
+        the fossil fuel that would have been needed to produce it. Under total energy supply
+        it is counted at the energy content of its gross electrical output. The practical
+        effect is that <strong>renewable shares in this release are lower</strong> than the
+        numbers most readers have seen in older charts, in news coverage, or in earlier
+        coursework. If a figure here looks too small against something you remember, this is
+        probably why.
+      </p>
+      <p>
+        There is a second problem inside the same change, and it is not visible in the column
+        names. Non-fossil combustible sources are counted on their heat input, and
+        non-combustible renewables on their electrical output. I tested what that does. For
+        the world in 2024, nuclear energy supply divided by nuclear electricity generation is
+        <span data-fig="ch6.nuclear_ratio">3.07x</span>. For wind the same ratio is
+        <span data-fig="ch6.wind_ratio">1.0x</span>, and hydro and solar are 1.01.
+      </p>
+      <p>
+        So nuclear is counted at the heat that went in and renewables at the electricity that
+        came out. Any figure for the low-carbon share of total energy supply inflates nuclear
+        roughly threefold against renewables. This site avoids that figure. Where a low-carbon
+        share appears, it is a share of electricity, where the problem does not arise.
+      </p>
+    </div>
+
+    <h3 class="fig-title" style="margin:2rem 0 0.75rem;font-size:1.0625rem;">Two things I found and did not use</h3>
+    <div class="prose">
+      <p>
+        <strong>Poor countries look cleaner, but only on average.</strong> In 2023 the
+        low-income aggregate got <span data-fig="ch6.low_income_lowc">61.9%</span> of its
+        electricity from low-carbon sources against
+        <span data-fig="ch6.high_income_lowc">45.7%</span> for high-income countries. That
+        looks like a striking reversal and it would have made a good chapter. It does not
+        survive at country level: the median country in the lowest-generation fifth is only
+        <span data-fig="ch6.bottom_quintile_lowc">37.5%</span> low-carbon. The aggregate is
+        pulled up by a few large hydro countries, mostly Ethiopia and the Democratic Republic
+        of Congo. The honest version is that some poor countries run on hydro, not that
+        poverty produces clean grids, so I left it out.
+      </p>
+      <p>
+        <strong>Some countries went backwards, for opposite reasons.</strong> Between 2000 and
+        2024, <span data-fig="ch6.fell_count">19</span> of
+        <span data-fig="ch6.fell_of">93</span> countries over 10 million people generated less
+        electricity per person than they had. Canada lost 3,523 kWh per person and the United
+        Kingdom 2,275, which is efficiency and the loss of heavy industry. South Africa lost
+        600 and Venezuela 656, which is a grid in trouble. The number moves the same way and
+        means opposite things. Charted together it would mislead, so there is no chart.
+      </p>
+    </div>
+
+    <h3 class="fig-title" style="margin:2rem 0 0.75rem;font-size:1.0625rem;">What would answer these questions</h3>
+    <div class="prose">
+      <p>
+        None of this is a criticism of Our World in Data. They publish what their sources
+        publish and document the gaps carefully. The limits start further upstream, in which
+        governments and agencies collect fuel-level statistics and report them.
+      </p>
+      <p>
+        The questions this site raises and cannot answer need different data: household
+        surveys for access and affordability, utility records for reliability, and national
+        energy balances for the countries that do not currently produce them. Those exist for
+        some countries. The pattern of which ones is, more or less, Chapter 1.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-foot">
+    <p>
+      Data: Energy Institute Statistical Review of World Energy (2026), Ember Yearly
+      Electricity Data (2026), US EIA, and others, compiled by Our World in Data. Release
+      2026-09-10.
+    </p>
+    <p>
+      Built by Olalekan Joshua Alagbe. Every number on this page is produced by a script in
+      the repository and re-checked against the frozen data file.
+    </p>
+  </footer>
+
+</div>
+</main>
+
+<script src="vendor/plotly-geo-3.0.1.min.js"></script>
+<script src="data/bundle.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

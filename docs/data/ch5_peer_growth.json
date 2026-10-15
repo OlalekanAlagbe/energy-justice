@@ -1,0 +1,81 @@
+{
+ "meta": {
+  "chart": "Growth in electricity generated per person",
+  "chapter": 5,
+  "from": 2000,
+  "to": 2024,
+  "built_by": "analysis/24_build_ch5.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "electricity_generation_per_capita_kwh"
+  ],
+  "n_rows": 8,
+  "note": "2024 and not 2025, because 2025 electricity is reported for only 90 of 220 countries and a peer comparison needs every country present."
+ },
+ "rows": [
+  {
+   "country": "Vietnam",
+   "kwh_first": 344.2,
+   "kwh_last": 3006.1,
+   "growth_x": 8.73,
+   "highlight": false,
+   "is_reference": false
+  },
+  {
+   "country": "Ethiopia",
+   "kwh_first": 25.1,
+   "kwh_last": 190.8,
+   "growth_x": 7.61,
+   "highlight": false,
+   "is_reference": false
+  },
+  {
+   "country": "Bangladesh",
+   "kwh_first": 118.5,
+   "kwh_last": 586.2,
+   "growth_x": 4.95,
+   "highlight": false,
+   "is_reference": false
+  },
+  {
+   "country": "India",
+   "kwh_first": 540.1,
+   "kwh_last": 1403.6,
+   "growth_x": 2.6,
+   "highlight": false,
+   "is_reference": false
+  },
+  {
+   "country": "Ghana",
+   "kwh_first": 365.1,
+   "kwh_last": 705.0,
+   "growth_x": 1.93,
+   "highlight": false,
+   "is_reference": false
+  },
+  {
+   "country": "World",
+   "kwh_first": 2475.6,
+   "kwh_last": 3789.6,
+   "growth_x": 1.53,
+   "highlight": false,
+   "is_reference": true
+  },
+  {
+   "country": "Nigeria",
+   "kwh_first": 116.6,
+   "kwh_last": 161.4,
+   "growth_x": 1.38,
+   "highlight": true,
+   "is_reference": false
+  },
+  {
+   "country": "South Africa",
+   "kwh_first": 4466.9,
+   "kwh_last": 3867.1,
+   "growth_x": 0.87,
+   "highlight": false,
+   "is_reference": false
+  }
+ ]
+}

@@ -1,0 +1,1798 @@
+{
+ "meta": {
+  "chart": "Does this country have an energy mix breakdown",
+  "chapter": 1,
+  "year": 2024,
+  "built_by": "analysis/20_build_ch1.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "iso_code",
+   "country",
+   "fossil_fuels_energy_twh",
+   "total_energy_twh",
+   "electricity_generation_twh",
+   "population"
+  ],
+  "filter": "iso_code present, so countries only and no regions or aggregates",
+  "n_rows": 220
+ },
+ "rows": [
+  {
+   "iso": "AFG",
+   "country": "Afghanistan",
+   "measured": 0,
+   "total_energy_twh": 39.45,
+   "electricity_twh": 0.99,
+   "population": 42647502
+  },
+  {
+   "iso": "ALB",
+   "country": "Albania",
+   "measured": 0,
+   "total_energy_twh": 25.59,
+   "electricity_twh": 8.34,
+   "population": 2791756
+  },
+  {
+   "iso": "DZA",
+   "country": "Algeria",
+   "measured": 1,
+   "total_energy_twh": 781.45,
+   "electricity_twh": 96.36,
+   "population": 46814302
+  },
+  {
+   "iso": "ASM",
+   "country": "American Samoa",
+   "measured": 0,
+   "total_energy_twh": 2.32,
+   "electricity_twh": 0.18,
+   "population": 46792
+  },
+  {
+   "iso": "AGO",
+   "country": "Angola",
+   "measured": 0,
+   "total_energy_twh": 100.76,
+   "electricity_twh": 15.59,
+   "population": 37885854
+  },
+  {
+   "iso": "ATA",
+   "country": "Antarctica",
+   "measured": 0,
+   "total_energy_twh": 0.05,
+   "electricity_twh": null,
+   "population": null
+  },
+  {
+   "iso": "ATG",
+   "country": "Antigua and Barbuda",
+   "measured": 0,
+   "total_energy_twh": 3.12,
+   "electricity_twh": 0.37,
+   "population": 93782
+  },
+  {
+   "iso": "ARG",
+   "country": "Argentina",
+   "measured": 1,
+   "total_energy_twh": 886.68,
+   "electricity_twh": 152.51,
+   "population": 45696153
+  },
+  {
+   "iso": "ARM",
+   "country": "Armenia",
+   "measured": 0,
+   "total_energy_twh": 49.78,
+   "electricity_twh": 9.03,
+   "population": 2973843
+  },
+  {
+   "iso": "ABW",
+   "country": "Aruba",
+   "measured": 0,
+   "total_energy_twh": 4.93,
+   "electricity_twh": 1.0,
+   "population": 108076
+  },
+  {
+   "iso": "AUS",
+   "country": "Australia",
+   "measured": 1,
+   "total_energy_twh": 1542.07,
+   "electricity_twh": 281.64,
+   "population": 26713206
+  },
+  {
+   "iso": "AUT",
+   "country": "Austria",
+   "measured": 1,
+   "total_energy_twh": 309.89,
+   "electricity_twh": 78.47,
+   "population": 9120815
+  },
+  {
+   "iso": "AZE",
+   "country": "Azerbaijan",
+   "measured": 1,
+   "total_energy_twh": 202.36,
+   "electricity_twh": 27.84,
+   "population": 10336577
+  },
+  {
+   "iso": "BHS",
+   "country": "Bahamas",
+   "measured": 0,
+   "total_energy_twh": 13.9,
+   "electricity_twh": 2.25,
+   "population": 401282
+  },
+  {
+   "iso": "BHR",
+   "country": "Bahrain",
+   "measured": 0,
+   "total_energy_twh": 244.33,
+   "electricity_twh": 37.95,
+   "population": 1607059
+  },
+  {
+   "iso": "BGD",
+   "country": "Bangladesh",
+   "measured": 1,
+   "total_energy_twh": 510.29,
+   "electricity_twh": 101.74,
+   "population": 173562366
+  },
+  {
+   "iso": "BRB",
+   "country": "Barbados",
+   "measured": 0,
+   "total_energy_twh": 6.77,
+   "electricity_twh": 1.11,
+   "population": 282476
+  },
+  {
+   "iso": "BLR",
+   "country": "Belarus",
+   "measured": 1,
+   "total_energy_twh": 319.09,
+   "electricity_twh": 45.82,
+   "population": 9056696
+  },
+  {
+   "iso": "BEL",
+   "country": "Belgium",
+   "measured": 1,
+   "total_energy_twh": 627.18,
+   "electricity_twh": 76.01,
+   "population": 11738761
+  },
+  {
+   "iso": "BLZ",
+   "country": "Belize",
+   "measured": 0,
+   "total_energy_twh": 4.22,
+   "electricity_twh": 0.47,
+   "population": 417077
+  },
+  {
+   "iso": "BEN",
+   "country": "Benin",
+   "measured": 0,
+   "total_energy_twh": 31.41,
+   "electricity_twh": 1.01,
+   "population": 14462721
+  },
+  {
+   "iso": "BMU",
+   "country": "Bermuda",
+   "measured": 0,
+   "total_energy_twh": 2.41,
+   "electricity_twh": 0.61,
+   "population": 64660
+  },
+  {
+   "iso": "BTN",
+   "country": "Bhutan",
+   "measured": 0,
+   "total_energy_twh": 17.8,
+   "electricity_twh": 11.0,
+   "population": 791530
+  },
+  {
+   "iso": "BOL",
+   "country": "Bolivia",
+   "measured": 0,
+   "total_energy_twh": 116.44,
+   "electricity_twh": 13.53,
+   "population": 12413318
+  },
+  {
+   "iso": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "measured": 0,
+   "total_energy_twh": 87.51,
+   "electricity_twh": 15.49,
+   "population": 3164256
+  },
+  {
+   "iso": "BWA",
+   "country": "Botswana",
+   "measured": 0,
+   "total_energy_twh": 24.73,
+   "electricity_twh": 3.43,
+   "population": 2521145
+  },
+  {
+   "iso": "BRA",
+   "country": "Brazil",
+   "measured": 1,
+   "total_energy_twh": 3048.16,
+   "electricity_twh": 745.72,
+   "population": 211998565
+  },
+  {
+   "iso": "VGB",
+   "country": "British Virgin Islands",
+   "measured": 0,
+   "total_energy_twh": 0.79,
+   "electricity_twh": null,
+   "population": 39498
+  },
+  {
+   "iso": "BRN",
+   "country": "Brunei",
+   "measured": 0,
+   "total_energy_twh": 56.44,
+   "electricity_twh": 5.56,
+   "population": 462734
+  },
+  {
+   "iso": "BGR",
+   "country": "Bulgaria",
+   "measured": 1,
+   "total_energy_twh": 189.53,
+   "electricity_twh": 38.3,
+   "population": 6757686
+  },
+  {
+   "iso": "BFA",
+   "country": "Burkina Faso",
+   "measured": 0,
+   "total_energy_twh": 25.02,
+   "electricity_twh": 1.69,
+   "population": 23548782
+  },
+  {
+   "iso": "BDI",
+   "country": "Burundi",
+   "measured": 0,
+   "total_energy_twh": 3.91,
+   "electricity_twh": 0.49,
+   "population": 14047788
+  },
+  {
+   "iso": "KHM",
+   "country": "Cambodia",
+   "measured": 0,
+   "total_energy_twh": 87.63,
+   "electricity_twh": 15.48,
+   "population": 17638804
+  },
+  {
+   "iso": "CMR",
+   "country": "Cameroon",
+   "measured": 0,
+   "total_energy_twh": 35.03,
+   "electricity_twh": 7.26,
+   "population": 29123748
+  },
+  {
+   "iso": "CAN",
+   "country": "Canada",
+   "measured": 1,
+   "total_energy_twh": 3299.89,
+   "electricity_twh": 636.79,
+   "population": 39742429
+  },
+  {
+   "iso": "CPV",
+   "country": "Cape Verde",
+   "measured": 0,
+   "total_energy_twh": 3.11,
+   "electricity_twh": 0.52,
+   "population": 524878
+  },
+  {
+   "iso": "CYM",
+   "country": "Cayman Islands",
+   "measured": 0,
+   "total_energy_twh": 3.55,
+   "electricity_twh": 0.71,
+   "population": 74476
+  },
+  {
+   "iso": "CAF",
+   "country": "Central African Republic",
+   "measured": 0,
+   "total_energy_twh": 1.9,
+   "electricity_twh": null,
+   "population": 5330691
+  },
+  {
+   "iso": "TCD",
+   "country": "Chad",
+   "measured": 0,
+   "total_energy_twh": 7.77,
+   "electricity_twh": 0.37,
+   "population": 20299131
+  },
+  {
+   "iso": "CHL",
+   "country": "Chile",
+   "measured": 1,
+   "total_energy_twh": 417.71,
+   "electricity_twh": 88.62,
+   "population": 19764774
+  },
+  {
+   "iso": "CHN",
+   "country": "China",
+   "measured": 1,
+   "total_energy_twh": 44106.52,
+   "electricity_twh": 10086.88,
+   "population": 1419321284
+  },
+  {
+   "iso": "COL",
+   "country": "Colombia",
+   "measured": 1,
+   "total_energy_twh": 516.08,
+   "electricity_twh": 89.14,
+   "population": 52886360
+  },
+  {
+   "iso": "COM",
+   "country": "Comoros",
+   "measured": 0,
+   "total_energy_twh": 1.58,
+   "electricity_twh": null,
+   "population": 866632
+  },
+  {
+   "iso": "COG",
+   "country": "Congo",
+   "measured": 0,
+   "total_energy_twh": 24.43,
+   "electricity_twh": 5.46,
+   "population": 6332969
+  },
+  {
+   "iso": "COK",
+   "country": "Cook Islands",
+   "measured": 0,
+   "total_energy_twh": 0.5,
+   "electricity_twh": 0.04,
+   "population": 13750
+  },
+  {
+   "iso": "CRI",
+   "country": "Costa Rica",
+   "measured": 0,
+   "total_energy_twh": 49.39,
+   "electricity_twh": 11.0,
+   "population": 5129909
+  },
+  {
+   "iso": "CIV",
+   "country": "Cote d'Ivoire",
+   "measured": 0,
+   "total_energy_twh": 83.41,
+   "electricity_twh": 10.79,
+   "population": 31934229
+  },
+  {
+   "iso": "HRV",
+   "country": "Croatia",
+   "measured": 1,
+   "total_energy_twh": 86.21,
+   "electricity_twh": 15.29,
+   "population": 3875325
+  },
+  {
+   "iso": "CUB",
+   "country": "Cuba",
+   "measured": 0,
+   "total_energy_twh": 84.26,
+   "electricity_twh": 19.43,
+   "population": 10979781
+  },
+  {
+   "iso": "CUW",
+   "country": "Curacao",
+   "measured": 0,
+   "total_energy_twh": null,
+   "electricity_twh": null,
+   "population": 185482
+  },
+  {
+   "iso": "CYP",
+   "country": "Cyprus",
+   "measured": 0,
+   "total_energy_twh": 31.53,
+   "electricity_twh": 5.79,
+   "population": 1358287
+  },
+  {
+   "iso": "CZE",
+   "country": "Czechia",
+   "measured": 1,
+   "total_energy_twh": 409.21,
+   "electricity_twh": 72.81,
+   "population": 10735857
+  },
+  {
+   "iso": "COD",
+   "country": "Democratic Republic of Congo",
+   "measured": 0,
+   "total_energy_twh": 34.14,
+   "electricity_twh": 15.92,
+   "population": 109276264
+  },
+  {
+   "iso": "DNK",
+   "country": "Denmark",
+   "measured": 1,
+   "total_energy_twh": 152.83,
+   "electricity_twh": 35.06,
+   "population": 5977417
+  },
+  {
+   "iso": "DJI",
+   "country": "Djibouti",
+   "measured": 0,
+   "total_energy_twh": 3.51,
+   "electricity_twh": 0.2,
+   "population": 1168726
+  },
+  {
+   "iso": "DMA",
+   "country": "Dominica",
+   "measured": 0,
+   "total_energy_twh": 0.77,
+   "electricity_twh": null,
+   "population": 66226
+  },
+  {
+   "iso": "DOM",
+   "country": "Dominican Republic",
+   "measured": 0,
+   "total_energy_twh": 140.02,
+   "electricity_twh": 24.03,
+   "population": 11427558
+  },
+  {
+   "iso": "TLS",
+   "country": "East Timor",
+   "measured": 0,
+   "total_energy_twh": 2.78,
+   "electricity_twh": 0.51,
+   "population": 1400638
+  },
+  {
+   "iso": "ECU",
+   "country": "Ecuador",
+   "measured": 1,
+   "total_energy_twh": 194.29,
+   "electricity_twh": 32.66,
+   "population": 18135478
+  },
+  {
+   "iso": "EGY",
+   "country": "Egypt",
+   "measured": 1,
+   "total_energy_twh": 1077.49,
+   "electricity_twh": 237.39,
+   "population": 116538256
+  },
+  {
+   "iso": "SLV",
+   "country": "El Salvador",
+   "measured": 0,
+   "total_energy_twh": 46.81,
+   "electricity_twh": 6.53,
+   "population": 6338197
+  },
+  {
+   "iso": "GNQ",
+   "country": "Equatorial Guinea",
+   "measured": 0,
+   "total_energy_twh": 31.07,
+   "electricity_twh": 1.49,
+   "population": 1892523
+  },
+  {
+   "iso": "ERI",
+   "country": "Eritrea",
+   "measured": 0,
+   "total_energy_twh": 3.14,
+   "electricity_twh": 0.45,
+   "population": 3535610
+  },
+  {
+   "iso": "EST",
+   "country": "Estonia",
+   "measured": 1,
+   "total_energy_twh": 52.95,
+   "electricity_twh": 6.26,
+   "population": 1360548
+  },
+  {
+   "iso": "SWZ",
+   "country": "Eswatini",
+   "measured": 0,
+   "total_energy_twh": 6.97,
+   "electricity_twh": 0.61,
+   "population": 1242829
+  },
+  {
+   "iso": "ETH",
+   "country": "Ethiopia",
+   "measured": 0,
+   "total_energy_twh": 90.55,
+   "electricity_twh": 25.2,
+   "population": 132059770
+  },
+  {
+   "iso": "FLK",
+   "country": "Falkland Islands",
+   "measured": 0,
+   "total_energy_twh": 0.49,
+   "electricity_twh": null,
+   "population": 3492
+  },
+  {
+   "iso": "FRO",
+   "country": "Faroe Islands",
+   "measured": 0,
+   "total_energy_twh": 3.58,
+   "electricity_twh": null,
+   "population": 55419
+  },
+  {
+   "iso": "FJI",
+   "country": "Fiji",
+   "measured": 0,
+   "total_energy_twh": 10.17,
+   "electricity_twh": 1.15,
+   "population": 928800
+  },
+  {
+   "iso": "FIN",
+   "country": "Finland",
+   "measured": 1,
+   "total_energy_twh": 298.03,
+   "electricity_twh": 82.55,
+   "population": 5617311
+  },
+  {
+   "iso": "FRA",
+   "country": "France",
+   "measured": 1,
+   "total_energy_twh": 2500.61,
+   "electricity_twh": 561.78,
+   "population": 66548532
+  },
+  {
+   "iso": "GUF",
+   "country": "French Guiana",
+   "measured": 0,
+   "total_energy_twh": 0.0,
+   "electricity_twh": null,
+   "population": 308538
+  },
+  {
+   "iso": "PYF",
+   "country": "French Polynesia",
+   "measured": 0,
+   "total_energy_twh": 5.72,
+   "electricity_twh": 0.72,
+   "population": 281816
+  },
+  {
+   "iso": "GAB",
+   "country": "Gabon",
+   "measured": 0,
+   "total_energy_twh": 17.17,
+   "electricity_twh": 2.6,
+   "population": 2538953
+  },
+  {
+   "iso": "GMB",
+   "country": "Gambia",
+   "measured": 0,
+   "total_energy_twh": 2.3,
+   "electricity_twh": 0.51,
+   "population": 2759999
+  },
+  {
+   "iso": "GEO",
+   "country": "Georgia",
+   "measured": 0,
+   "total_energy_twh": 71.58,
+   "electricity_twh": 13.93,
+   "population": 3807668
+  },
+  {
+   "iso": "DEU",
+   "country": "Germany",
+   "measured": 1,
+   "total_energy_twh": 2795.43,
+   "electricity_twh": 495.99,
+   "population": 84552234
+  },
+  {
+   "iso": "GHA",
+   "country": "Ghana",
+   "measured": 0,
+   "total_energy_twh": 112.35,
+   "electricity_twh": 24.27,
+   "population": 34427417
+  },
+  {
+   "iso": "GIB",
+   "country": "Gibraltar",
+   "measured": 0,
+   "total_energy_twh": null,
+   "electricity_twh": 0.22,
+   "population": 39351
+  },
+  {
+   "iso": "GRC",
+   "country": "Greece",
+   "measured": 1,
+   "total_energy_twh": 283.71,
+   "electricity_twh": 57.08,
+   "population": 10047813
+  },
+  {
+   "iso": "GRL",
+   "country": "Greenland",
+   "measured": 0,
+   "total_energy_twh": 2.7,
+   "electricity_twh": 0.6,
+   "population": 55864
+  },
+  {
+   "iso": "GRD",
+   "country": "Grenada",
+   "measured": 0,
+   "total_energy_twh": 1.68,
+   "electricity_twh": 0.24,
+   "population": 117218
+  },
+  {
+   "iso": "GLP",
+   "country": "Guadeloupe",
+   "measured": 0,
+   "total_energy_twh": 0.0,
+   "electricity_twh": null,
+   "population": 375113
+  },
+  {
+   "iso": "GUM",
+   "country": "Guam",
+   "measured": 0,
+   "total_energy_twh": 5.59,
+   "electricity_twh": 1.86,
+   "population": 167790
+  },
+  {
+   "iso": "GTM",
+   "country": "Guatemala",
+   "measured": 0,
+   "total_energy_twh": 99.95,
+   "electricity_twh": 15.79,
+   "population": 18406366
+  },
+  {
+   "iso": "GIN",
+   "country": "Guinea",
+   "measured": 0,
+   "total_energy_twh": 21.89,
+   "electricity_twh": 4.03,
+   "population": 14754779
+  },
+  {
+   "iso": "GNB",
+   "country": "Guinea-Bissau",
+   "measured": 0,
+   "total_energy_twh": 1.52,
+   "electricity_twh": 0.08,
+   "population": 2201360
+  },
+  {
+   "iso": "GUY",
+   "country": "Guyana",
+   "measured": 0,
+   "total_energy_twh": 16.45,
+   "electricity_twh": 1.38,
+   "population": 831092
+  },
+  {
+   "iso": "HTI",
+   "country": "Haiti",
+   "measured": 0,
+   "total_energy_twh": 7.09,
+   "electricity_twh": 0.86,
+   "population": 11772562
+  },
+  {
+   "iso": "HND",
+   "country": "Honduras",
+   "measured": 0,
+   "total_energy_twh": 56.74,
+   "electricity_twh": 12.48,
+   "population": 10825704
+  },
+  {
+   "iso": "HKG",
+   "country": "Hong Kong",
+   "measured": 1,
+   "total_energy_twh": 272.58,
+   "electricity_twh": 37.44,
+   "population": 7414914
+  },
+  {
+   "iso": "HUN",
+   "country": "Hungary",
+   "measured": 1,
+   "total_energy_twh": 252.1,
+   "electricity_twh": 38.0,
+   "population": 9676135
+  },
+  {
+   "iso": "ISL",
+   "country": "Iceland",
+   "measured": 0,
+   "total_energy_twh": 86.65,
+   "electricity_twh": 19.05,
+   "population": 393404
+  },
+  {
+   "iso": "IND",
+   "country": "India",
+   "measured": 1,
+   "total_energy_twh": 10783.03,
+   "electricity_twh": 2036.52,
+   "population": 1450935785
+  },
+  {
+   "iso": "IDN",
+   "country": "Indonesia",
+   "measured": 1,
+   "total_energy_twh": 3041.28,
+   "electricity_twh": 371.54,
+   "population": 283487933
+  },
+  {
+   "iso": "IRN",
+   "country": "Iran",
+   "measured": 1,
+   "total_energy_twh": 3666.88,
+   "electricity_twh": 395.79,
+   "population": 91567737
+  },
+  {
+   "iso": "IRQ",
+   "country": "Iraq",
+   "measured": 0,
+   "total_energy_twh": 672.19,
+   "electricity_twh": 149.73,
+   "population": 46042015
+  },
+  {
+   "iso": "IRL",
+   "country": "Ireland",
+   "measured": 1,
+   "total_energy_twh": 159.82,
+   "electricity_twh": 31.08,
+   "population": 5255016
+  },
+  {
+   "iso": "ISR",
+   "country": "Israel",
+   "measured": 1,
+   "total_energy_twh": 292.57,
+   "electricity_twh": 80.4,
+   "population": 9387015
+  },
+  {
+   "iso": "ITA",
+   "country": "Italy",
+   "measured": 1,
+   "total_energy_twh": 1548.47,
+   "electricity_twh": 267.56,
+   "population": 59342870
+  },
+  {
+   "iso": "JAM",
+   "country": "Jamaica",
+   "measured": 0,
+   "total_energy_twh": 35.5,
+   "electricity_twh": 4.92,
+   "population": 2839182
+  },
+  {
+   "iso": "JPN",
+   "country": "Japan",
+   "measured": 1,
+   "total_energy_twh": 4613.24,
+   "electricity_twh": 1016.39,
+   "population": 123753041
+  },
+  {
+   "iso": "JOR",
+   "country": "Jordan",
+   "measured": 0,
+   "total_energy_twh": 107.63,
+   "electricity_twh": 23.67,
+   "population": 11552885
+  },
+  {
+   "iso": "KAZ",
+   "country": "Kazakhstan",
+   "measured": 1,
+   "total_energy_twh": 857.9,
+   "electricity_twh": 118.51,
+   "population": 20592574
+  },
+  {
+   "iso": "KEN",
+   "country": "Kenya",
+   "measured": 0,
+   "total_energy_twh": 94.63,
+   "electricity_twh": 13.26,
+   "population": 56432946
+  },
+  {
+   "iso": "KIR",
+   "country": "Kiribati",
+   "measured": 0,
+   "total_energy_twh": 0.36,
+   "electricity_twh": 0.04,
+   "population": 134521
+  },
+  {
+   "iso": "KWT",
+   "country": "Kuwait",
+   "measured": 1,
+   "total_energy_twh": 521.61,
+   "electricity_twh": 92.49,
+   "population": 4934508
+  },
+  {
+   "iso": "KGZ",
+   "country": "Kyrgyzstan",
+   "measured": 0,
+   "total_energy_twh": 54.98,
+   "electricity_twh": 15.77,
+   "population": 7186014
+  },
+  {
+   "iso": "LAO",
+   "country": "Laos",
+   "measured": 0,
+   "total_energy_twh": 84.59,
+   "electricity_twh": 52.31,
+   "population": 7769823
+  },
+  {
+   "iso": "LVA",
+   "country": "Latvia",
+   "measured": 1,
+   "total_energy_twh": 32.82,
+   "electricity_twh": 6.33,
+   "population": 1871874
+  },
+  {
+   "iso": "LBN",
+   "country": "Lebanon",
+   "measured": 0,
+   "total_energy_twh": 71.36,
+   "electricity_twh": 5.34,
+   "population": 5805962
+  },
+  {
+   "iso": "LSO",
+   "country": "Lesotho",
+   "measured": 0,
+   "total_energy_twh": 3.93,
+   "electricity_twh": 0.0,
+   "population": 2337428
+  },
+  {
+   "iso": "LBR",
+   "country": "Liberia",
+   "measured": 0,
+   "total_energy_twh": 3.2,
+   "electricity_twh": 0.57,
+   "population": 5612813
+  },
+  {
+   "iso": "LBY",
+   "country": "Libya",
+   "measured": 0,
+   "total_energy_twh": 246.25,
+   "electricity_twh": 34.59,
+   "population": 7381029
+  },
+  {
+   "iso": "LTU",
+   "country": "Lithuania",
+   "measured": 1,
+   "total_energy_twh": 65.68,
+   "electricity_twh": 7.39,
+   "population": 2859112
+  },
+  {
+   "iso": "LUX",
+   "country": "Luxembourg",
+   "measured": 1,
+   "total_energy_twh": 35.87,
+   "electricity_twh": 1.51,
+   "population": 673042
+  },
+  {
+   "iso": "MAC",
+   "country": "Macao",
+   "measured": 0,
+   "total_energy_twh": 13.98,
+   "electricity_twh": 0.78,
+   "population": 720270
+  },
+  {
+   "iso": "MDG",
+   "country": "Madagascar",
+   "measured": 0,
+   "total_energy_twh": 16.42,
+   "electricity_twh": 2.43,
+   "population": 31964960
+  },
+  {
+   "iso": "MWI",
+   "country": "Malawi",
+   "measured": 0,
+   "total_energy_twh": 8.64,
+   "electricity_twh": 1.83,
+   "population": 21655288
+  },
+  {
+   "iso": "MYS",
+   "country": "Malaysia",
+   "measured": 1,
+   "total_energy_twh": 1324.42,
+   "electricity_twh": 198.12,
+   "population": 35557670
+  },
+  {
+   "iso": "MDV",
+   "country": "Maldives",
+   "measured": 0,
+   "total_energy_twh": 7.75,
+   "electricity_twh": 0.85,
+   "population": 527801
+  },
+  {
+   "iso": "MLI",
+   "country": "Mali",
+   "measured": 0,
+   "total_energy_twh": 29.03,
+   "electricity_twh": 5.96,
+   "population": 24478597
+  },
+  {
+   "iso": "MLT",
+   "country": "Malta",
+   "measured": 0,
+   "total_energy_twh": 36.33,
+   "electricity_twh": 2.19,
+   "population": 539612
+  },
+  {
+   "iso": "MTQ",
+   "country": "Martinique",
+   "measured": 0,
+   "total_energy_twh": 0.0,
+   "electricity_twh": null,
+   "population": 343201
+  },
+  {
+   "iso": "MRT",
+   "country": "Mauritania",
+   "measured": 0,
+   "total_energy_twh": 19.68,
+   "electricity_twh": 2.07,
+   "population": 5169403
+  },
+  {
+   "iso": "MUS",
+   "country": "Mauritius",
+   "measured": 0,
+   "total_energy_twh": 23.96,
+   "electricity_twh": 3.41,
+   "population": 1271171
+  },
+  {
+   "iso": "MEX",
+   "country": "Mexico",
+   "measured": 1,
+   "total_energy_twh": 2189.65,
+   "electricity_twh": 355.18,
+   "population": 130861001
+  },
+  {
+   "iso": "FSM",
+   "country": "Micronesia (country)",
+   "measured": 0,
+   "total_energy_twh": 0.7,
+   "electricity_twh": null,
+   "population": 113171
+  },
+  {
+   "iso": "MDA",
+   "country": "Moldova",
+   "measured": 0,
+   "total_energy_twh": 35.96,
+   "electricity_twh": 6.07,
+   "population": 3034967
+  },
+  {
+   "iso": "MNG",
+   "country": "Mongolia",
+   "measured": 0,
+   "total_energy_twh": 76.83,
+   "electricity_twh": 8.82,
+   "population": 3475541
+  },
+  {
+   "iso": "MNE",
+   "country": "Montenegro",
+   "measured": 0,
+   "total_energy_twh": 11.83,
+   "electricity_twh": 3.53,
+   "population": 638481
+  },
+  {
+   "iso": "MSR",
+   "country": "Montserrat",
+   "measured": 0,
+   "total_energy_twh": 0.19,
+   "electricity_twh": 0.01,
+   "population": 4414
+  },
+  {
+   "iso": "MAR",
+   "country": "Morocco",
+   "measured": 1,
+   "total_energy_twh": 262.75,
+   "electricity_twh": 42.4,
+   "population": 38081176
+  },
+  {
+   "iso": "MOZ",
+   "country": "Mozambique",
+   "measured": 0,
+   "total_energy_twh": 61.01,
+   "electricity_twh": 19.79,
+   "population": 34631767
+  },
+  {
+   "iso": "MMR",
+   "country": "Myanmar",
+   "measured": 0,
+   "total_energy_twh": 140.26,
+   "electricity_twh": 21.71,
+   "population": 54500086
+  },
+  {
+   "iso": "NAM",
+   "country": "Namibia",
+   "measured": 0,
+   "total_energy_twh": 18.96,
+   "electricity_twh": 1.64,
+   "population": 3030127
+  },
+  {
+   "iso": "NRU",
+   "country": "Nauru",
+   "measured": 0,
+   "total_energy_twh": 0.38,
+   "electricity_twh": 0.05,
+   "population": 11968
+  },
+  {
+   "iso": "NPL",
+   "country": "Nepal",
+   "measured": 0,
+   "total_energy_twh": 52.67,
+   "electricity_twh": 11.13,
+   "population": 29651054
+  },
+  {
+   "iso": "NLD",
+   "country": "Netherlands",
+   "measured": 1,
+   "total_energy_twh": 875.35,
+   "electricity_twh": 122.33,
+   "population": 18228740
+  },
+  {
+   "iso": "ANT",
+   "country": "Netherlands Antilles",
+   "measured": 0,
+   "total_energy_twh": 29.41,
+   "electricity_twh": null,
+   "population": null
+  },
+  {
+   "iso": "NCL",
+   "country": "New Caledonia",
+   "measured": 0,
+   "total_energy_twh": 14.05,
+   "electricity_twh": 3.12,
+   "population": 292655
+  },
+  {
+   "iso": "NZL",
+   "country": "New Zealand",
+   "measured": 1,
+   "total_energy_twh": 258.03,
+   "electricity_twh": 44.01,
+   "population": 5213942
+  },
+  {
+   "iso": "NIC",
+   "country": "Nicaragua",
+   "measured": 0,
+   "total_energy_twh": 26.44,
+   "electricity_twh": 4.52,
+   "population": 6916136
+  },
+  {
+   "iso": "NER",
+   "country": "Niger",
+   "measured": 0,
+   "total_energy_twh": 13.82,
+   "electricity_twh": 0.95,
+   "population": 27032417
+  },
+  {
+   "iso": "NGA",
+   "country": "Nigeria",
+   "measured": 0,
+   "total_energy_twh": 514.91,
+   "electricity_twh": 37.56,
+   "population": 232679482
+  },
+  {
+   "iso": "NIU",
+   "country": "Niue",
+   "measured": 0,
+   "total_energy_twh": 0.03,
+   "electricity_twh": null,
+   "population": 1841
+  },
+  {
+   "iso": "PRK",
+   "country": "North Korea",
+   "measured": 0,
+   "total_energy_twh": 193.47,
+   "electricity_twh": 27.1,
+   "population": 26498832
+  },
+  {
+   "iso": "MKD",
+   "country": "North Macedonia",
+   "measured": 1,
+   "total_energy_twh": 26.74,
+   "electricity_twh": 6.31,
+   "population": 1823011
+  },
+  {
+   "iso": "MNP",
+   "country": "Northern Mariana Islands",
+   "measured": 0,
+   "total_energy_twh": 0.0,
+   "electricity_twh": null,
+   "population": 44299
+  },
+  {
+   "iso": "NOR",
+   "country": "Norway",
+   "measured": 1,
+   "total_energy_twh": 305.24,
+   "electricity_twh": 157.11,
+   "population": 5576656
+  },
+  {
+   "iso": "OMN",
+   "country": "Oman",
+   "measured": 1,
+   "total_energy_twh": 452.41,
+   "electricity_twh": 49.1,
+   "population": 5281542
+  },
+  {
+   "iso": "PAK",
+   "country": "Pakistan",
+   "measured": 1,
+   "total_energy_twh": 849.82,
+   "electricity_twh": 174.96,
+   "population": 251269160
+  },
+  {
+   "iso": "PSE",
+   "country": "Palestine",
+   "measured": 0,
+   "total_energy_twh": 27.04,
+   "electricity_twh": 0.99,
+   "population": 5495447
+  },
+  {
+   "iso": "PAN",
+   "country": "Panama",
+   "measured": 0,
+   "total_energy_twh": 104.36,
+   "electricity_twh": 13.43,
+   "population": 4515576
+  },
+  {
+   "iso": "PNG",
+   "country": "Papua New Guinea",
+   "measured": 0,
+   "total_energy_twh": 32.75,
+   "electricity_twh": 4.73,
+   "population": 10576509
+  },
+  {
+   "iso": "PRY",
+   "country": "Paraguay",
+   "measured": 0,
+   "total_energy_twh": 54.8,
+   "electricity_twh": 42.41,
+   "population": 6929152
+  },
+  {
+   "iso": "PER",
+   "country": "Peru",
+   "measured": 1,
+   "total_energy_twh": 312.94,
+   "electricity_twh": 59.29,
+   "population": 34217850
+  },
+  {
+   "iso": "PHL",
+   "country": "Philippines",
+   "measured": 1,
+   "total_energy_twh": 729.8,
+   "electricity_twh": 124.17,
+   "population": 115843663
+  },
+  {
+   "iso": "POL",
+   "country": "Poland",
+   "measured": 1,
+   "total_energy_twh": 1058.97,
+   "electricity_twh": 172.12,
+   "population": 38539209
+  },
+  {
+   "iso": "PRT",
+   "country": "Portugal",
+   "measured": 1,
+   "total_energy_twh": 214.47,
+   "electricity_twh": 47.27,
+   "population": 10425291
+  },
+  {
+   "iso": "PRI",
+   "country": "Puerto Rico",
+   "measured": 0,
+   "total_energy_twh": 89.3,
+   "electricity_twh": 20.0,
+   "population": 3242212
+  },
+  {
+   "iso": "QAT",
+   "country": "Qatar",
+   "measured": 1,
+   "total_energy_twh": 632.06,
+   "electricity_twh": 56.68,
+   "population": 3048429
+  },
+  {
+   "iso": "REU",
+   "country": "Reunion",
+   "measured": 0,
+   "total_energy_twh": 0.0,
+   "electricity_twh": null,
+   "population": 878595
+  },
+  {
+   "iso": "ROU",
+   "country": "Romania",
+   "measured": 1,
+   "total_energy_twh": 322.43,
+   "electricity_twh": 52.72,
+   "population": 19015096
+  },
+  {
+   "iso": "RUS",
+   "country": "Russia",
+   "measured": 1,
+   "total_energy_twh": 8716.72,
+   "electricity_twh": 1209.31,
+   "population": 144820421
+  },
+  {
+   "iso": "RWA",
+   "country": "Rwanda",
+   "measured": 0,
+   "total_energy_twh": 7.86,
+   "electricity_twh": 1.13,
+   "population": 14256573
+  },
+  {
+   "iso": "SHN",
+   "country": "Saint Helena",
+   "measured": 0,
+   "total_energy_twh": 0.04,
+   "electricity_twh": null,
+   "population": 5262
+  },
+  {
+   "iso": "KNA",
+   "country": "Saint Kitts and Nevis",
+   "measured": 0,
+   "total_energy_twh": 1.17,
+   "electricity_twh": 0.23,
+   "population": 46867
+  },
+  {
+   "iso": "LCA",
+   "country": "Saint Lucia",
+   "measured": 0,
+   "total_energy_twh": 2.65,
+   "electricity_twh": 0.4,
+   "population": 179751
+  },
+  {
+   "iso": "SPM",
+   "country": "Saint Pierre and Miquelon",
+   "measured": 0,
+   "total_energy_twh": 0.3,
+   "electricity_twh": null,
+   "population": 5652
+  },
+  {
+   "iso": "VCT",
+   "country": "Saint Vincent and the Grenadines",
+   "measured": 0,
+   "total_energy_twh": 1.14,
+   "electricity_twh": 0.15,
+   "population": 100630
+  },
+  {
+   "iso": "WSM",
+   "country": "Samoa",
+   "measured": 0,
+   "total_energy_twh": 1.45,
+   "electricity_twh": 0.16,
+   "population": 218031
+  },
+  {
+   "iso": "STP",
+   "country": "Sao Tome and Principe",
+   "measured": 0,
+   "total_energy_twh": 0.74,
+   "electricity_twh": null,
+   "population": 235548
+  },
+  {
+   "iso": "SAU",
+   "country": "Saudi Arabia",
+   "measured": 1,
+   "total_energy_twh": 3279.69,
+   "electricity_twh": 454.64,
+   "population": 33962751
+  },
+  {
+   "iso": "SEN",
+   "country": "Senegal",
+   "measured": 0,
+   "total_energy_twh": 49.96,
+   "electricity_twh": 7.63,
+   "population": 18501988
+  },
+  {
+   "iso": "SRB",
+   "country": "Serbia",
+   "measured": 0,
+   "total_energy_twh": 169.88,
+   "electricity_twh": 36.96,
+   "population": 6736217
+  },
+  {
+   "iso": "SYC",
+   "country": "Seychelles",
+   "measured": 0,
+   "total_energy_twh": 4.12,
+   "electricity_twh": 0.63,
+   "population": 130436
+  },
+  {
+   "iso": "SLE",
+   "country": "Sierra Leone",
+   "measured": 0,
+   "total_energy_twh": 6.97,
+   "electricity_twh": 0.21,
+   "population": 8642029
+  },
+  {
+   "iso": "SGP",
+   "country": "Singapore",
+   "measured": 1,
+   "total_energy_twh": 1021.83,
+   "electricity_twh": 59.61,
+   "population": 5832387
+  },
+  {
+   "iso": "SVK",
+   "country": "Slovakia",
+   "measured": 1,
+   "total_energy_twh": 178.18,
+   "electricity_twh": 29.52,
+   "population": 5506759
+  },
+  {
+   "iso": "SVN",
+   "country": "Slovenia",
+   "measured": 1,
+   "total_energy_twh": 70.92,
+   "electricity_twh": 16.71,
+   "population": 2118692
+  },
+  {
+   "iso": "SLB",
+   "country": "Solomon Islands",
+   "measured": 0,
+   "total_energy_twh": 1.34,
+   "electricity_twh": 0.11,
+   "population": 819206
+  },
+  {
+   "iso": "SOM",
+   "country": "Somalia",
+   "measured": 0,
+   "total_energy_twh": 6.79,
+   "electricity_twh": 0.43,
+   "population": 19009155
+  },
+  {
+   "iso": "ZAF",
+   "country": "South Africa",
+   "measured": 1,
+   "total_energy_twh": 1402.37,
+   "electricity_twh": 247.52,
+   "population": 64007187
+  },
+  {
+   "iso": "KOR",
+   "country": "South Korea",
+   "measured": 1,
+   "total_energy_twh": 3660.23,
+   "electricity_twh": 625.38,
+   "population": 51717587
+  },
+  {
+   "iso": "SSD",
+   "country": "South Sudan",
+   "measured": 0,
+   "total_energy_twh": 7.3,
+   "electricity_twh": 0.56,
+   "population": 11943410
+  },
+  {
+   "iso": "ESP",
+   "country": "Spain",
+   "measured": 1,
+   "total_energy_twh": 1412.95,
+   "electricity_twh": 280.94,
+   "population": 47910533
+  },
+  {
+   "iso": "LKA",
+   "country": "Sri Lanka",
+   "measured": 0,
+   "total_energy_twh": 95.81,
+   "electricity_twh": 17.07,
+   "population": 23103561
+  },
+  {
+   "iso": "SDN",
+   "country": "Sudan",
+   "measured": 0,
+   "total_energy_twh": 64.65,
+   "electricity_twh": 14.77,
+   "population": 50448960
+  },
+  {
+   "iso": "SUR",
+   "country": "Suriname",
+   "measured": 0,
+   "total_energy_twh": 9.85,
+   "electricity_twh": 1.74,
+   "population": 634438
+  },
+  {
+   "iso": "SWE",
+   "country": "Sweden",
+   "measured": 1,
+   "total_energy_twh": 468.72,
+   "electricity_twh": 172.15,
+   "population": 10606993
+  },
+  {
+   "iso": "CHE",
+   "country": "Switzerland",
+   "measured": 1,
+   "total_energy_twh": 267.26,
+   "electricity_twh": 78.37,
+   "population": 8921979
+  },
+  {
+   "iso": "SYR",
+   "country": "Syria",
+   "measured": 0,
+   "total_energy_twh": 116.61,
+   "electricity_twh": 24.88,
+   "population": 24672758
+  },
+  {
+   "iso": "TWN",
+   "country": "Taiwan",
+   "measured": 1,
+   "total_energy_twh": 1200.44,
+   "electricity_twh": 288.56,
+   "population": 23213964
+  },
+  {
+   "iso": "TJK",
+   "country": "Tajikistan",
+   "measured": 0,
+   "total_energy_twh": 53.4,
+   "electricity_twh": 22.2,
+   "population": 10590930
+  },
+  {
+   "iso": "TZA",
+   "country": "Tanzania",
+   "measured": 0,
+   "total_energy_twh": 79.19,
+   "electricity_twh": 8.84,
+   "population": 68560162
+  },
+  {
+   "iso": "THA",
+   "country": "Thailand",
+   "measured": 1,
+   "total_energy_twh": 1436.95,
+   "electricity_twh": 199.52,
+   "population": 71668010
+  },
+  {
+   "iso": "TGO",
+   "country": "Togo",
+   "measured": 0,
+   "total_energy_twh": 12.77,
+   "electricity_twh": 0.71,
+   "population": 8406554
+  },
+  {
+   "iso": "TON",
+   "country": "Tonga",
+   "measured": 0,
+   "total_energy_twh": 0.92,
+   "electricity_twh": 0.07,
+   "population": 104192
+  },
+  {
+   "iso": "TTO",
+   "country": "Trinidad and Tobago",
+   "measured": 1,
+   "total_energy_twh": 161.55,
+   "electricity_twh": 9.55,
+   "population": 1507778
+  },
+  {
+   "iso": "TUN",
+   "country": "Tunisia",
+   "measured": 0,
+   "total_energy_twh": 123.07,
+   "electricity_twh": 21.37,
+   "population": 12277103
+  },
+  {
+   "iso": "TUR",
+   "country": "Turkey",
+   "measured": 1,
+   "total_energy_twh": 1945.98,
+   "electricity_twh": 341.23,
+   "population": 87473800
+  },
+  {
+   "iso": "TKM",
+   "country": "Turkmenistan",
+   "measured": 0,
+   "total_energy_twh": 384.41,
+   "electricity_twh": 33.01,
+   "population": 7494494
+  },
+  {
+   "iso": "TCA",
+   "country": "Turks and Caicos Islands",
+   "measured": 0,
+   "total_energy_twh": 1.91,
+   "electricity_twh": 0.27,
+   "population": 46563
+  },
+  {
+   "iso": "TUV",
+   "country": "Tuvalu",
+   "measured": 0,
+   "total_energy_twh": 0.0,
+   "electricity_twh": null,
+   "population": 9669
+  },
+  {
+   "iso": "UGA",
+   "country": "Uganda",
+   "measured": 0,
+   "total_energy_twh": 31.86,
+   "electricity_twh": 5.81,
+   "population": 50015091
+  },
+  {
+   "iso": "UKR",
+   "country": "Ukraine",
+   "measured": 1,
+   "total_energy_twh": 631.76,
+   "electricity_twh": null,
+   "population": 37860221
+  },
+  {
+   "iso": "ARE",
+   "country": "United Arab Emirates",
+   "measured": 1,
+   "total_energy_twh": 1410.76,
+   "electricity_twh": 177.26,
+   "population": 11027135
+  },
+  {
+   "iso": "GBR",
+   "country": "United Kingdom",
+   "measured": 1,
+   "total_energy_twh": 1770.69,
+   "electricity_twh": 284.16,
+   "population": 69138185
+  },
+  {
+   "iso": "USA",
+   "country": "United States",
+   "measured": 1,
+   "total_energy_twh": 25567.9,
+   "electricity_twh": 4391.02,
+   "population": 345426566
+  },
+  {
+   "iso": "VIR",
+   "country": "United States Virgin Islands",
+   "measured": 0,
+   "total_energy_twh": 9.86,
+   "electricity_twh": null,
+   "population": 84919
+  },
+  {
+   "iso": "URY",
+   "country": "Uruguay",
+   "measured": 0,
+   "total_energy_twh": 53.51,
+   "electricity_twh": 13.37,
+   "population": 3386583
+  },
+  {
+   "iso": "UZB",
+   "country": "Uzbekistan",
+   "measured": 1,
+   "total_energy_twh": 574.03,
+   "electricity_twh": 81.5,
+   "population": 36361859
+  },
+  {
+   "iso": "VUT",
+   "country": "Vanuatu",
+   "measured": 0,
+   "total_energy_twh": 1.35,
+   "electricity_twh": null,
+   "population": 327786
+  },
+  {
+   "iso": "VEN",
+   "country": "Venezuela",
+   "measured": 1,
+   "total_energy_twh": 571.3,
+   "electricity_twh": 80.13,
+   "population": 28405544
+  },
+  {
+   "iso": "VNM",
+   "country": "Vietnam",
+   "measured": 1,
+   "total_energy_twh": 1258.57,
+   "electricity_twh": 303.58,
+   "population": 100987685
+  },
+  {
+   "iso": "ESH",
+   "country": "Western Sahara",
+   "measured": 0,
+   "total_energy_twh": 1.24,
+   "electricity_twh": null,
+   "population": 590515
+  },
+  {
+   "iso": "YEM",
+   "country": "Yemen",
+   "measured": 0,
+   "total_energy_twh": 61.6,
+   "electricity_twh": 5.25,
+   "population": 40583173
+  },
+  {
+   "iso": "ZMB",
+   "country": "Zambia",
+   "measured": 0,
+   "total_energy_twh": 50.97,
+   "electricity_twh": 19.72,
+   "population": 21314962
+  },
+  {
+   "iso": "ZWE",
+   "country": "Zimbabwe",
+   "measured": 0,
+   "total_energy_twh": 67.52,
+   "electricity_twh": 10.26,
+   "population": 16634366
+  }
+ ],
+ "summary": {
+  "measured": 74,
+  "not_measured": 146,
+  "total_countries": 220,
+  "pop_share_not_measured_pct": 21.8,
+  "with_total_energy": 218,
+  "with_electricity": 196,
+  "know_total_not_mix": 144,
+  "africa_measured": 4,
+  "africa_total": 54,
+  "africa_measured_names": [
+   "Algeria",
+   "Egypt",
+   "Morocco",
+   "South Africa"
+  ]
+ }
+}

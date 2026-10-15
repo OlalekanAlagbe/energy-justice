@@ -1,0 +1,327 @@
+/* ==========================================================================
+   Energy Justice, site layout
+   Depends on tokens.css for every colour and face. Nothing here hard-codes a
+   colour. Specificity is kept flat: one class per component, no element
+   selectors fighting class selectors over spacing.
+   ========================================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---- skip link ---------------------------------------------------------- */
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--ink); color: var(--ground);
+  padding: 0.75rem 1rem; font-family: var(--font-mono); font-size: 0.8125rem;
+}
+.skip:focus { left: 0; }
+
+/* ---- theme toggle ------------------------------------------------------- */
+.theme-toggle {
+  position: fixed; top: 1rem; right: 1rem; z-index: 60;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: var(--surface); color: var(--ink-soft);
+  border: 1px solid var(--rule);
+  padding: 0.45rem 0.7rem;
+  font-family: var(--font-mono); font-size: 0.6875rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--ink); border-color: var(--rule-firm); }
+.theme-toggle:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.theme-toggle .icon { width: 0.875rem; height: 0.875rem; display: block; }
+
+/* ---- side navigation ---------------------------------------------------- */
+.sidenav {
+  position: fixed; inset: 0 auto 0 0; width: var(--nav-w); z-index: 50;
+  background: var(--ground);
+  border-right: 1px solid var(--rule);
+  padding: 2.5rem 1.25rem;
+  overflow-y: auto;
+}
+.sidenav-brand {
+  font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--teal); margin: 0 0 0.35rem;
+}
+.sidenav-sub {
+  font-family: var(--font-mono); font-size: 0.65rem;
+  color: var(--ink-mute); margin: 0 0 2rem; line-height: 1.5;
+}
+.sidenav-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.1rem; }
+.sidenav-link {
+  display: grid; grid-template-columns: 1.6rem 1fr; gap: 0.3rem;
+  padding: 0.5rem 0.4rem;
+  color: var(--ink-mute); text-decoration: none;
+  font-size: 0.8125rem; line-height: 1.3;
+  border-left: 2px solid transparent;
+}
+.sidenav-link .n {
+  font-family: var(--font-mono); font-size: 0.6875rem;
+  font-variant-numeric: tabular-nums; padding-top: 0.1em;
+}
+.sidenav-link:hover { color: var(--ink-soft); background: var(--surface-2); }
+.sidenav-link:focus-visible { outline: 2px solid var(--teal); outline-offset: -2px; }
+.sidenav-link.is-current {
+  color: var(--ink); border-left-color: var(--teal); background: var(--surface);
+}
+.sidenav-link.is-current .n { color: var(--teal); }
+.sidenav-foot {
+  margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule);
+  font-family: var(--font-mono); font-size: 0.65rem; line-height: 1.6;
+  color: var(--ink-mute);
+}
+.sidenav-foot a { color: var(--ink-soft); }
+
+/* ---- main column -------------------------------------------------------- */
+.main { margin-left: var(--nav-w); }
+.wrap {
+  max-width: var(--sheet-max);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 4vw, 2.5rem) 7rem;
+}
+
+/* ---- hero --------------------------------------------------------------- */
+.hero { border-bottom: 2px solid var(--ink); padding-bottom: 2rem; margin-bottom: 1rem; }
+.hero-kicker {
+  font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--teal); margin: 0 0 1.25rem;
+}
+.hero h1 {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(2.1rem, 6.5vw, 3.5rem); line-height: 1.03;
+  letter-spacing: -0.016em; text-wrap: balance; margin: 0 0 1.125rem;
+}
+.hero-stand {
+  font-family: var(--font-display);
+  font-size: clamp(1.0625rem, 2.5vw, 1.375rem); line-height: 1.5;
+  color: var(--ink-soft); max-width: 44ch; margin: 0 0 1.75rem; text-wrap: pretty;
+}
+.hero-meta {
+  display: flex; flex-wrap: wrap; gap: 0.4rem 2rem;
+  font-family: var(--font-mono); font-size: 0.75rem; color: var(--ink-mute);
+}
+.hero-meta b { color: var(--ink-soft); font-weight: 500; }
+
+/* ---- chapter ------------------------------------------------------------ */
+.chapter { padding-top: 4.5rem; scroll-margin-top: 1rem; }
+.chapter:first-of-type { padding-top: 2.75rem; }
+.chapter:first-of-type .chapter-head { border-top: none; padding-top: 0; }
+.chapter-head { border-top: 1px solid var(--rule); padding-top: 1.5rem; margin-bottom: 1.5rem; }
+.chapter-eyebrow {
+  display: flex; align-items: baseline; gap: 0.6rem;
+  font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-mute); margin: 0 0 0.875rem;
+}
+.chapter-eyebrow .n { color: var(--teal); font-weight: 600; font-variant-numeric: tabular-nums; }
+.chapter h2 {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(1.6rem, 4.2vw, 2.4rem); line-height: 1.1;
+  letter-spacing: -0.012em; text-wrap: balance; margin: 0;
+}
+.claim {
+  font-family: var(--font-display);
+  font-size: clamp(1.0625rem, 2.3vw, 1.25rem); line-height: 1.55;
+  color: var(--ink); max-width: 50ch; margin: 1.125rem 0 0;
+  padding-left: 1rem; border-left: 3px solid var(--teal);
+  text-wrap: pretty;
+}
+
+/* ---- prose -------------------------------------------------------------- */
+.prose { max-width: var(--measure); }
+.prose p { margin: 0 0 1.125rem; text-wrap: pretty; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { font-weight: 600; color: var(--ink); }
+.prose a { color: var(--teal); text-underline-offset: 2px; }
+.mono {
+  font-family: var(--font-mono); font-size: 0.86em;
+  background: var(--surface-2); padding: 0.1em 0.35em; border-radius: 3px;
+  color: var(--ink-soft);
+}
+.num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* ---- figure block ------------------------------------------------------- */
+.fig {
+  background: var(--surface); border: 1px solid var(--rule);
+  margin: 2rem 0; padding: 1.25rem clamp(0.875rem, 2.5vw, 1.5rem) 1.125rem;
+}
+.fig-head { margin-bottom: 1rem; }
+.fig-title {
+  font-family: var(--font-body); font-weight: 600; font-size: 0.9375rem;
+  line-height: 1.35; color: var(--ink); margin: 0 0 0.3rem; text-wrap: balance;
+}
+.fig-sub {
+  font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--ink-mute); margin: 0; line-height: 1.5;
+}
+.plot { width: 100%; }
+.plot-map { aspect-ratio: 2.15 / 1; min-height: 240px; width: 100%; }
+.plot-line { height: clamp(260px, 42vw, 360px); }
+.plot-scatter { height: clamp(320px, 50vw, 440px); }
+.plot-area { height: clamp(280px, 44vw, 380px); }
+
+/* custom legend, used instead of Plotly's so it wears site type */
+.legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin: 0.875rem 0 0; }
+.legend-item {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font-family: var(--font-mono); font-size: 0.6875rem; color: var(--ink-soft);
+}
+.legend-swatch {
+  width: 0.875rem; height: 0.875rem; flex: none; border: 1px solid var(--rule);
+}
+.legend-swatch.is-line { height: 0.1875rem; width: 1.125rem; border: none; }
+.legend-swatch.is-dash {
+  height: 0; width: 1.125rem; border: none;
+  border-top: 2px dashed var(--mark-mute); background: none;
+}
+
+.fig-foot {
+  margin: 1rem 0 0; padding-top: 0.75rem; border-top: 1px solid var(--rule);
+  font-family: var(--font-mono); font-size: 0.6875rem; line-height: 1.6;
+  color: var(--ink-mute);
+}
+.fig-foot p { margin: 0 0 0.35rem; }
+.fig-foot p:last-child { margin-bottom: 0; }
+.fig-foot .label {
+  color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.07em;
+}
+.fig-foot.is-caveat { border-top-color: var(--amber); }
+
+/* ---- stat row ----------------------------------------------------------- */
+.stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 2rem 0;
+}
+.stat { background: var(--surface); padding: 1rem 1.125rem; }
+.stat-label {
+  display: block; font-family: var(--font-mono); font-size: 0.6875rem;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-mute);
+  margin: 0 0 0.45rem; line-height: 1.35; min-height: 2.7em;
+}
+.stat-value {
+  display: block; font-family: var(--font-display); font-weight: 600;
+  font-size: 1.75rem; line-height: 1; font-variant-numeric: tabular-nums; color: var(--ink);
+}
+.stat-value.is-teal { color: var(--teal); }
+.stat-value.is-amber { color: var(--amber); }
+.stat-unit { font-family: var(--font-body); font-size: 0.8125rem; font-weight: 400; color: var(--ink-mute); }
+.stat-note { font-size: 0.75rem; color: var(--ink-mute); margin: 0.4rem 0 0; line-height: 1.4; }
+
+/* ---- CSS bars, same component as the Step 3 memo ------------------------ */
+.bars { display: flex; flex-direction: column; gap: 0.625rem; }
+.bar-row { display: grid; grid-template-columns: minmax(6rem, 9rem) 1fr; gap: 0.75rem; align-items: center; }
+.bar-name { font-size: 0.8125rem; color: var(--ink-soft); line-height: 1.3; text-align: right; }
+.bar-row.is-hl .bar-name { color: var(--amber); font-weight: 600; }
+.bar-track { display: flex; align-items: center; gap: 0.5rem; min-width: 0; }
+.bar-fill { height: 14px; background: var(--teal); border-radius: 0 4px 4px 0; min-width: 2px; flex: none; }
+.bar-row.is-hl .bar-fill { background: var(--amber); }
+.bar-fill.is-ghost { background: var(--rule-firm); }
+.bar-val {
+  font-family: var(--font-mono); font-size: 0.78125rem;
+  font-variant-numeric: tabular-nums; color: var(--ink-soft); white-space: nowrap;
+}
+.bar-row.is-hl .bar-val { color: var(--amber); font-weight: 500; }
+
+/* ---- table view, the relief a contrast warning obliges ------------------ */
+.table-wrap { overflow-x: auto; margin: 1.25rem 0 0; border: 1px solid var(--rule); background: var(--surface); }
+.table-wrap table { border-collapse: collapse; width: 100%; font-size: 0.8125rem; min-width: 26rem; }
+.table-wrap caption {
+  font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--ink-mute); text-align: left;
+  padding: 0.875rem 1rem 0.5rem; line-height: 1.4;
+}
+.table-wrap th, .table-wrap td { padding: 0.5rem 1rem; text-align: left; border-top: 1px solid var(--rule); }
+.table-wrap thead th {
+  font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 500;
+  letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-mute);
+  border-top: 1px solid var(--rule-firm); white-space: nowrap;
+}
+.table-wrap td.is-num, .table-wrap th.is-num {
+  text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums;
+}
+.table-wrap tbody tr.is-hl { background: var(--amber-wash); }
+.table-wrap tbody tr.is-hl td { color: var(--amber); font-weight: 500; }
+
+details.table-toggle { margin: 1rem 0 0; }
+details.table-toggle > summary {
+  font-family: var(--font-mono); font-size: 0.6875rem; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--ink-mute); cursor: pointer; padding: 0.3rem 0;
+}
+details.table-toggle > summary:hover { color: var(--ink-soft); }
+details.table-toggle > summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+/* ---- callout and methodology note --------------------------------------- */
+.callout {
+  background: var(--teal-wash); border: 1px solid var(--rule);
+  border-left: 3px solid var(--teal); padding: 1.125rem 1.25rem; margin: 2rem 0;
+}
+.callout h3 {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.0625rem;
+  margin: 0 0 0.5rem; line-height: 1.3;
+}
+.callout p { margin: 0 0 0.75rem; font-size: 0.9375rem; max-width: var(--measure); }
+.callout p:last-child { margin-bottom: 0; }
+
+.method-note {
+  font-family: var(--font-mono); font-size: 0.6875rem; line-height: 1.6;
+  color: var(--ink-mute); background: var(--surface-2);
+  border-left: 2px solid var(--amber); padding: 0.625rem 0.875rem; margin: 1.5rem 0;
+}
+
+/* ---- footer ------------------------------------------------------------- */
+.site-foot {
+  border-top: 2px solid var(--ink); margin-top: 5rem; padding-top: 1.5rem;
+  font-family: var(--font-mono); font-size: 0.71875rem; line-height: 1.7; color: var(--ink-mute);
+}
+.site-foot a { color: var(--ink-soft); }
+.site-foot p { margin: 0 0 0.6rem; max-width: var(--measure); }
+
+/* ---- narrow screens ----------------------------------------------------- */
+@media (max-width: 64rem) {
+  .sidenav {
+    position: sticky; inset: auto; width: auto; height: auto;
+    border-right: none; border-bottom: 1px solid var(--rule);
+    top: 0; padding: 0.75rem 1rem;
+  }
+  .sidenav-sub, .sidenav-foot { display: none; }
+  .sidenav-brand { margin-bottom: 0.5rem; font-size: 0.65rem; }
+  .sidenav-list {
+    flex-direction: row; gap: 0.25rem;
+    overflow-x: auto; scrollbar-width: none; padding-bottom: 0.15rem;
+  }
+  .sidenav-list::-webkit-scrollbar { display: none; }
+  .sidenav-link {
+    grid-template-columns: auto; border-left: none;
+    border-bottom: 2px solid transparent; white-space: nowrap;
+    padding: 0.35rem 0.5rem; font-size: 0.75rem;
+  }
+  .sidenav-link .n { display: none; }
+  .sidenav-link.is-current { border-left-color: transparent; border-bottom-color: var(--teal); background: none; }
+  .main { margin-left: 0; }
+  .chapter { scroll-margin-top: 4.5rem; }
+  .theme-toggle { top: auto; bottom: 1rem; right: 1rem; }
+}
+
+@media (max-width: 30rem) {
+  .bar-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .bar-name { text-align: left; }
+  .stat-value { font-size: 1.5rem; }
+}

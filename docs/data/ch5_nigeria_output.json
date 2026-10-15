@@ -1,0 +1,207 @@
+{
+ "meta": {
+  "chart": "Nigeria's electricity, in total and per person",
+  "chapter": 5,
+  "years": [
+   2000,
+   2025
+  ],
+  "built_by": "analysis/24_build_ch5.py",
+  "source_file": "owid-energy-2026-10-14.csv",
+  "source_columns": [
+   "electricity_generation_twh",
+   "electricity_generation_per_capita_kwh",
+   "population"
+  ],
+  "n_rows": 26,
+  "note": "Two panels on one shared year axis, never two y scales on one plot. A dual axis would let the scales be chosen, and therefore the conclusion."
+ },
+ "rows": [
+  {
+   "year": 2000,
+   "generation_twh": 14.74,
+   "generation_pc_kwh": 116.6,
+   "population": 126382490
+  },
+  {
+   "year": 2001,
+   "generation_twh": 15.47,
+   "generation_pc_kwh": 119.1,
+   "population": 129862594
+  },
+  {
+   "year": 2002,
+   "generation_twh": 21.55,
+   "generation_pc_kwh": 161.5,
+   "population": 133471995
+  },
+  {
+   "year": 2003,
+   "generation_twh": 20.2,
+   "generation_pc_kwh": 147.2,
+   "population": 137202646
+  },
+  {
+   "year": 2004,
+   "generation_twh": 24.29,
+   "generation_pc_kwh": 172.2,
+   "population": 141057045
+  },
+  {
+   "year": 2005,
+   "generation_twh": 23.55,
+   "generation_pc_kwh": 162.4,
+   "population": 145017256
+  },
+  {
+   "year": 2006,
+   "generation_twh": 23.12,
+   "generation_pc_kwh": 155.1,
+   "population": 149077335
+  },
+  {
+   "year": 2007,
+   "generation_twh": 22.99,
+   "generation_pc_kwh": 150.0,
+   "population": 153267254
+  },
+  {
+   "year": 2008,
+   "generation_twh": 21.12,
+   "generation_pc_kwh": 134.0,
+   "population": 157595014
+  },
+  {
+   "year": 2009,
+   "generation_twh": 19.79,
+   "generation_pc_kwh": 122.1,
+   "population": 162049466
+  },
+  {
+   "year": 2010,
+   "generation_twh": 26.13,
+   "generation_pc_kwh": 156.8,
+   "population": 166642888
+  },
+  {
+   "year": 2011,
+   "generation_twh": 27.04,
+   "generation_pc_kwh": 157.8,
+   "population": 171379602
+  },
+  {
+   "year": 2012,
+   "generation_twh": 28.74,
+   "generation_pc_kwh": 163.1,
+   "population": 176200627
+  },
+  {
+   "year": 2013,
+   "generation_twh": 28.93,
+   "generation_pc_kwh": 159.8,
+   "population": 181049440
+  },
+  {
+   "year": 2014,
+   "generation_twh": 32.28,
+   "generation_pc_kwh": 173.6,
+   "population": 185896917
+  },
+  {
+   "year": 2015,
+   "generation_twh": 33.17,
+   "generation_pc_kwh": 174.0,
+   "population": 190671883
+  },
+  {
+   "year": 2016,
+   "generation_twh": 36.54,
+   "generation_pc_kwh": 187.0,
+   "population": 195443698
+  },
+  {
+   "year": 2017,
+   "generation_twh": 32.24,
+   "generation_pc_kwh": 161.0,
+   "population": 200254580
+  },
+  {
+   "year": 2018,
+   "generation_twh": 36.71,
+   "generation_pc_kwh": 179.1,
+   "population": 204938752
+  },
+  {
+   "year": 2019,
+   "generation_twh": 36.46,
+   "generation_pc_kwh": 174.0,
+   "population": 209485637
+  },
+  {
+   "year": 2020,
+   "generation_twh": 38.0,
+   "generation_pc_kwh": 177.6,
+   "population": 213996185
+  },
+  {
+   "year": 2021,
+   "generation_twh": 39.2,
+   "generation_pc_kwh": 179.4,
+   "population": 218529286
+  },
+  {
+   "year": 2022,
+   "generation_twh": 38.0,
+   "generation_pc_kwh": 170.3,
+   "population": 223150906
+  },
+  {
+   "year": 2023,
+   "generation_twh": 40.92,
+   "generation_pc_kwh": 179.6,
+   "population": 227882949
+  },
+  {
+   "year": 2024,
+   "generation_twh": 37.56,
+   "generation_pc_kwh": 161.4,
+   "population": 232679482
+  },
+  {
+   "year": 2025,
+   "generation_twh": 41.54,
+   "generation_pc_kwh": 174.9,
+   "population": 237527788
+  }
+ ],
+ "trend": {
+  "from": 2002,
+  "to": 2025,
+  "slope_kwh_per_year": 1.21,
+  "x": [
+   2002,
+   2025
+  ],
+  "y": [
+   150.0,
+   177.8
+  ]
+ },
+ "summary": {
+  "gen_first": 14.74,
+  "gen_last": 41.54,
+  "gen_growth_x": 2.82,
+  "pop_growth_x": 1.88,
+  "pc_first": 116.6,
+  "pc_last": 174.9,
+  "pc_growth_x": 1.5,
+  "pc_min": 116.6,
+  "pc_max": 187.0,
+  "pc_change_since_trend_start": 13.4,
+  "world_pc_last": 3859.8,
+  "gap_to_world_kwh": 3684.9,
+  "years_to_reach_world_at_this_rate": 3050,
+  "pc_2002": 161.5,
+  "pc_2024": 161.4
+ }
+}

@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Working files. These stay on the machine and are deliberately not published.
+#
+# The site is built and verified from the repository tree alone: the build
+# scripts (20 to 25), the bundler (26) and the verifier (27) read only
+# data/owid-energy-2026-10-14.csv and write only into docs/data/. None of them
+# import anything listed below.
+# ---------------------------------------------------------------------------
+
+# Exploration and working notes
+analysis/01_shape_and_coverage.py
+analysis/02_column_coverage.py
+analysis/03_the_data_gap.py
+analysis/04_nigeria.py
+analysis/05_nigeria_numbers.py
+analysis/06_methodology_tests.py
+analysis/07_groupings.py
+analysis/08_clean_because_poor.py
+analysis/09_exporters_and_growth.py
+analysis/10_nigeria_peers_and_time.py
+analysis/11_anomalies_and_clusters.py
+analysis/12_world_trends.py
+analysis/13_prehistory.py
+analysis/14_verify_memo_numbers.py
+analysis/15_chapter_feasibility.py
+analysis/16_verify_ramps.py
+analysis/research_memo.md
+analysis/research_memo.html
+analysis/chapter_proposal.md
+analysis/build_plan.md
+
+# Raw download and working copies. The frozen, dated copy in data/ is the one
+# the repository keeps.
+owid_energy.csv
+owid_energy.xlsx
+owid_energy_desp.txt
+PROMPT.txt
+prompt.txt
+
+# Screenshot harness, a local review tool
+.shots/
+
+# Environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+node_modules/
+package.json
+package-lock.json
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
